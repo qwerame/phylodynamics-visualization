@@ -1,0 +1,98 @@
+{
+  "x_constraint": [
+    [
+      "Washington",
+      "California",
+      "British Columbia"
+    ],
+    [
+      "Montana"
+    ],
+    [
+      "Kansas",
+      "North Dakota"
+    ],
+    [
+      "Iowa",
+      "Texas"
+    ],
+    [
+      "Illinois",
+      "Arkansas",
+      "Louisiana",
+      "Wisconsin",
+      "Missouri",
+      "Manitoba"
+    ],
+    [
+      "Indiana",
+      "Alabama",
+      "Michigan"
+    ],
+    [
+      "Ohio",
+      "Georgia",
+      "Virginia",
+      "North Carolina"
+    ],
+    [
+      "New Jersey",
+      "Pennsylvania",
+      "New York",
+      "Ontario"
+    ],
+    [
+      "New Hampshire",
+      "Massachusetts"
+    ]
+  ],
+  "y_constraint": [
+    [
+      "Louisiana"
+    ],
+    [
+      "Georgia",
+      "Alabama",
+      "Texas"
+    ],
+    [
+      "North Carolina",
+      "Arkansas"
+    ],
+    [
+      "Virginia"
+    ],
+    [
+      "New Jersey",
+      "Kansas",
+      "Ohio",
+      "Indiana",
+      "Missouri",
+      "California"
+    ],
+    [
+      "Iowa",
+      "Illinois",
+      "Pennsylvania"
+    ],
+    [
+      "Massachusetts",
+      "New York",
+      "Michigan"
+    ],
+    [
+      "New Hampshire",
+      "Wisconsin"
+    ],
+    [
+      "North Dakota",
+      "Washington",
+      "Montana"
+    ],
+    [
+      "Manitoba",
+      "British Columbia",
+      "Ontario"
+    ]
+  ]
+}
