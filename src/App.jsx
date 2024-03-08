@@ -1,41 +1,40 @@
 import './App.css'
 
-import Panel from "./components/panel";
+import Panel from "./components/Panel";
+import {useEffect, useState} from "react";
+import GeographicDiv from "./components/GeographicDiv";
 
-import Slider from "./components/slider";
-import {useState} from "react";
-import Svg from "./components/svg";
+import constraint from "./data/constraint.json"
+import raw_nodes from "./data/output_node.json"
+import raw_links from "./data/output_edge.json"
+import {ValueProvider} from "./context.jsx";
 
 function App() {
-    const [startColor, setStartColor] = useState('rgb(249, 249, 249)');
-    const [endColor, setEndColor] = useState('rgb(255, 0, 0)');
-
-    const [sourceColor, setSourceColor] = useState('rgb(255, 255, 255)');
-    const [targetColor, setTargetColor] = useState('rgb(255, 255, 255)');
-
-    const [time, setTime] = useState(1)
-    const handleStartChange = color => setStartColor(color)
-    const handleEndChange = color => setEndColor(color)
-
-    const handleSourceChange = color => setSourceColor(color)
-    const handleTargetChange = color => setTargetColor(color)
-
-    const changeTime = e => {
-        // console.log(e.target.value)
-        setTime(e.target.value)
-    }
+    const [initValue, setInitValue] = useState()
+    useEffect(() => {
+        setInitValue({
+            startColor: 'rgb(249, 249, 249)',
+            endColor: 'rgb(255, 0, 0)',
+            selectedId: '++',
+            time: raw_nodes.time_info.end_time,
+            raw_nodes: raw_nodes,
+            raw_links: raw_links,
+            constraint: constraint,
+            startTime: raw_nodes.time_info.start_time,
+            endTime: raw_nodes.time_info.end_time
+        })
+    }, []);
 
 
     return (
         <>
-
-            <Panel startColor={startColor} handleStartChange={handleStartChange} endColor={endColor} handleEndChange={handleEndChange}
-                    sourceColor={sourceColor} handleSourceChange={handleSourceChange} targetColor={targetColor} handleTargetChange={handleTargetChange}
-                    changeTime={changeTime}
-            ></Panel>
-            <Svg startColor={startColor} endColor={endColor} sourceColor={sourceColor} targetColor={targetColor} time={time}></Svg>
-            <Slider changeTime={changeTime}></Slider>
-
+            {
+                initValue ?
+                    <ValueProvider init={initValue}>
+                        <GeographicDiv/>
+                        <Panel/>
+                    </ValueProvider> : null
+            }
         </>
     )
 }

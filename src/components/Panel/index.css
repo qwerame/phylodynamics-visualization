@@ -1,0 +1,22 @@
+#panel {
+    position: relative;
+    display: inline-block;
+    .panel-popover {
+        position: absolute;
+        top: -240px;
+    }
+    #popoverStart {
+        left: -55px;
+    }
+    #popoverEnd
+    {
+        right: -60px;
+    }
+    .cover {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

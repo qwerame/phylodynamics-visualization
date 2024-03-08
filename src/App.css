@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.node {
+  /*stroke-opacity: inherit;*/
+  stroke-width: 2px;
+  color: red;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1px;
+  opacity: 1;
+  /*marker-end: url(#end-arrow);*/
+}
