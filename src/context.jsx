@@ -11,7 +11,7 @@ export function ValueProvider({ children , init}) {
     );
 
     useEffect(() => {
-        console.log(value)
+        // console.log(value)
     }, [value]);
 
     return (

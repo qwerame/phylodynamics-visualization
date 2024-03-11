@@ -1,4 +1,7 @@
 import {useValue, useValueDispatch} from "../../context.jsx";
+import {useCallback, useEffect} from "react";
+import * as d3 from "d3";
+import {axis_width, axis_height, axis_margin} from "../../constants.js";
 
 const Slider = () => {
 
@@ -12,9 +15,30 @@ const Slider = () => {
 
     }
 
+    const translateTime = useCallback(time => {
+        const year = Math.floor(time)
+        const raw_month = Math.floor(time % 1 * 12) + 1
+        const month = raw_month < 10 ? '0' + raw_month : raw_month
+        return year + '-' + month
+    }, [])
+
+    useEffect(() => {
+        const x = d3.scaleUtc()
+            .domain([new Date(translateTime(value.startTime)), new Date(translateTime(value.endTime))])
+            .range([axis_margin, axis_width - axis_margin]);
+        const svg = d3.select("#axis-svg")
+            .attr("width", axis_width)
+            .attr("height", axis_height);
+
+        svg.append("g").call(d3.axisBottom(x));
+    }, []);
+
     return (
-        <div id="slider" style={{marginTop: "15px", display: "inline-block"}}>
-            <input type="range" min={value.startTime} max={value.endTime} onInput={changeValue} step="any" style={{width: "600px"}} defaultValue={value.endTime} />
+        <div id="slider" style={{display: "inline-block", width: axis_width + "px"}}>
+            <input type="range" min={value.startTime} max={value.endTime} list="values"
+                   onInput={changeValue} step="any" defaultValue={value.endTime}
+                   style={{width: axis_width - axis_margin * 2 + "px"}}/>
+            <svg id="axis-svg"></svg>
         </div>
     )
 }

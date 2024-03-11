@@ -1,8 +1,7 @@
 import {useCallback, useEffect, useRef} from "react";
 import * as d3 from "d3";
 import {useValue, useValueDispatch} from "../../context.jsx";
-
-
+import {geographic_svg_size} from "../../constants.js";
 
 
 const GeographicSvg = (props) => {
@@ -11,9 +10,6 @@ const GeographicSvg = (props) => {
 
     const {links, nodes} = props
     const svgRef = useRef()
-
-    const width = 850; // outer width, in pixels
-    const height = 850; // outer height, in pixels
 
     // generate radius
     const getR = useCallback((label, time) => {
@@ -61,9 +57,17 @@ const GeographicSvg = (props) => {
         })
 
         node.append("circle")
+            .attr("r" , d => d.r)
+            .attr("fill", "rgb(0,0,0)")
+            .attr("opacity", "0.2")
+            .classed("static-circle", true)
+
+
+        node.append("circle")
             .attr("r" , d => getR(d.label, value.time) * d.r)
             // .attr("r", d => d.r)
             .attr("fill", d => d3.interpolateRgb(value.startColor, value.endColor)(d.color))
+            .classed("dynamic-circle", true)
 
 
         node.append("text")
@@ -100,7 +104,7 @@ const GeographicSvg = (props) => {
             svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
 
         }
-        svg.selectAll("circle").attr("r" , d => getR(d.label, value.time) * d.r)
+        svg.selectAll(".dynamic-circle").attr("r" , d => getR(d.label, value.time) * d.r)
             .attr("fill", d => d3.interpolateRgb(value.startColor, value.endColor)(d.color))
 
 
@@ -109,7 +113,8 @@ const GeographicSvg = (props) => {
 
 
     return (
-      <svg ref={svgRef} viewBox={[0, 0, width, height]} width={width} height={height} style={{"backgroundColor": "lightGrey"}}>
+      <svg ref={svgRef} viewBox={[0, 0, geographic_svg_size, geographic_svg_size]}
+           width={geographic_svg_size} height={geographic_svg_size} style={{"backgroundColor": "lightGrey"}}>
       </svg>
     );
 };

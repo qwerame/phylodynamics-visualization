@@ -1,6 +1,10 @@
 #panel {
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-top: 15px;
+
     .panel-popover {
         position: absolute;
         top: -240px;

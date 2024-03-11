@@ -3,14 +3,12 @@ import * as d3 from "d3";
 import * as cola from "webcola";
 import GeographicSvg from "./GeographicSvg.jsx";
 import {useValue} from "../../context.jsx";
-
+import {geographic_svg_size} from "../../constants.js";
 
 const GeographicDiv = () => {
     const value = useValue()
 
     const d3cola = cola.d3adaptor(d3).convergenceThreshold(0.1);
-    const width = 850; // outer width, in pixels
-    const height = 850; // outer height, in pixels
 
     const [marginX, setMarginX] = useState();
     const [marginY, setMarginY] = useState();
@@ -48,7 +46,7 @@ const GeographicDiv = () => {
                 label: "bottom_left",
                 r: 1,
                 x: 0,
-                y: height,
+                y: geographic_svg_size,
                 width: 1,
                 height: 1
             },
@@ -58,7 +56,7 @@ const GeographicDiv = () => {
                 fixedWeight: 100,
                 r: 1,
                 label: "top_right",
-                x: width,
+                x: geographic_svg_size,
                 y: 0,
                 width: 1,
                 height: 1
@@ -90,13 +88,13 @@ const GeographicDiv = () => {
             return accumulator + lenToR(len_max)
         }, 0);
 
-        const temp_ratio = width * 0.5 / Math.max(sum_x, sum_y)
+        const temp_ratio = geographic_svg_size * 0.5 / Math.max(sum_x, sum_y)
         setRatio(temp_ratio)
         setXReferenceNodes(reference_x)
         setYReferenceNodes(reference_y)
         // console.log(reference_y)
-        setMarginX((width - sum_x * temp_ratio)/reference_x.length)
-        setMarginY((height - sum_y * temp_ratio)/reference_y.length)
+        setMarginX((geographic_svg_size - sum_x * temp_ratio)/reference_x.length)
+        setMarginY((geographic_svg_size - sum_y * temp_ratio)/reference_y.length)
 
     }, [])
 
@@ -274,7 +272,7 @@ const GeographicDiv = () => {
             // console.log("links done")
             // console.log(links)
             d3cola
-                .size([width, height])
+                .size([geographic_svg_size, geographic_svg_size])
                 .nodes([...nodes, ...fakeNodes])
                 .constraints(constraints)
                 .links(links)
@@ -310,7 +308,7 @@ const GeographicDiv = () => {
 
 
     return (
-        <div id="geographic-div" style={{width: "850px", height: "850px"}}>
+        <div id="geographic-div" style={{width: geographic_svg_size + 'px', height: geographic_svg_size + 'px'}}>
             {finalLinks && nodes ? <GeographicSvg links={finalLinks} nodes={nodes}/> : null}
         </div>
 
