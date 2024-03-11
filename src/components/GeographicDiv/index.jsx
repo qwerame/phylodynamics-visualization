@@ -28,10 +28,6 @@ const GeographicDiv = () => {
     const [links, setLinks] = useState();
     const [finalLinks, setFinalLinks] = useState();
 
-    const getRandom = useCallback( (min, max) => {
-        return Math.random() * (max - min) + min + 30
-    }, [])
-
     // to make small nodes visible
     const lenToR = useCallback((len) => {
         return len === 0 ? 0 : (len < 10 ? 10 - 1 / len : len)
@@ -49,7 +45,6 @@ const GeographicDiv = () => {
                 id: Object.keys(value.raw_nodes.nodes).length.toString(),
                 fixed: true,
                 fixedWeight: 100,
-                time_list: [2022,2023],
                 label: "bottom_left",
                 r: 1,
                 x: 0,
@@ -76,21 +71,21 @@ const GeographicDiv = () => {
     const generateRatio = useCallback( () => {
         const reference_x = []
         const sum_x = value.constraint.x_constraint.reduce((accumulator, currentValue) => {
-            const len_map = new Map(currentValue.map(d => [value.raw_nodes.nodes[d].time_list.length, d]));
+            const len_map = new Map(currentValue.map((d, index) => [value.raw_nodes.nodes[d].time_list.length, {name:d, index: index}]));
             const len_max = Math.max(...len_map.keys())
             const max_location = len_map.get(len_max)
-            console.log(max_location)
-            reference_x.push({id: value.raw_nodes.nodes[max_location].id, length: len_max})
-            console.log(reference_x)
+            // console.log(max_location)
+            reference_x.push({id: value.raw_nodes.nodes[max_location.name].id, length: len_max, index: max_location.index})
+            // console.log(reference_x)
             return accumulator + lenToR(len_max)
         }, 0);
         const reference_y = []
         const sum_y = value.constraint.y_constraint.reduce((accumulator, currentValue) => {
-            const len_map = new Map(currentValue.map(d => [value.raw_nodes.nodes[d].time_list.length, d]));
+            const len_map = new Map(currentValue.map((d, index) => [value.raw_nodes.nodes[d].time_list.length, {name:d, index: index}]));
             const len_max = Math.max(...len_map.keys())
             const max_location = len_map.get(len_max)
             // console.log(max_location)
-            reference_y.push({id: value.raw_nodes.nodes[max_location].id, length: len_max})
+            reference_y.push({id: value.raw_nodes.nodes[max_location.name].id, length: len_max, index: max_location.index})
             // console.log(reference_y)
             return accumulator + lenToR(len_max)
         }, 0);
@@ -108,6 +103,26 @@ const GeographicDiv = () => {
     const lineFunction = d3.line()
         .x(function (d) { return d.x; })
         .y(function (d) { return d.y; });
+
+    const getTextSizes = useCallback(nameList => {
+        const widthList = []
+        const container = d3.select("#geographic-div");
+        container.append("svg")
+            .selectAll("text")
+            .data(nameList)
+            .enter().append("text")
+            .text(d => d)
+            .attr("fill", "black")
+            .attr("stroke", "black")
+            .attr("font-size", "8px")
+            .attr("stroke-width", 0.8)
+            .each(function () {
+                widthList.push(this.getBBox().width)
+            });
+
+        container.selectAll("*").remove()
+        return widthList
+    }, [])
 
     // generate constraints (after generateRatio)
     useEffect(() => {
@@ -171,11 +186,11 @@ const GeographicDiv = () => {
             // alignment within the group
             value.constraint.x_constraint.forEach((item, groupIndex) => {
                 if(item.length > 1){
-                    const offsets = item.map((location) => {
+                    const offsets = item.map((location, index) => {
                         return {
                             "node": value.raw_nodes.nodes[location].id,
-                            "offset": getRandom(lenToR(value.raw_nodes.nodes[location].time_list.length) - lenToR(xReferenceNodes[groupIndex].length) ,
-                                lenToR(xReferenceNodes[groupIndex].length) - lenToR(value.raw_nodes.nodes[location].time_list.length )) * ratio / 2
+                            "offset": (lenToR(xReferenceNodes[groupIndex].length) - lenToR(value.raw_nodes.nodes[location].time_list.length))
+                                * ((index - xReferenceNodes[groupIndex].index) >= 0 ? 1 : -1)* ratio / 2
                         }
                     })
                     // console.log(offsets)
@@ -189,11 +204,11 @@ const GeographicDiv = () => {
 
             value.constraint.y_constraint.forEach((item, groupIndex) => {
                 if(item.length > 1){
-                    const offsets = item.map((location) => {
+                    const offsets = item.map((location, index) => {
                         return {
                             "node": value.raw_nodes.nodes[location].id,
-                            "offset": getRandom(lenToR(value.raw_nodes.nodes[location].time_list.length) - lenToR(yReferenceNodes[groupIndex].length) ,
-                                lenToR(yReferenceNodes[groupIndex].length) - lenToR(value.raw_nodes.nodes[location].time_list.length)) * ratio/ 2
+                            "offset": (lenToR(yReferenceNodes[groupIndex].length) - lenToR(value.raw_nodes.nodes[location].time_list.length))
+                                * ((index - yReferenceNodes[groupIndex].index >= 0 ? 1 : -1)) * ratio/ 2
                         }
                     })
                     temp_constraints.push({
@@ -203,7 +218,7 @@ const GeographicDiv = () => {
                     })
                 }
             })
-            console.log(temp_constraints)
+            // console.log(temp_constraints)
 
             setConstraints(temp_constraints)
         }
@@ -213,22 +228,28 @@ const GeographicDiv = () => {
     // generate nodes (after generateRatio)
     useEffect(() => {
         if(ratio) {
-            const realNodes = Object.keys(value.raw_nodes.nodes).map(key => {
+            const sizeList = getTextSizes(Object.keys(value.raw_nodes.nodes))
+            // console.log(widthList)
+            const realNodes = Object.keys(value.raw_nodes.nodes).map((key, index) => {
+                const node_width = lenToR(value.raw_nodes.nodes[key].time_list.length) * ratio
+                const text_width = Math.min(sizeList[index], node_width + marginX)
                 return {
                     id: value.raw_nodes.nodes[key].id,
                     label: key,
-                    r: lenToR(value.raw_nodes.nodes[key].time_list.length) * ratio / 2,
+                    r: node_width / 2,
                     color: normalizeTime(value.raw_nodes.nodes[key].first_time, value.startTime, value.endTime),
-                    width: lenToR(value.raw_nodes.nodes[key].time_list.length) * ratio,
-                    height: lenToR(value.raw_nodes.nodes[key].time_list.length) * ratio
+                    width: Math.max(node_width, text_width),
+                    height: Math.max(node_width, 20),
+                    text_width: text_width,
+                    node_width: node_width
                 }
             })
             setNodes(realNodes)
         }
-    }, [ratio])
+    }, [ratio, marginX])
 
     useEffect(() => {
-        console.log(finalLinks)
+        // console.log(finalLinks)
     }, [finalLinks]);
 
     const generateLinks = useCallback(() => {
@@ -250,8 +271,8 @@ const GeographicDiv = () => {
     //generate node position (after generating constraints, generating nodes, generating links)
     useEffect(() => {
         if(nodes && links && constraints && fakeNodes){
-            console.log("links done")
-            console.log(links)
+            // console.log("links done")
+            // console.log(links)
             d3cola
                 .size([width, height])
                 .nodes([...nodes, ...fakeNodes])
@@ -263,17 +284,21 @@ const GeographicDiv = () => {
 
 
             console.log(nodes)
-            console.log(links)
+            // console.log(links)
 
 
             d3cola.start(30, 30, 60).on("tick", () => {
 
-                nodes.forEach(value => value.innerBounds = value.bounds.inflate(0))
+                nodes.forEach(value => {
+                    value.innerBounds = value.bounds.inflate(0)
+                    if(value.height > value.node_width)
+                        value.innerBounds.y += (value.height - value.node_width) / 2
+                })
 
             }).on("end", () => {
 
                 d3cola.prepareEdgeRouting();
-                console.log(links)
+                // console.log(links)
                 setFinalLinks(links.map(item => Object.assign(Object.create(item), {
                     ...item,
                     path:lineFunction(d3cola.routeEdge(item))
@@ -286,7 +311,7 @@ const GeographicDiv = () => {
 
     return (
         <div id="geographic-div" style={{width: "850px", height: "850px"}}>
-            {finalLinks ? <GeographicSvg links={finalLinks} nodes={nodes} ratio={ratio}/> : null}
+            {finalLinks && nodes ? <GeographicSvg links={finalLinks} nodes={nodes}/> : null}
         </div>
 
     );

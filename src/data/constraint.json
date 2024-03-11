@@ -1,45 +1,49 @@
 {
   "x_constraint": [
     [
+      "British Columbia",
       "Washington",
-      "California",
-      "British Columbia"
+      "California"
     ],
     [
       "Montana"
     ],
     [
-      "Kansas",
-      "North Dakota"
+      "Texas",
+      "North Dakota",
+      "Kansas"
     ],
     [
+      "Manitoba",
       "Iowa",
-      "Texas"
-    ],
-    [
-      "Illinois",
       "Arkansas",
-      "Louisiana",
-      "Wisconsin",
       "Missouri",
-      "Manitoba"
+      "Louisiana"
     ],
     [
-      "Indiana",
+      "Wisconsin",
+      "Illinois"
+    ],
+    [
       "Alabama",
+      "Indiana",
       "Michigan"
     ],
     [
-      "Ohio",
-      "Georgia",
-      "Virginia",
-      "North Carolina"
+      "Ontario"
     ],
     [
-      "New Jersey",
+      "Georgia",
+      "Ohio",
+      "North Carolina",
+      "Virginia"
+    ],
+    [
       "Pennsylvania",
-      "New York",
-      "Ontario"
+      "New York"
+    ],
+    [
+      "New Jersey"
     ],
     [
       "New Hampshire",
@@ -48,51 +52,49 @@
   ],
   "y_constraint": [
     [
-      "Louisiana"
-    ],
-    [
-      "Georgia",
-      "Alabama",
+      "Louisiana",
       "Texas"
     ],
     [
-      "North Carolina",
-      "Arkansas"
+      "Alabama",
+      "Georgia"
     ],
     [
-      "Virginia"
+      "Arkansas",
+      "North Carolina"
     ],
     [
-      "New Jersey",
-      "Kansas",
-      "Ohio",
-      "Indiana",
+      "California",
+      "Virginia",
       "Missouri",
-      "California"
+      "Kansas"
     ],
     [
-      "Iowa",
+      "Indiana",
       "Illinois",
+      "Ohio",
+      "New Jersey",
       "Pennsylvania"
     ],
     [
+      "Iowa",
       "Massachusetts",
-      "New York",
-      "Michigan"
+      "New York"
     ],
     [
       "New Hampshire",
-      "Wisconsin"
+      "Wisconsin",
+      "Michigan"
     ],
     [
-      "North Dakota",
+      "Montana",
       "Washington",
-      "Montana"
+      "North Dakota"
     ],
     [
-      "Manitoba",
+      "Ontario",
       "British Columbia",
-      "Ontario"
+      "Manitoba"
     ]
   ]
 }
