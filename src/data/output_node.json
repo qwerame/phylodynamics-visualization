@@ -968,5 +968,34 @@
     "time_info": {
         "start_time": 2004.9815203948672,
         "end_time": 2018.0013698630137
+    },
+    "nodes_map": {
+        "0": "Wisconsin",
+        "1": "Iowa",
+        "2": "Ontario",
+        "3": "British Columbia",
+        "4": "California",
+        "5": "New Jersey",
+        "6": "Indiana",
+        "7": "New York",
+        "8": "Ohio",
+        "9": "Michigan",
+        "10": "Massachusetts",
+        "11": "Washington",
+        "12": "Missouri",
+        "13": "Manitoba",
+        "14": "Montana",
+        "15": "Georgia",
+        "16": "New Hampshire",
+        "17": "North Dakota",
+        "18": "Illinois",
+        "19": "Alabama",
+        "20": "Kansas",
+        "21": "Pennsylvania",
+        "22": "Virginia",
+        "23": "Texas",
+        "24": "Louisiana",
+        "25": "North Carolina",
+        "26": "Arkansas"
     }
 }

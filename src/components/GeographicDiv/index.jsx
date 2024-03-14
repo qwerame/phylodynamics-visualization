@@ -281,7 +281,7 @@ const GeographicDiv = () => {
                 .jaccardLinkLengths(20, 0.1)
 
 
-            console.log(nodes)
+            // console.log(nodes)
             // console.log(links)
 
 
@@ -308,7 +308,7 @@ const GeographicDiv = () => {
 
 
     return (
-        <div id="geographic-div" style={{width: geographic_svg_size + 'px', height: geographic_svg_size + 'px'}}>
+        <div id="geographic-div" className="svg-div" style={{width: geographic_svg_size + 'px', height: geographic_svg_size + 'px'}}>
             {finalLinks && nodes ? <GeographicSvg links={finalLinks} nodes={nodes}/> : null}
         </div>
 

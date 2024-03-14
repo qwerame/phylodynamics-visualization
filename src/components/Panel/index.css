@@ -10,11 +10,11 @@
         top: -240px;
     }
     #popoverStart {
-        left: -55px;
+        left: 345px;
     }
     #popoverEnd
     {
-        right: -60px;
+        right: 345px;
     }
     .cover {
         position: fixed;
