@@ -11,12 +11,15 @@ const TreeStructureDiv = () => {
     const [selectedLeavesArr, setSelectedLeavesArr] = useState([]) // only index
     const [leavesMap, setLeavesMap] = useState({}) // index - y
 
-    const [xRatio, setXRatio] = useState()
+    const [xRatio, setXRatio] = useState(undefined)
 
     // full data , used in TreeStructureSvg
     const [selectedLeaves, setSelectedLeaves] = useState([])
     const [branches, setBranches] = useState([])
 
+    useEffect(() =>{
+        setXRatio((tree_structure_svg_size - 2 * tree_structure_svg_padding) / value.x_span)
+    }, [])
 
     useEffect(() => {
         setSelectedLocation(value.selectedId.length > 2 ?
@@ -58,9 +61,9 @@ const TreeStructureDiv = () => {
     }, [selectedLocation])
 
     useEffect(() => {
-        const xRatio = (tree_structure_svg_size - 2 * tree_structure_svg_padding)
-            / Math.max(...selectedLeavesArr.map(item => value.raw_tree_nodes[item].height))
-        setXRatio(xRatio)
+        // const xRatio = (tree_structure_svg_size - 2 * tree_structure_svg_padding)
+        //     / Math.max(...selectedLeavesArr.map(item => value.raw_tree_nodes[item].height))
+        // setXRatio(oldValue => oldValue === undefined || oldValue <= 0 ? xRatio : oldValue)
         const yRatio = (tree_structure_svg_size - 2 * tree_structure_svg_padding) / selectedLeavesArr.length
         const tempSelectedLeaves = selectedLeavesArr.map((item, index) => Object.assign(Object.create(value.raw_tree_nodes[item]), {
             ...value.raw_tree_nodes[item],
@@ -110,7 +113,7 @@ const TreeStructureDiv = () => {
     }
 
     return (
-        <div className="svg-div" style={{width: tree_structure_svg_size + 'px', height: tree_structure_svg_size + 'px'}}>
+        <div id='tree-structure-div' className="svg-div" style={{width: tree_structure_svg_size + 'px', height: tree_structure_svg_size + 'px'}}>
             {selectedLeaves && branches ?
                 <TreeStructureSvg treeLeaves={selectedLeaves} branchTee={branches} xRatio={xRatio}/> : null }
         </div>

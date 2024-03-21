@@ -45,6 +45,18 @@ function ValueReducer(value, action) {
                 ...value,
                 selectedId: action.newValue === value.selectedId ? "++" : action.newValue}
         }
+        case 'setDetailNodeInfo': {
+            return {
+                ...value,
+                detail_node_info: action.newValue
+            }
+        }
+        case 'setHoveredLocation': {
+            return {
+                ...value,
+                hovered_location: action.newValue
+            }
+        }
         default: {
             throw Error('Unknown action: ' + action.type);
         }

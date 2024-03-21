@@ -1,19 +1,35 @@
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import * as d3 from "d3";
-import {useValue} from "../../context.jsx";
-import {tree_structure_svg_size} from "../../constants.js";
-
+import {useValue, useValueDispatch} from "../../context.jsx";
+import {tree_structure_svg_padding, tree_structure_svg_size} from "../../constants.js";
+import {getStroke, getZone} from "../../utils.js";
+import Legend from "../GridGeographicDiv/Legend.jsx";
 
 const TreeStructureSvg = (props) => {
     const value = useValue()
+    const dispatch = useValueDispatch()
     const {treeLeaves, branchTee} = props
     const svgRef = useRef()
 
+
     useEffect(() => {
         const svg = d3.select(svgRef.current)
-
         svg.selectAll("*").remove()
         const tree = svg.append("g").attr("id", 'tree')
+        tree.selectAll("*").remove()
+        svg.append('rect')
+            .attr('id', 'temporalRect')
+            .attr('width', 0)
+            .attr('height', tree_structure_svg_size)
+            .attr('fill', 'rgb(238, 238, 238)')
+            .attr('opacity', 0.8)
+            .attr('x',  tree_structure_svg_size - tree_structure_svg_padding)
+
+    }, []);
+
+    useEffect(() => {
+        const tree = d3.select('#tree')
+        tree.selectAll("*").remove()
 
         const branchTees = tree.append("g").attr("id", 'branchTees')
 
@@ -25,6 +41,7 @@ const TreeStructureSvg = (props) => {
             .attr("x2", d => d.xSelf || 0)
             .attr("y2", d => d.max || 0)
             .attr("stroke", d => value.color_map[d.location])
+
 
         const branchStems = tree.append("g").attr("id", 'branchStems')
 
@@ -43,17 +60,56 @@ const TreeStructureSvg = (props) => {
             .enter().append("circle")
             .attr("r" , "4")
             .attr("fill", d => value.color_map[d.location])
-            .classed("static-circle", true)
+            .classed("tree-leaf", true)
             .attr("cx", d => d.x)
             .attr("cy", d => d.y)
+            .attr('stroke', d => getStroke(value.color_map[d.location]))
+            .on("mouseover", function (e){
+                d3.select(this).attr('r', 6)
+                dispatch({
+                    type: 'setDetailNodeInfo',
+                    newValue: {
+                        name: e.target.__data__.name,
+                        traits: e.target.__data__.traits,
+                        zone: getZone(e.target.__data__.x, e.target.__data__.y),
+                        x: e.clientX,
+                        y: e.clientY
+                    }
+                })
+            })
+            .on("mouseout", function () {
+                d3.select(this).attr('r', 4)
+                dispatch({
+                    type: 'setDetailNodeInfo',
+                    newValue: null
+                })
+            })
 
-        console.log(branchTee)
+
+
     }, [treeLeaves, branchTee]);
+
+    useEffect(() => {
+        d3.selectAll('.tree-leaf').attr('r', d => d.location === value.hovered_location ? 6 : 4)
+    }, [value.hovered_location]);
+
+    useEffect(() => {
+        const ratio = (value.time - value.startTime) / (value.endTime - value.startTime)
+        d3.select('#temporalRect')
+            .attr('width' , Math.abs(ratio) <= 1e-10 ? tree_structure_svg_size : (
+                Math.abs(ratio - 1) <= 1e-10 ? 0 : tree_structure_svg_padding + (1 - ratio) * (tree_structure_svg_size - 2 * tree_structure_svg_padding)
+            ))
+            .attr('x', Math.abs(ratio) <= 1e-10 ? 0 : tree_structure_svg_padding + ratio * (tree_structure_svg_size - 2 * tree_structure_svg_padding))
+        console.log(ratio)
+    }, [value.time]);
     return (
-        <svg ref={svgRef} viewBox={[0, 0, tree_structure_svg_size, tree_structure_svg_size]}
-             width={tree_structure_svg_size} height={tree_structure_svg_size} style={{"backgroundColor": "white", "border": "1px solid black"}}>
-        </svg>
+        <>
+            <svg ref={svgRef} viewBox={[0, 0, tree_structure_svg_size, tree_structure_svg_size]}
+                 width={tree_structure_svg_size} height={tree_structure_svg_size} style={{"backgroundColor": "aliceblue"}}>
+            </svg>
+
+            <Legend></Legend>
+        </>
     );
 };
-
 export default TreeStructureSvg;

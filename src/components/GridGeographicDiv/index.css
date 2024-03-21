@@ -1,0 +1,36 @@
+#legend {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background-color: rgba(240,248,255, 0.5);
+
+    padding: 5px 0 0 0;
+}
+
+.legend-text {
+    font-size: 12px;
+    fill: rgb(51, 51, 51);
+}
+
+.title-text {
+    font-size: 15px;
+    fill: rgb(51, 51, 51);
+}
+
+#title-div {
+    height: 16px;
+    width: 80px;
+    position: absolute;
+    bottom: 6px;
+    left: 4px;
+    text-align: left;
+    #title-span {
+        font-size: 16px;
+    }
+    .chevron-icon {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        margin-left: 4px;
+    }
+}

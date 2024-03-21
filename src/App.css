@@ -58,5 +58,6 @@
 .svg-div {
   display: inline-block;
   margin: 10px;
+  position: relative;
   /*border: 1px solid black;*/
 }
