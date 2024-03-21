@@ -38,7 +38,8 @@ function App() {
             grid_columns: gridConstraints.info.columns,
             grid_rows: gridConstraints.info.rows,
             detail_node_info: null,
-            hovered_location: null
+            hovered_location: null,
+            hovered_variation_info: null,
         })
     }, []);
 

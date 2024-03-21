@@ -1,9 +1,9 @@
-import {useEffect, useRef, useState} from "react";
+import {useEffect, useRef} from "react";
 import * as d3 from "d3";
 import {useValue, useValueDispatch} from "../../context.jsx";
 import {tree_structure_svg_padding, tree_structure_svg_size} from "../../constants.js";
 import {getStroke, getZone} from "../../utils.js";
-import Legend from "../GridGeographicDiv/Legend.jsx";
+import Legend from "../Legend/Legend.jsx";
 
 const TreeStructureSvg = (props) => {
     const value = useValue()
@@ -71,7 +71,7 @@ const TreeStructureSvg = (props) => {
                     newValue: {
                         name: e.target.__data__.name,
                         traits: e.target.__data__.traits,
-                        zone: getZone(e.target.__data__.x, e.target.__data__.y),
+                        zone: getZone(e.target.__data__.x, e.target.__data__.y, tree_structure_svg_size),
                         x: e.clientX,
                         y: e.clientY
                     }

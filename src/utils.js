@@ -23,10 +23,10 @@ const generateGroupColor = (n, startColor, endColor) => {
     return returnList
 }
 
-export const getZone = (x, y) => {
-    if(x < tree_structure_svg_size / 2 && y < tree_structure_svg_size / 2) return 0;
-    else if(x >= tree_structure_svg_size / 2 && y < tree_structure_svg_size / 2) return 1;
-    else if(x < tree_structure_svg_size / 2 && y > tree_structure_svg_size / 2) return 2;
+export const getZone = (x, y, span) => {
+    if(x < span / 2 && y < span / 2) return 0;
+    else if(x >= span / 2 && y < span / 2) return 1;
+    else if(x < span / 2 && y > span / 2) return 2;
     return 3;
 }
 

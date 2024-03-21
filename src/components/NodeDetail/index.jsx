@@ -7,13 +7,11 @@ const NodeDetail = () => {
     const [style, setStyle] = useState({
         position: 'absolute',
         width: '260px',
-        // height: '100px',
         background: 'rgb(55, 55, 55)',
         borderRadius: '10px',
         padding: '10px',
         zIndex: '1000',
         pointerEvents: 'none',
-        fontFamily: 'Lato, "Helvetica Neue", Helvetica, sans-serif',
         fontSize: '14px',
         lineHeight: '1',
         fontWeight: '300',

@@ -4,7 +4,7 @@ import * as cola from "webcola";
 import {useValue} from "../../context.jsx";
 import {geographic_svg_size} from "../../constants.js";
 import GridGeographicSvg from "./GridGeographicSvg.jsx";
-import NodeDetail from "../NodeDetail/index.jsx";
+import VariationDetail from "../VariationDetail/index.jsx";
 const GridGeographicDiv = () => {
     const value = useValue()
 
@@ -109,7 +109,7 @@ const GridGeographicDiv = () => {
                 return {
                     id: value.raw_nodes.nodes[key].id,
                     label: key,
-                    color: d3.interpolateRgb(value.startColor, value.endColor)(value.raw_nodes.nodes[key].time_list.length / maxListLength),
+                    color: value.raw_nodes.nodes[key].time_list.length / maxListLength,
                     width: Math.max(gridSize * 0.6, text_width),
                     height: gridSize * 0.6,
                     text_width: text_width,
@@ -135,7 +135,7 @@ const GridGeographicDiv = () => {
             <div id="geographic-div" className="svg-div" style={{width: geographic_svg_size + 'px', height: geographic_svg_size + 'px'}}>
                 {nodes && finalLinks ? <GridGeographicSvg nodes={nodes} links={finalLinks}/> : null}
             </div>
-            <NodeDetail></NodeDetail>
+            <VariationDetail></VariationDetail>
         </>
     );
 };

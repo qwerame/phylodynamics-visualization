@@ -1,7 +1,8 @@
-import {useCallback, useEffect, useRef, useState} from "react";
+import {useCallback, useEffect, useRef} from "react";
 import * as d3 from "d3";
 import {useValue, useValueDispatch} from "../../context.jsx";
 import {geographic_svg_size} from "../../constants.js";
+import {getZone} from "../../utils.js";
 
 
 const GridGeographicSvg = (props) => {
@@ -53,14 +54,38 @@ const GridGeographicSvg = (props) => {
             .enter().append("g")
             .attr("transform", d => `translate(${d.x},${d.y})`)
             .attr("cx", d => d.x)
-            .attr("cy", d => d.y);
-
-        node.on("click", e => {
-            dispatch({
-                type: 'setSelectedId',
-                newValue: "+" + e.target.__data__.id + "+"
+            .attr("cy", d => d.y)
+            .on("click", e => {
+                dispatch({
+                    type: 'setSelectedId',
+                    newValue: "+" + e.target.__data__.id + "+"
+                })
             })
-        })
+            .on("mouseenter", function (e){
+                dispatch({
+                    type: 'setHoveredLocation',
+                    newValue: e.target.__data__.label
+                })
+                dispatch({
+                    type: 'setHoveredVariationInfo',
+                    newValue: {
+                        location: e.target.__data__.label,
+                        zone: getZone(e.target.__data__.x, e.target.__data__.y, geographic_svg_size),
+                        x: e.clientX,
+                        y: e.clientY
+                    }
+                })
+            })
+            .on("mouseleave", () => {
+                dispatch({
+                    type: 'setHoveredLocation',
+                    newValue: null
+                })
+                dispatch({
+                    type: 'setHoveredVariationInfo',
+                    newValue: null
+                })
+            })
 
         // node.append("circle")
         //     .attr("r" , d => d.width / 2)
@@ -69,9 +94,13 @@ const GridGeographicSvg = (props) => {
         //     .classed("static-circle", true)
 
 
-        node.append("circle")
-            .attr("r" , d => d.width / 2)
+        node.append("rect")
+            .attr("width" , d => d.width)
+            .attr('height', d => d.height)
             .attr("fill", d => d.color)
+            .attr('transform', d => `translate(-${d.width / 2}, -${d.height / 2})`)
+            .attr('rx', '10px')
+            .attr('ry', '10px')
             .classed("dynamic-circle", true)
 
 
@@ -109,7 +138,8 @@ const GridGeographicSvg = (props) => {
             svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
 
         }
-        svg.selectAll(".dynamic-circle").attr("fill", d => d3.interpolateRgb(value.startColor, d.color)(getTime(d.label, value.time)))
+        svg.selectAll(".dynamic-circle").attr("fill", d => d3.interpolateRgb(value.startColor, d3.interpolateRgb(value.startColor, value.endColor)(d.color))(getTime(d.label, value.time)))
+        svg.selectAll(".filtered-num").text(d => value.raw_nodes.nodes[d.label].time_list.filter(item => item < value.time).length)
 
 
     }, [value.time, value.selectedId, value.startColor, value.endColor]);

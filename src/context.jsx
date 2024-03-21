@@ -57,6 +57,12 @@ function ValueReducer(value, action) {
                 hovered_location: action.newValue
             }
         }
+        case 'setHoveredVariationInfo': {
+            return {
+                ...value,
+                hovered_variation_info: action.newValue
+            }
+        }
         default: {
             throw Error('Unknown action: ' + action.type);
         }

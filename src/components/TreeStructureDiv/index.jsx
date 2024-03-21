@@ -2,6 +2,7 @@ import {useCallback, useEffect, useState} from "react";
 import {useValue} from "../../context.jsx";
 import {tree_structure_svg_size, tree_structure_svg_padding} from "../../constants.js"
 import TreeStructureSvg from "./TreeStructureSvg.jsx";
+import NodeDetail from "../NodeDetail/index.jsx";
 const TreeStructureDiv = () => {
     const value = useValue()
 
@@ -113,11 +114,13 @@ const TreeStructureDiv = () => {
     }
 
     return (
-        <div id='tree-structure-div' className="svg-div" style={{width: tree_structure_svg_size + 'px', height: tree_structure_svg_size + 'px'}}>
-            {selectedLeaves && branches ?
-                <TreeStructureSvg treeLeaves={selectedLeaves} branchTee={branches} xRatio={xRatio}/> : null }
-        </div>
-
+        <>
+            <div id='tree-structure-div' className="svg-div" style={{width: tree_structure_svg_size + 'px', height: tree_structure_svg_size + 'px'}}>
+                {selectedLeaves && branches ?
+                    <TreeStructureSvg treeLeaves={selectedLeaves} branchTee={branches} xRatio={xRatio}/> : null }
+            </div>
+            <NodeDetail></NodeDetail>
+        </>
     );
 };
 
