@@ -117,7 +117,7 @@ const TreeStructureDiv = () => {
         <>
             <div id='tree-structure-div' className="svg-div" style={{width: tree_structure_svg_size + 'px', height: tree_structure_svg_size + 'px'}}>
                 {selectedLeaves && branches ?
-                    <TreeStructureSvg treeLeaves={selectedLeaves} branchTee={branches} xRatio={xRatio}/> : null }
+                    <TreeStructureSvg treeLeaves={selectedLeaves} branchTee={branches}/> : null }
             </div>
             <NodeDetail></NodeDetail>
         </>

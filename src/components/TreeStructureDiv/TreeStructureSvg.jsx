@@ -41,6 +41,25 @@ const TreeStructureSvg = (props) => {
             .attr("x2", d => d.xSelf || 0)
             .attr("y2", d => d.max || 0)
             .attr("stroke", d => value.color_map[d.location])
+            .attr("stroke-width", 2)
+            .on("mouseover", function (e){
+                dispatch({
+                    type: 'setDetailNodeInfo',
+                    newValue: {
+                        name: e.target.__data__.name,
+                        traits: e.target.__data__.traits,
+                        zone: getZone(e.target.__data__.xSelf, (e.target.__data__.min + e.target.__data__.min) / 2, tree_structure_svg_size),
+                        x: e.clientX,
+                        y: e.clientY
+                    }
+                })
+            })
+            .on("mouseout", function () {
+                dispatch({
+                    type: 'setDetailNodeInfo',
+                    newValue: null
+                })
+            })
 
 
         const branchStems = tree.append("g").attr("id", 'branchStems')
@@ -53,6 +72,25 @@ const TreeStructureSvg = (props) => {
             .attr("x2", d => d.xParent || 0)
             .attr("y2", d => (d.min + d.max) / 2 || 0)
             .attr("stroke", d => value.color_map[d.location])
+            .attr("stroke-width", 2)
+            .on("mouseover", function (e){
+                dispatch({
+                    type: 'setDetailNodeInfo',
+                    newValue: {
+                        name: e.target.__data__.name,
+                        traits: e.target.__data__.traits,
+                        zone: getZone(e.target.__data__.xSelf, (e.target.__data__.min + e.target.__data__.min) / 2, tree_structure_svg_size),
+                        x: e.clientX,
+                        y: e.clientY
+                    }
+                })
+            })
+            .on("mouseout", function () {
+                dispatch({
+                    type: 'setDetailNodeInfo',
+                    newValue: null
+                })
+            })
 
         const leaves = tree.append("g").attr("id", 'leaves')
         leaves.selectAll("circle")
