@@ -5,6 +5,7 @@ import {useValue} from "../../context.jsx";
 import {geographic_svg_size} from "../../constants.js";
 import GridGeographicSvg from "./GridGeographicSvg.jsx";
 import VariationDetail from "../VariationDetail/index.jsx";
+import {getLnLength} from "../../utils.js";
 const GridGeographicDiv = () => {
     const value = useValue()
 
@@ -95,7 +96,7 @@ const GridGeographicDiv = () => {
         setMarginX((geographic_svg_size - tempGridSize * value.grid_columns) / 2)
         setMarginY((geographic_svg_size - tempGridSize * value.grid_rows) / 2)
         setGridSize(tempGridSize)
-        setMaxListLength(Math.max(...Object.values(value.raw_nodes.nodes).map(item => item.time_list.length)))
+        setMaxListLength(getLnLength(Math.max(...Object.values(value.raw_nodes.nodes).map(item => item.time_list.length))))
         generateLinks()
 
     }, []);
@@ -109,7 +110,7 @@ const GridGeographicDiv = () => {
                 return {
                     id: value.raw_nodes.nodes[key].id,
                     label: key,
-                    color: value.raw_nodes.nodes[key].time_list.length / maxListLength,
+                    color: getLnLength(value.raw_nodes.nodes[key].time_list.length) / maxListLength,
                     width: Math.max(gridSize * 0.6, text_width),
                     height: gridSize * 0.6,
                     text_width: text_width,

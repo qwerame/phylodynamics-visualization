@@ -65,3 +65,7 @@ export const translateTrait = (traitName, traitValue) => {
 export const getStroke = oldValue => {
     return d3.interpolateRgb('rgb(0,0,0)', oldValue)(0.8)
 }
+
+export const getLnLength = length => {
+    return Math.log(length + 1)
+}
