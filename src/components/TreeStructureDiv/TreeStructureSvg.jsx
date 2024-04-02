@@ -2,7 +2,7 @@ import {useEffect, useRef} from "react";
 import * as d3 from "d3";
 import {useValue, useValueDispatch} from "../../context.jsx";
 import {tree_structure_svg_padding, tree_structure_svg_size} from "../../constants.js";
-import {getStroke, getZone} from "../../utils.js";
+import {getPath, getStroke, getZone} from "../../utils.js";
 import Legend from "../Legend/Legend.jsx";
 
 const TreeStructureSvg = (props) => {
@@ -31,18 +31,17 @@ const TreeStructureSvg = (props) => {
         const tree = d3.select('#tree')
         tree.selectAll("*").remove()
 
-        const branchTees = tree.append("g").attr("id", 'branchTees')
+        const branches = tree.append("g").attr("id", 'branches')
 
-        branchTees.selectAll("line")
+        branches.selectAll("path")
             .data(branchTee)
-            .enter().append("line")
-            .attr("x1", d => d.xSelf || 0)
-            .attr("y1", d => d.min || 0)
-            .attr("x2", d => d.xSelf || 0)
-            .attr("y2", d => d.max || 0)
+            .enter().append("path")
+            .attr("d", d => getPath(d.xParent, d.xSelf, d.min, d.max))
+            .attr("stroke-width",1)
             .attr("stroke", d => value.color_map[d.location])
-            .attr("stroke-width", 2)
+            .attr("fill", 'none')
             .on("mouseover", function (e){
+                d3.select(this).attr("stroke-width", 2)
                 dispatch({
                     type: 'setDetailNodeInfo',
                     newValue: {
@@ -55,37 +54,7 @@ const TreeStructureSvg = (props) => {
                 })
             })
             .on("mouseout", function () {
-                dispatch({
-                    type: 'setDetailNodeInfo',
-                    newValue: null
-                })
-            })
-
-
-        const branchStems = tree.append("g").attr("id", 'branchStems')
-
-        branchStems.selectAll("line")
-            .data(branchTee)
-            .enter().append("line")
-            .attr("x1", d => d.xSelf  || 0)
-            .attr("y1", d => (d.min + d.max) / 2 || 0)
-            .attr("x2", d => d.xParent || 0)
-            .attr("y2", d => (d.min + d.max) / 2 || 0)
-            .attr("stroke", d => value.color_map[d.location])
-            .attr("stroke-width", 2)
-            .on("mouseover", function (e){
-                dispatch({
-                    type: 'setDetailNodeInfo',
-                    newValue: {
-                        name: e.target.__data__.name,
-                        traits: e.target.__data__.traits,
-                        zone: getZone(e.target.__data__.xSelf, (e.target.__data__.min + e.target.__data__.min) / 2, tree_structure_svg_size),
-                        x: e.clientX,
-                        y: e.clientY
-                    }
-                })
-            })
-            .on("mouseout", function () {
+                d3.select(this).attr("stroke-width", 1)
                 dispatch({
                     type: 'setDetailNodeInfo',
                     newValue: null
@@ -138,7 +107,7 @@ const TreeStructureSvg = (props) => {
                 Math.abs(ratio - 1) <= 1e-10 ? 0 : tree_structure_svg_padding + (1 - ratio) * (tree_structure_svg_size - 2 * tree_structure_svg_padding)
             ))
             .attr('x', Math.abs(ratio) <= 1e-10 ? 0 : tree_structure_svg_padding + ratio * (tree_structure_svg_size - 2 * tree_structure_svg_padding))
-        console.log(ratio)
+        // console.log(ratio)
     }, [value.time]);
     return (
         <>

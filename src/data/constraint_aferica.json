@@ -1,0 +1,208 @@
+{
+    "groups": {
+        "Boke": [
+            0,
+            1
+        ],
+        "Conakry": [
+            1,
+            5
+        ],
+        "Dubreka": [
+            1,
+            3
+        ],
+        "Fria": [
+            1,
+            2
+        ],
+        "Coyah": [
+            2,
+            4
+        ],
+        "Western Urban": [
+            3,
+            9
+        ],
+        "Western Rural": [
+            3,
+            10
+        ],
+        "Western Area": [
+            4,
+            10
+        ],
+        "Forecariah": [
+            4,
+            5
+        ],
+        "Port Loko": [
+            4,
+            7
+        ],
+        "Kambia": [
+            4,
+            6
+        ],
+        "Kindia": [
+            4,
+            4
+        ],
+        "Bonthe": [
+            5,
+            11
+        ],
+        "Moyamba": [
+            5,
+            10
+        ],
+        "Bombali": [
+            5,
+            4
+        ],
+        "Dalaba": [
+            5,
+            1
+        ],
+        "Tonkolili": [
+            5,
+            7
+        ],
+        "Bo": [
+            6,
+            10
+        ],
+        "Pujehun": [
+            6,
+            11
+        ],
+        "Sierra Leone": [
+            7,
+            8
+        ],
+        "Guinea": [
+            7,
+            0
+        ],
+        "Kenema": [
+            8,
+            10
+        ],
+        "Koinadugu": [
+            9,
+            4
+        ],
+        "Grand Cape Mount": [
+            9,
+            12
+        ],
+        "Kono": [
+            9,
+            7
+        ],
+        "Bomi": [
+            9,
+            14
+        ],
+        "Montserrado": [
+            10,
+            14
+        ],
+        "Kailahun": [
+            10,
+            10
+        ],
+        "Faranah": [
+            10,
+            3
+        ],
+        "Gbarpolu": [
+            10,
+            11
+        ],
+        "Margibi": [
+            10,
+            15
+        ],
+        "Gueckedou": [
+            10,
+            7
+        ],
+        "Kouroussa": [
+            10,
+            3
+        ],
+        "Kissidougou": [
+            11,
+            5
+        ],
+        "Lofa": [
+            11,
+            11
+        ],
+        "Grand Bassa": [
+            12,
+            15
+        ],
+        "Bong": [
+            12,
+            14
+        ],
+        "Siguiri": [
+            12,
+            0
+        ],
+        "Rivercess": [
+            12,
+            16
+        ],
+        "Macenta": [
+            12,
+            10
+        ],
+        "Kerouane": [
+            12,
+            4
+        ],
+        "Liberia": [
+            13,
+            13
+        ],
+        "Sinoe": [
+            14,
+            17
+        ],
+        "Nzerekore": [
+            14,
+            10
+        ],
+        "Nimba": [
+            14,
+            14
+        ],
+        "Kankan": [
+            15,
+            2
+        ],
+        "Lola": [
+            15,
+            10
+        ],
+        "Beyla": [
+            15,
+            7
+        ],
+        "Grand Kru": [
+            15,
+            18
+        ],
+        "River Gee": [
+            16,
+            17
+        ]
+    },
+    "info": {
+        "rows": 19,
+        "columns": 17
+    }
+}

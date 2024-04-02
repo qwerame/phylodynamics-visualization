@@ -32,7 +32,7 @@ const VariationDetail = () => {
         })
         setVariationNum(value.hovered_variation_info ?
             value.raw_nodes.nodes[value.hovered_variation_info.location].time_list.filter(item => item < value.time).length : null)
-        console.log(value.hovered_variation_info)
+        // console.log(value.hovered_variation_info)
     }, [value.hovered_variation_info]);
 
 

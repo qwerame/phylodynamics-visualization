@@ -99,8 +99,8 @@ const GridGeographicSvg = (props) => {
             .attr('height', d => d.height)
             .attr("fill", d => d.color)
             .attr('transform', d => `translate(-${d.width / 2}, -${d.height / 2})`)
-            .attr('rx', '10px')
-            .attr('ry', '10px')
+            .attr('rx', '1%')
+            .attr('ry', '1%')
             .classed("dynamic-circle", true)
 
 

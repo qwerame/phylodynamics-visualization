@@ -22,7 +22,7 @@ const NodeDetail = () => {
     })
     const [traits, setTraits] = useState()
     useEffect(() => {
-        console.log(value.detail_node_info)
+        // console.log(value.detail_node_info)
         setStyle(oldStyle => {
             return value.detail_node_info === null ? {
                 ...oldStyle,

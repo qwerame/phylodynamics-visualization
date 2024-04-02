@@ -2,7 +2,7 @@ import {useCallback, useEffect, useState} from "react";
 import * as d3 from "d3";
 import * as cola from "webcola";
 import {useValue} from "../../context.jsx";
-import {geographic_svg_size} from "../../constants.js";
+import {geographic_svg_padding, geographic_svg_size} from "../../constants.js";
 import GridGeographicSvg from "./GridGeographicSvg.jsx";
 import VariationDetail from "../VariationDetail/index.jsx";
 import {getLnLength} from "../../utils.js";
@@ -59,7 +59,7 @@ const GridGeographicDiv = () => {
             // console.log("links done")
             // console.log(links)
             d3cola
-                .size([geographic_svg_size, geographic_svg_size])
+                .size([geographic_svg_size - 2 * geographic_svg_padding, geographic_svg_size - 2 * geographic_svg_padding])
                 .nodes(nodes)
                 .links(links)
                 .avoidOverlaps(true)
@@ -92,9 +92,9 @@ const GridGeographicDiv = () => {
     }, [nodes, links]);
 
     useEffect(() => {
-        const tempGridSize = geographic_svg_size / Math.max(value.grid_columns, value.grid_rows)
-        setMarginX((geographic_svg_size - tempGridSize * value.grid_columns) / 2)
-        setMarginY((geographic_svg_size - tempGridSize * value.grid_rows) / 2)
+        const tempGridSize = (geographic_svg_size - 2 * geographic_svg_padding)/ Math.max(value.grid_columns, value.grid_rows)
+        setMarginX((geographic_svg_size - 2 * geographic_svg_padding - tempGridSize * value.grid_columns) / 2 + geographic_svg_padding)
+        setMarginY((geographic_svg_size - 2 * geographic_svg_padding - tempGridSize * value.grid_rows) / 2 + geographic_svg_padding)
         setGridSize(tempGridSize)
         setMaxListLength(getLnLength(Math.max(...Object.values(value.raw_nodes.nodes).map(item => item.time_list.length))))
         generateLinks()
@@ -102,17 +102,19 @@ const GridGeographicDiv = () => {
     }, []);
 
     useEffect(() => {
-        console.log(maxListLength)
+        console.log(maxListLength + ' ' + gridSize + ' ' + marginX + ' ' + marginY)
         if(gridSize && maxListLength && marginX && marginY){
             const sizeList = getTextSizes(Object.keys(value.raw_nodes.nodes))
+            console.log(value.grid_constraint)
             setNodes(Object.keys(value.raw_nodes.nodes).map((key, index) => {
-                const text_width = Math.min(sizeList[index], gridSize * 0.6)
+                const text_width = Math.min(sizeList[index], gridSize * 0.7)
+                console.log(key + ' ' + value.grid_constraint[key])
                 return {
                     id: value.raw_nodes.nodes[key].id,
                     label: key,
                     color: getLnLength(value.raw_nodes.nodes[key].time_list.length) / maxListLength,
-                    width: Math.max(gridSize * 0.6, text_width),
-                    height: gridSize * 0.6,
+                    width: Math.max(gridSize * 0.7, text_width),
+                    height: gridSize * 0.7,
                     text_width: text_width,
                     fixed: true,
                     fixedWeight: 100,
@@ -126,10 +128,10 @@ const GridGeographicDiv = () => {
     }, [gridSize, maxListLength, marginX, marginY]);
 
     useEffect(() => {
-        if(nodes && finalLinks){
-            console.log(finalLinks)
+        if(nodes ){
+            console.log(nodes)
         }
-    }, [nodes, finalLinks]);
+    }, [nodes]);
 
     return (
         <>

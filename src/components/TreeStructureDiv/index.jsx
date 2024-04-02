@@ -78,7 +78,7 @@ const TreeStructureDiv = () => {
     }, [selectedNodes,selectedLeavesArr]);
 
     useEffect(() => {
-        console.log(xRatio)
+        // console.log(xRatio)
         const nodesObj = {}
         generate_nodes(value.raw_tree_nodes[value.tree_root], nodesObj)
         setBranches(Object.keys(nodesObj).map(nodeKey => Object.assign(Object.create(nodesObj[nodeKey]), {

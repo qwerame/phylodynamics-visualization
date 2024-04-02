@@ -63,9 +63,9 @@ const Panel = ()  => {
 
     return (
         <div id="panel">
-            <button className="panel-button" onClick={clickStart} ref={startRef} style={{background: localStartColor}}>start color</button>
+            <button className="panel-button" onClick={clickStart} ref={startRef} style={{background: localStartColor}}>min color</button>
             <Slider></Slider>
-            <button className="panel-button" onClick={clickEnd} ref={endRef} style={{background: localEndColor}}>end color</button>
+            <button className="panel-button" onClick={clickEnd} ref={endRef} style={{background: localEndColor}}>max color</button>
 
             {displayStart ?
                 <div id="popoverStart" className="panel-popover">

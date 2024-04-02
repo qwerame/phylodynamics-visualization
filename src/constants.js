@@ -1,4 +1,5 @@
 export const geographic_svg_size = 800
+export const geographic_svg_padding = 10
 export const axis_width = 650
 export const axis_height = 25
 export const axis_margin = 25
