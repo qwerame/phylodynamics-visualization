@@ -1,12 +1,12 @@
 import {useCallback, useEffect, useState} from "react";
-import {useValue} from "../../context.jsx";
+import {useValue, useValueDispatch} from "../../context.jsx";
 import {tree_structure_svg_size, tree_structure_svg_padding} from "../../constants.js"
 import TreeStructureSvg from "./TreeStructureSvg.jsx";
 import NodeDetail from "../NodeDetail/index.jsx";
 const TreeStructureDiv = () => {
     const value = useValue()
-
-    const [selectedLocation, setSelectedLocation] = useState("")
+    const dispatch = useValueDispatch()
+    // const [selectedLocation, setSelectedLocation] = useState("")
 
     const [selectedNodes, setSelectedNodes] = useState([]) // only index
     const [selectedLeavesArr, setSelectedLeavesArr] = useState([]) // only index
@@ -22,36 +22,36 @@ const TreeStructureDiv = () => {
         setXRatio((tree_structure_svg_size - 2 * tree_structure_svg_padding) / value.x_span)
     }, [])
 
-    useEffect(() => {
-        setSelectedLocation(value.selectedId.length > 2 ?
-            value.nodes_map[value.selectedId.slice(1, value.selectedId.length - 1)]: "")
-    }, [value.selectedId]);
+    // useEffect(() => {
+    //     setSelectedLocation(value.selectedId.length > 2 ?
+    //         value.nodes_map[value.selectedId.slice(1, value.selectedId.length - 1)]: "")
+    // }, [value.selectedId]);
 
-    useEffect(() => {
-        // console.log(Object.keys(value.raw_tree_nodes).length)
-
-        const list = []
-        filter_nodes(value.raw_tree_nodes[value.tree_root], list)
-        // console.log(list)
-        setSelectedNodes(list)
-        setSelectedLeavesArr(list.filter(item => value.raw_leaves.includes(item)))
-    }, [selectedLocation]);
+    // useEffect(() => {
+    //     // console.log(Object.keys(value.raw_tree_nodes).length)
+    //
+    //     const list = []
+    //     filter_nodes(value.raw_tree_nodes[value.tree_root], list)
+    //     // console.log(list)
+    //     setSelectedNodes(list)
+    //     setSelectedLeavesArr(list.filter(item => value.raw_leaves.includes(item)))
+    // }, [selectedLocation]);
 
     const add_nodes = useCallback((cur_node, list) => {
         list.push(cur_node.index)
         cur_node.children.forEach(item => add_nodes(value.raw_tree_nodes[item], list))
     }, [])
 
-    const filter_nodes = useCallback((cur_node, list) => {
+    const filter_nodes = useCallback((cur_node, list, location) => {
         var isSelected = false
-        if(cur_node.location && cur_node.location.includes(selectedLocation)) {
+        if(cur_node.location && cur_node.location.includes(location)) {
             isSelected = true
             add_nodes(cur_node, list)
             return true
         }
         else {
             cur_node.children.forEach(item => {
-                if(filter_nodes(value.raw_tree_nodes[item], list)) isSelected = true
+                if(filter_nodes(value.raw_tree_nodes[item], list, location)) isSelected = true
             })
             if(isSelected){
                 list.push(cur_node.index)
@@ -59,7 +59,41 @@ const TreeStructureDiv = () => {
             }
             return false
         }
-    }, [selectedLocation])
+    }, [])
+
+    useEffect(() => {
+        const list = []
+        if(!value.selectedNodeId && value.selectedId === '++') {
+            add_nodes(value.raw_tree_nodes[value.tree_root], list)
+            dispatch({
+                type: 'setSelectedNodeIdList',
+                newValue: null
+            })
+        }
+        else if(value.selectedId !== '++') {
+            const selectedLocation = value.nodes_map[value.selectedId.slice(1, value.selectedId.length - 1)]
+            filter_nodes(value.raw_tree_nodes[value.tree_root], list, selectedLocation)
+            dispatch({
+                type: 'setSelectedNodeIdList',
+                newValue: null
+            })
+        }
+        else {
+            add_nodes(value.raw_tree_nodes[value.selectedNodeId], list)
+            let temp_node = value.raw_tree_nodes[value.selectedNodeId].parent
+            while(temp_node !== value.raw_tree_nodes[temp_node].parent){
+                list.push(temp_node)
+                temp_node = value.raw_tree_nodes[temp_node].parent
+            }
+            // console.log(list)
+            dispatch({
+                type: 'setSelectedNodeIdList',
+                newValue: list
+            })
+        }
+        setSelectedNodes(list)
+        setSelectedLeavesArr(list.filter(item => value.raw_leaves.includes(item)))
+    }, [value.selectedNodeId, value.selectedId]);
 
     useEffect(() => {
         // const xRatio = (tree_structure_svg_size - 2 * tree_structure_svg_padding)

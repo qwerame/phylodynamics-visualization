@@ -60,6 +60,14 @@ const GridGeographicSvg = (props) => {
                     type: 'setSelectedId',
                     newValue: "+" + e.target.__data__.id + "+"
                 })
+                dispatch({
+                    type: 'setSelectedNodeIdList',
+                    newValue: null
+                })
+                dispatch({
+                    type: 'setSelectedNodeId',
+                    newValue: null
+                })
             })
             .on("mouseenter", function (e){
                 dispatch({
@@ -129,20 +137,26 @@ const GridGeographicSvg = (props) => {
 
         // console.log(startTime * (1 - time) + endTime * time)
         const svg = d3.select(svgRef.current);
-        if(value.selectedId === "++") {
+        if(value.selectedId === "++" && value.selectedNodeIdList === null) {
             svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time ? "0" : "1")
             svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time ? "0" : "1")
+        }
+        else if(value.selectedNodeIdList){
+            svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time ? "0" :
+                (value.selectedNodeIdList.includes(d.source_node_id) && value.selectedNodeIdList.includes(d.target_node_id)) ? "1" : "0")
+            svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time ? "0" :
+                (value.selectedNodeIdList.includes(d.source_node_id) && value.selectedNodeIdList.includes(d.target_node_id)) ? "1" : "0")
+
         }
         else {
             svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
             svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
-
         }
         svg.selectAll(".dynamic-circle").attr("fill", d => d3.interpolateRgb(value.startColor, d3.interpolateRgb(value.startColor, value.endColor)(d.color))(getTime(d.label, value.time)))
         svg.selectAll(".filtered-num").text(d => value.raw_nodes.nodes[d.label].time_list.filter(item => item < value.time).length)
 
 
-    }, [value.time, value.selectedId, value.startColor, value.endColor]);
+    }, [value.time, value.selectedId, value.startColor, value.endColor, value.selectedNodeIdList]);
 
 
 

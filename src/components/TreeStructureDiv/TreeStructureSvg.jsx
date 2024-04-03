@@ -24,10 +24,13 @@ const TreeStructureSvg = (props) => {
             .attr('fill', 'rgb(238, 238, 238)')
             .attr('opacity', 0.8)
             .attr('x',  tree_structure_svg_size - tree_structure_svg_padding)
-
     }, []);
 
     useEffect(() => {
+        dispatch({
+            type: 'setDetailNodeInfo',
+            newValue: null
+        })
         const tree = d3.select('#tree')
         tree.selectAll("*").remove()
 
@@ -60,6 +63,26 @@ const TreeStructureSvg = (props) => {
                     newValue: null
                 })
             })
+            .on("click", function (e) {
+                dispatch({
+                    type: 'setSelectedNodeId',
+                    newValue: e.target.__data__.index
+                })
+                dispatch({
+                    type: 'setSelectedId',
+                    newValue: '++'
+                })
+            })
+
+        const nodes = tree.append("g").attr("id", 'nodes')
+        nodes.selectAll("circle")
+            .data(branchTee)
+            .enter().append("circle")
+            .attr("r" , "1")
+            .attr("fill", d => value.color_map[d.location])
+            .attr("cx", d => d.xSelf)
+            .attr("cy", d => (d.min + d.max) / 2)
+            .attr('stroke', d => getStroke(value.color_map[d.location]))
 
         const leaves = tree.append("g").attr("id", 'leaves')
         leaves.selectAll("circle")

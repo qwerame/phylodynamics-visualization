@@ -26,7 +26,7 @@ function App() {
         setInitValue({
             startColor: 'rgb(255,240,230)',
             endColor: 'rgb(255, 0, 0)',
-            selectedId: '++',
+            selectedId: '++', // location id
             time: raw_nodes.time_info.end_time,
             raw_nodes: raw_nodes,
             raw_links: raw_links,
@@ -45,6 +45,8 @@ function App() {
             detail_node_info: null,
             hovered_location: null,
             hovered_variation_info: null,
+            selectedNodeId: null, // node id in tree structure
+            selectedNodeIdList: null,
         })
     }, []);
 
