@@ -47,6 +47,7 @@ function App() {
             hovered_variation_info: null,
             selectedNodeId: null, // node id in tree structure
             selectedNodeIdList: null,
+            display_time_axis: raw_nodes.time_axis
         })
     }, []);
 

@@ -53,6 +53,8 @@ const GridGeographicSvg = (props) => {
             .data(nodes)
             .enter().append("g")
             .attr("transform", d => `translate(${d.x},${d.y})`)
+            .attr("stroke", d => '+' + d.id + '+' === value.selectedId ? "rgb(0, 0, 0)" : "")
+            .attr("stroke-width", "2")
             .attr("cx", d => d.x)
             .attr("cy", d => d.y)
             .on("click", e => {
@@ -131,7 +133,7 @@ const GridGeographicSvg = (props) => {
             .attr("marker-end", d => "url(#arrow" + d.id + ")")
 
 
-    }, []);
+    }, [value.selectedId]);
 
     useEffect(() => {
 

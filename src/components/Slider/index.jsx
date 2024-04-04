@@ -23,22 +23,25 @@ const Slider = () => {
     }, [])
 
     useEffect(() => {
-        const x = d3.scaleUtc()
-            .domain([new Date(translateTime(value.startTime)), new Date(translateTime(value.endTime))])
-            .range([axis_margin, axis_width - axis_margin]);
-        const svg = d3.select("#axis-svg")
-            .attr("width", axis_width)
-            .attr("height", axis_height);
+        if(value.display_time_axis) {
+            const x = d3.scaleUtc()
+                .domain([new Date(translateTime(value.startTime)), new Date(translateTime(value.endTime))])
+                .range([axis_margin, axis_width - axis_margin]);
+            const svg = d3.select("#axis-svg")
+                .attr("width", axis_width)
+                .attr("height", axis_height);
 
-        svg.append("g").call(d3.axisBottom(x));
+            svg.append("g").call(d3.axisBottom(x));
+        }
     }, []);
 
     return (
-        <div id="slider" style={{display: "inline-block", width: axis_width + "px"}}>
+        <div id="slider" style={{display: "flex", width: axis_width + "px",
+            justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
             <input type="range" min={value.startTime} max={value.endTime} list="values"
                    onInput={changeValue} step="any" defaultValue={value.endTime}
                    style={{width: axis_width - axis_margin * 2 + "px"}}/>
-            <svg id="axis-svg"></svg>
+            <svg id="axis-svg" height="0"></svg>
         </div>
     )
 }

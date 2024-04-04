@@ -40,11 +40,11 @@ const TreeStructureSvg = (props) => {
             .data(branchTee)
             .enter().append("path")
             .attr("d", d => getPath(d.xParent, d.xSelf, d.min, d.max))
-            .attr("stroke-width",1)
+            .attr("stroke-width",d => d.index === value.selectedNodeId ? 3 : 1)
             .attr("stroke", d => value.color_map[d.location])
             .attr("fill", 'none')
             .on("mouseover", function (e){
-                d3.select(this).attr("stroke-width", 2)
+                d3.select(this).attr("stroke-width", d => d.index === value.selectedNodeId ? 3 : 2)
                 dispatch({
                     type: 'setDetailNodeInfo',
                     newValue: {
@@ -57,7 +57,7 @@ const TreeStructureSvg = (props) => {
                 })
             })
             .on("mouseout", function () {
-                d3.select(this).attr("stroke-width", 1)
+                d3.select(this).attr("stroke-width", d => d.index === value.selectedNodeId ? 3 : 1)
                 dispatch({
                     type: 'setDetailNodeInfo',
                     newValue: null
