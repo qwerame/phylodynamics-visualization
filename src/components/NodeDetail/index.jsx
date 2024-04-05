@@ -6,7 +6,7 @@ const NodeDetail = () => {
     const [name, setName] = useState()
     const [style, setStyle] = useState({
         position: 'absolute',
-        width: '260px',
+        width: '320px',
         background: 'rgb(55, 55, 55)',
         borderRadius: '10px',
         padding: '10px',
@@ -32,7 +32,7 @@ const NodeDetail = () => {
                 left: value.detail_node_info.x + 'px',
                 top: value.detail_node_info.y + 'px',
                 opacity: 0.9,
-                transform: getTransformStyle(value.detail_node_info.zone)
+                transform: getTransformStyle(value.detail_node_info.zone, value.detail_node_info.y)
             }
         })
         setName(value.detail_node_info ? value.detail_node_info.name : null)
@@ -41,9 +41,9 @@ const NodeDetail = () => {
 
     return (
         <div style={style}>
-            {traits && name ?
+            {traits || name ?
                 <div style={{position: 'relative', padding: '5px'}}>
-                    <div style={{fontSize: '18px',fontWeight: '400',marginBottom: '10px', textAlign: 'left'}}>{name}</div>
+                    <div style={{fontSize: '18px',fontWeight: '400',marginBottom: '10px', textAlign: 'left'}}>{name || '-'}</div>
                     {Object.keys(traits).map(key => {
                         return (
                             <div key={key} style={{textAlign: 'left', paddingBottom: '10px'}}>

@@ -15,9 +15,12 @@ const GridGeographicSvg = (props) => {
 
     // generate radius
     const getTime = useCallback((label, time) => {
-        const new_list = value.raw_nodes.nodes[label].time_list.filter(item => item < time)
-        // console.log(new_list)
-        return new_list.length / value.raw_nodes.nodes[label].time_list.length
+        if(value.raw_nodes.nodes[label]) {
+            const new_list = value.raw_nodes.nodes[label].time_list.filter(item => item < time)
+            // console.log(new_list)
+            return new_list.length / value.raw_nodes.nodes[label].time_list.length
+        }
+        return -1
     }, [])
 
     useEffect(() => {
@@ -58,33 +61,37 @@ const GridGeographicSvg = (props) => {
             .attr("cx", d => d.x)
             .attr("cy", d => d.y)
             .on("click", e => {
-                dispatch({
-                    type: 'setSelectedId',
-                    newValue: "+" + e.target.__data__.id + "+"
-                })
-                dispatch({
-                    type: 'setSelectedNodeIdList',
-                    newValue: null
-                })
-                dispatch({
-                    type: 'setSelectedNodeId',
-                    newValue: null
-                })
+                if(e.target.__data__.color >= 0){
+                    dispatch({
+                        type: 'setSelectedId',
+                        newValue: "+" + e.target.__data__.id + "+"
+                    })
+                    dispatch({
+                        type: 'setSelectedNodeIdList',
+                        newValue: null
+                    })
+                    dispatch({
+                        type: 'setSelectedNodeId',
+                        newValue: null
+                    })
+                }
             })
             .on("mouseenter", function (e){
-                dispatch({
-                    type: 'setHoveredLocation',
-                    newValue: e.target.__data__.label
-                })
-                dispatch({
-                    type: 'setHoveredVariationInfo',
-                    newValue: {
-                        location: e.target.__data__.label,
-                        zone: getZone(e.target.__data__.x, e.target.__data__.y, geographic_svg_size),
-                        x: e.clientX,
-                        y: e.clientY
-                    }
-                })
+                if(e.target.__data__.color >= 0) {
+                    dispatch({
+                        type: 'setHoveredLocation',
+                        newValue: e.target.__data__.label
+                    })
+                    dispatch({
+                        type: 'setHoveredVariationInfo',
+                        newValue: {
+                            location: e.target.__data__.label,
+                            zone: getZone(e.target.__data__.x, e.target.__data__.y, geographic_svg_size),
+                            x: e.clientX,
+                            y: e.clientY
+                        }
+                    })
+                }
             })
             .on("mouseleave", () => {
                 dispatch({
@@ -107,11 +114,12 @@ const GridGeographicSvg = (props) => {
         node.append("rect")
             .attr("width" , d => d.width)
             .attr('height', d => d.height)
-            .attr("fill", d => d.color)
+            // .attr("fill", d => d.color)
             .attr('transform', d => `translate(-${d.width / 2}, -${d.height / 2})`)
             .attr('rx', '1%')
             .attr('ry', '1%')
-            .classed("dynamic-circle", true)
+            .classed("real-node", d => d.color >= 0)
+            .classed("rect", true)
 
 
         node.append("text")
@@ -154,7 +162,7 @@ const GridGeographicSvg = (props) => {
             svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
             svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
         }
-        svg.selectAll(".dynamic-circle").attr("fill", d => d3.interpolateRgb(value.startColor, d3.interpolateRgb(value.startColor, value.endColor)(d.color))(getTime(d.label, value.time)))
+        svg.selectAll(".rect").attr("fill", d => d.color >= 0 ? d3.interpolateRgb(value.startColor, d3.interpolateRgb(value.startColor, value.endColor)(d.color))(getTime(d.label, value.time)) : 'rgb(105 105 105)')
         svg.selectAll(".filtered-num").text(d => value.raw_nodes.nodes[d.label].time_list.filter(item => item < value.time).length)
 
 

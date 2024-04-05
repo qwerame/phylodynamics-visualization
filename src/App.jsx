@@ -7,14 +7,20 @@ import GridGeographicDiv from "./components/GridGeographicDiv/index.jsx";
 import TreeStructureDiv from "./components/TreeStructureDiv/index.jsx";
 // import constraint from "./data/constraint.json"
 //
-import gridConstraints from "./data/grid_constraint.json"
-import raw_nodes from "./data/output_node.json"
-import raw_links from "./data/output_edge.json"
-import raw_tree from "./data/output_tree.json"
+// import gridConstraints from "./data/grid_constraint.json"
+// import raw_nodes from "./data/output_node.json"
+// import raw_links from "./data/output_edge.json"
+// import raw_tree from "./data/output_tree.json"
+
 // import gridConstraints from "./data/constraint_aferica.json"
 // import raw_nodes from "./data/node_aferica.json"
 // import raw_links from "./data/edge_aferica.json"
 // import raw_tree from "./data/tree_aferica.json"
+
+import gridConstraints from "./data/china_constraint.json"
+import raw_nodes from "./data/china_node.json"
+import raw_links from "./data/china_edge.json"
+import raw_tree from "./data/china_tree.json"
 
 import {ValueProvider} from "./context.jsx";
 import {generateColor} from "./utils.js";

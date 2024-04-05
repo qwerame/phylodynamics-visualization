@@ -46,6 +46,20 @@ const GridGeographicDiv = () => {
         return widthList
     }, [])
 
+    const getIdList = useCallback(nameList => {
+        const idList = []
+        const realListLength = Object.keys(value.raw_nodes.nodes).length
+        let fakeIndex = 0
+        nameList.forEach(name => {
+            if(value.raw_nodes.nodes[name]) idList.push(value.raw_nodes.nodes[name].id)
+            else {
+                idList.push(realListLength + fakeIndex)
+                fakeIndex ++
+            }
+        })
+        return nameList
+    }, [])
+
     const generateLinks = useCallback(() => {
         setLinks(value.raw_links.map(d => Object.assign(Object.create(d), {
             ...d,
@@ -104,15 +118,18 @@ const GridGeographicDiv = () => {
     useEffect(() => {
         console.log(maxListLength + ' ' + gridSize + ' ' + marginX + ' ' + marginY)
         if(gridSize && maxListLength && marginX && marginY){
-            const sizeList = getTextSizes(Object.keys(value.raw_nodes.nodes))
+            const fakeList = Object.keys(value.grid_constraint).filter(name => value.raw_nodes.nodes[name] == undefined)
+            const finalList = [...Object.keys(value.raw_nodes.nodes), ...fakeList]
+            const sizeList = getTextSizes(finalList)
+            const idList = getIdList(finalList)
             console.log(value.grid_constraint)
-            setNodes(Object.keys(value.raw_nodes.nodes).map((key, index) => {
+            setNodes(finalList.map((key, index) => {
                 const text_width = Math.min(sizeList[index], gridSize * 0.7)
                 console.log(key + ' ' + value.grid_constraint[key])
                 return {
-                    id: value.raw_nodes.nodes[key].id,
+                    id: idList[index],
                     label: key,
-                    color: getLnLength(value.raw_nodes.nodes[key].time_list.length) / maxListLength,
+                    color: value.raw_nodes.nodes[key] ? getLnLength(value.raw_nodes.nodes[key].time_list.length) / maxListLength : -1,
                     width: Math.max(gridSize * 0.7, text_width),
                     height: gridSize * 0.7,
                     text_width: text_width,

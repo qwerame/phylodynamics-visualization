@@ -30,16 +30,19 @@ export const getZone = (x, y, span) => {
     return 3;
 }
 
-export const getTransformStyle = zone => {
+export const getTransformStyle = (zone, y) => {
+    const viewHeight = document.documentElement.clientHeight
+    const y_forward_drct = -(y / viewHeight).toFixed(2) * 100 + '%'
+    const y_reverse_drct = (((viewHeight - y) / viewHeight).toFixed(2) * 100 - 100) + '%'
     switch (zone){
         case 0:
-            return 'translate(0%, 0%)'
+            return `translate(0%, ${y_forward_drct})`
         case 1:
-            return 'translate(-100%, 0%)'
+            return `translate(-100%, ${y_forward_drct})`
         case 2:
-            return 'translate(0%, -100%)'
+            return `translate(0%, ${y_reverse_drct})`
         default:
-            return 'translate(-100%, -100%)'
+            return `translate(-100%, ${y_reverse_drct})`
     }
 }
 
@@ -58,6 +61,8 @@ export const translateTrait = (traitName, traitValue) => {
         if(Number.isFinite(traitValue)) return getDate(traitValue)
         else if(Array.isArray(traitValue)) return '(' + getDate(traitValue[0]) + ', ' + getDate(traitValue[1]) + ')'
     }
+    else if(Number.isFinite(traitValue)) return traitValue.toFixed(5)
+    else if(Array.isArray(traitValue)) return '(' + traitValue[0].toFixed(5) + ' , ' + traitValue[1].toFixed(5) + ')'
     return traitValue
 
 }
