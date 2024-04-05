@@ -57,7 +57,7 @@ const GridGeographicDiv = () => {
                 fakeIndex ++
             }
         })
-        return nameList
+        return idList
     }, [])
 
     const generateLinks = useCallback(() => {
