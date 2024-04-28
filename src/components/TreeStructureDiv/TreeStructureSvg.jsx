@@ -3,7 +3,8 @@ import * as d3 from "d3";
 import {useValue, useValueDispatch} from "../../context.jsx";
 import {tree_structure_svg_padding, tree_structure_svg_size} from "../../constants.js";
 import {getPath, getStroke, getZone} from "../../utils.js";
-import Legend from "../Legend/Legend.jsx";
+import TreeLegend from "../Legend/TreeLegend.jsx";
+import PropTypes from "prop-types";
 
 const TreeStructureSvg = (props) => {
     const value = useValue()
@@ -18,12 +19,19 @@ const TreeStructureSvg = (props) => {
         const tree = svg.append("g").attr("id", 'tree')
         tree.selectAll("*").remove()
         svg.append('rect')
-            .attr('id', 'temporalRect')
+            .attr('id', 'temporalRightRect')
             .attr('width', 0)
             .attr('height', tree_structure_svg_size)
             .attr('fill', 'rgb(238, 238, 238)')
             .attr('opacity', 0.8)
             .attr('x',  tree_structure_svg_size - tree_structure_svg_padding)
+        svg.append('rect')
+            .attr('id', 'temporalLeftRect')
+            .attr('width', 0)
+            .attr('height', tree_structure_svg_size)
+            .attr('fill', 'rgb(238, 238, 238)')
+            .attr('opacity', 0.8)
+            .attr('x',  0)
     }, []);
 
     useEffect(() => {
@@ -124,22 +132,30 @@ const TreeStructureSvg = (props) => {
     }, [value.hovered_location]);
 
     useEffect(() => {
-        const ratio = (value.time - value.startTime) / (value.endTime - value.startTime)
-        d3.select('#temporalRect')
-            .attr('width' , Math.abs(ratio) <= 1e-10 ? tree_structure_svg_size : (
-                Math.abs(ratio - 1) <= 1e-10 ? 0 : tree_structure_svg_padding + (1 - ratio) * (tree_structure_svg_size - 2 * tree_structure_svg_padding)
-            ))
-            .attr('x', Math.abs(ratio) <= 1e-10 ? 0 : tree_structure_svg_padding + ratio * (tree_structure_svg_size - 2 * tree_structure_svg_padding))
-        // console.log(ratio)
-    }, [value.time]);
+        const ratioRight = (value.time - value.startTime) / (value.endTime - value.startTime)
+        const ratioLeft = (value.filtered_start_time - value.startTime) / (value.endTime - value.startTime)
+        d3.select('#temporalRightRect')
+            .attr('width' , Math.abs(ratioRight - 1) <= 1e-10 ? 0 : tree_structure_svg_padding + (1 - ratioRight) * (tree_structure_svg_size - 2 * tree_structure_svg_padding))
+            .attr('x', tree_structure_svg_padding + ratioRight * (tree_structure_svg_size - 2 * tree_structure_svg_padding))
+
+        d3.select('#temporalLeftRect')
+            .attr('width' , Math.abs(ratioLeft) <= 1e-10 ? 0 : tree_structure_svg_padding + ratioLeft * (tree_structure_svg_size - 2 * tree_structure_svg_padding))
+
+
+    }, [value.time, value.filtered_start_time]);
     return (
         <>
             <svg ref={svgRef} viewBox={[0, 0, tree_structure_svg_size, tree_structure_svg_size]}
                  width={tree_structure_svg_size} height={tree_structure_svg_size} style={{"backgroundColor": "aliceblue"}}>
             </svg>
 
-            <Legend></Legend>
+            <TreeLegend></TreeLegend>
         </>
     );
 };
+
+TreeStructureSvg.propTypes = {
+    treeLeaves: PropTypes.array,
+    branchTee: PropTypes.array
+}
 export default TreeStructureSvg;

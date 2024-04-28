@@ -1,140 +1,144 @@
 {
-    "groups": {
-        "Xinjiang": [
-            0,
-            5
-        ],
-        "Xizang": [
-            0,
-            6
-        ],
-        "Qinghai": [
-            1,
-            4
-        ],
-        "Yunnan": [
-            2,
-            9
-        ],
-        "Gansu": [
-            2,
-            4
-        ],
-        "Sichuan": [
-            3,
-            8
-        ],
-        "NingxiaHui": [
-            3,
-            4
-        ],
-        "Guizhou": [
-            3,
-            9
-        ],
-        "Chongqing": [
-            3,
-            7
-        ],
-        "Guangxi": [
-            4,
-            11
-        ],
-        "Shaanxi": [
-            4,
-            4
-        ],
-        "Hainan": [
-            4,
-            13
-        ],
-        "Hunan": [
-            4,
-            8
-        ],
-        "Hubei": [
-            4,
-            7
-        ],
-        "Shanxi": [
-            5,
-            4
-        ],
-        "Guangdong": [
-            5,
-            11
-        ],
-        "Henan": [
-            5,
-            5
-        ],
-        "Macau": [
-            6,
-            12
-        ],
-        "HongKong": [
-            7,
-            10
-        ],
-        "Jiangxi": [
-            8,
-            8
-        ],
-        "Beijing": [
-            8,
-            2
-        ],
-        "Hebei": [
-            8,
-            4
-        ],
-        "Anhui": [
-            8,
-            6
-        ],
-        "Fujian": [
-            8,
-            9
-        ],
-        "InnerMongolia": [
-            9,
-            1
-        ],
-        "Tianjin": [
-            10,
-            3
-        ],
-        "Jiangsu": [
-            11,
-            7
-        ],
-        "Shandong": [
-            11,
-            5
-        ],
-        "Zhejiang": [
-            12,
-            8
-        ],
-        "Shanghai": [
-            12,
-            7
-        ],
-        "Liaoning": [
-            13,
-            2
-        ],
-        "Jilin": [
-            14,
-            1
-        ],
-        "Heilongjiang": [
-            14,
-            0
-        ]
-    },
-    "info": {
-        "rows": 14,
-        "columns": 15
-    }
+  "groups": {
+    "Xinjiang": [
+      0,
+      1
+    ],
+    "Tibet": [
+      1,
+      8
+    ],
+    "Qinghai": [
+      1,
+      5
+    ],
+    "Yunnan": [
+      2,
+      11
+    ],
+    "Gansu": [
+      2,
+      5
+    ],
+    "Sichuan": [
+      3,
+      6
+    ],
+    "Ningxia": [
+      3,
+      5
+    ],
+    "Guizhou": [
+      3,
+      10
+    ],
+    "Chongqing": [
+      3,
+      8
+    ],
+    "Guangxi": [
+      3,
+      11
+    ],
+    "Shaanxi": [
+      4,
+      5
+    ],
+    "Hunan": [
+      5,
+      10
+    ],
+    "Hubei": [
+      5,
+      8
+    ],
+    "Shanxi": [
+      5,
+      5
+    ],
+    "Hainan": [
+      5,
+      14
+    ],
+    "Guangdong": [
+      5,
+      11
+    ],
+    "Henan": [
+      5,
+      6
+    ],
+    "Macao": [
+      6,
+      13
+    ],
+    "HongKong": [
+      7,
+      12
+    ],
+    "Jiangxi": [
+      8,
+      9
+    ],
+    "Beijing": [
+      8,
+      2
+    ],
+    "Hebei": [
+      8,
+      3
+    ],
+    "Anhui": [
+      8,
+      6
+    ],
+    "Fujian": [
+      8,
+      10
+    ],
+    "InnerMongolia": [
+      9,
+      1
+    ],
+    "Tianjin": [
+      10,
+      4
+    ],
+    "Shandong": [
+      11,
+      5
+    ],
+    "Jiangsu": [
+      11,
+      6
+    ],
+    "Zhejiang": [
+      11,
+      8
+    ],
+    "Taiwan": [
+      11,
+      11
+    ],
+    "Liaoning": [
+      11,
+      2
+    ],
+    "Shanghai": [
+      12,
+      7
+    ],
+    "Jilin": [
+      13,
+      1
+    ],
+    "Heilongjiang": [
+      13,
+      0
+    ]
+  },
+  "info": {
+    "rows": 15,
+    "columns": 14
+  }
 }

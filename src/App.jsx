@@ -34,6 +34,7 @@ function App() {
             endColor: 'rgb(255, 0, 0)',
             selectedId: '++', // location id
             time: raw_nodes.time_info.end_time,
+            filtered_start_time: raw_nodes.time_info.end_time,
             raw_nodes: raw_nodes,
             raw_links: raw_links,
             // constraint: constraint,
@@ -53,7 +54,8 @@ function App() {
             hovered_variation_info: null,
             selectedNodeId: null, // node id in tree structure
             selectedNodeIdList: null,
-            display_time_axis: raw_nodes.time_axis
+            display_time_axis: raw_nodes.time_axis,
+            maxLength: Math.max(...Object.values(raw_nodes.nodes).map(item => item.time_list.length))
         })
     }, []);
 

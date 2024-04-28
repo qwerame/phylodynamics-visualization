@@ -110,7 +110,7 @@ const GridGeographicDiv = () => {
         setMarginX((geographic_svg_size - 2 * geographic_svg_padding - tempGridSize * value.grid_columns) / 2 + geographic_svg_padding)
         setMarginY((geographic_svg_size - 2 * geographic_svg_padding - tempGridSize * value.grid_rows) / 2 + geographic_svg_padding)
         setGridSize(tempGridSize)
-        setMaxListLength(getLnLength(Math.max(...Object.values(value.raw_nodes.nodes).map(item => item.time_list.length))))
+        setMaxListLength(getLnLength(value.maxLength))
         generateLinks()
 
     }, []);
@@ -137,6 +137,7 @@ const GridGeographicDiv = () => {
                     fixedWeight: 100,
                     x: (value.grid_constraint[key][0] + 0.5) * gridSize + marginX,
                     y: (value.grid_constraint[key][1] + 0.5) * gridSize + marginY,
+                    isReal: !!value.raw_nodes.nodes[key]
 
                 }
             }))

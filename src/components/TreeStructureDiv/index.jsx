@@ -102,7 +102,7 @@ const TreeStructureDiv = () => {
         const yRatio = (tree_structure_svg_size - 2 * tree_structure_svg_padding) / selectedLeavesArr.length
         const tempSelectedLeaves = selectedLeavesArr.map((item, index) => Object.assign(Object.create(value.raw_tree_nodes[item]), {
             ...value.raw_tree_nodes[item],
-            x: value.raw_tree_nodes[item].height * xRatio + tree_structure_svg_padding,
+            x: value.raw_tree_nodes[item].x_ref * xRatio + tree_structure_svg_padding,
             y: (index + 0.5) * yRatio + tree_structure_svg_padding
         }))
         setSelectedLeaves(tempSelectedLeaves)
@@ -117,8 +117,8 @@ const TreeStructureDiv = () => {
         generate_nodes(value.raw_tree_nodes[value.tree_root], nodesObj)
         setBranches(Object.keys(nodesObj).map(nodeKey => Object.assign(Object.create(nodesObj[nodeKey]), {
                 ...nodesObj[nodeKey],
-                xSelf: nodesObj[nodeKey]['height'] * xRatio + tree_structure_svg_padding,
-                xParent: nodesObj[nodesObj[nodeKey].parent]['height'] * xRatio + tree_structure_svg_padding,
+                xSelf: nodesObj[nodeKey]['x_ref'] * xRatio + tree_structure_svg_padding,
+                xParent: nodesObj[nodesObj[nodeKey].parent]['x_ref'] * xRatio + tree_structure_svg_padding,
             })))
     }, [selectedLeaves, xRatio, leavesMap]);
 

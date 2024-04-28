@@ -50,14 +50,14 @@ export const getDate = time => {
     const year = Math.floor(time)
     const dayOfYear = time - year
     const startDate = new Date(year, 0);
-    const endDate = new Date(startDate.getTime() + dayOfYear * 24 * 60 * 60 * 1000);
+    const leapYear = year / 4 === 0
+    const endDate = new Date(startDate.getTime() + dayOfYear * 24 * 60 * 60 * 1000 * (leapYear ? 366 : 365));
     return year + '-' + (endDate.getMonth() + 1 < 10 ? '0' + (endDate.getMonth() + 1) : (endDate.getMonth() + 1)) + '-'
-        + (endDate.getDate() + 1 < 10 ? '0' + (endDate.getDate() + 1) : (endDate.getDate() + 1))
+        + (endDate.getDate() < 10 ? '0' + (endDate.getDate()) : endDate.getDate())
 }
 
 export const translateTrait = (traitName, traitValue) => {
     if(traitName.toLowerCase().includes('date')) {
-        console.log(typeof trait)
         if(Number.isFinite(traitValue)) return getDate(traitValue)
         else if(Array.isArray(traitValue)) return '(' + getDate(traitValue[0]) + ', ' + getDate(traitValue[1]) + ')'
     }
@@ -72,7 +72,7 @@ export const getStroke = oldValue => {
 }
 
 export const getLnLength = length => {
-    return Math.log(length + 1)
+    return length >= 1 ? Math.log(length) : -1
 }
 
 export const getPath = (parentX, selfX, min, max) => {

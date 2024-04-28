@@ -5,20 +5,20 @@ import * as d3 from "d3";
 import chevronUp from './chevron-up.svg'
 import chevronDown from './chevron-down.svg'
 
-const Legend = () => {
+const TreeLegend = () => {
     const value = useValue()
     const dispatch = useValueDispatch()
     const [isFolded, setIsFolded] = useState(false)
 
     useEffect(() => {
-        const legend = d3.select('#legend')
+        const legend = d3.select('#tree-legend')
         legend.attr("opacity" , isFolded ? 0 : 1)
     }, [isFolded]);
     return (
         <>
             {
                 !isFolded ?
-                     <svg id='legend' width={280} height={Math.floor((Object.keys(value.color_map).length + 1 )/ 2) * 19 + 18}>
+                     <svg id='tree-legend' className='legend' width={280} height={Math.floor((Object.keys(value.color_map).length + 1 )/ 2) * 19 + 18}>
                         <g>
                             <clipPath id='clipPath'>
                                 <rect x={0} y={0} width='125px'
@@ -48,7 +48,7 @@ const Legend = () => {
                         </g>
 
                     </svg> : null}
-            <div id='title-div'>
+            <div className='title-div'>
                 <span>Division</span>
                 <img className='chevron-icon' src={isFolded? chevronUp : chevronDown} alt='chevron-icon'
                      onClick={() => setIsFolded(value => !value)}/>
@@ -58,4 +58,4 @@ const Legend = () => {
 
 }
 
-export default Legend
+export default TreeLegend

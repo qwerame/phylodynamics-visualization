@@ -1,4 +1,5 @@
 import {createContext, useContext, useEffect, useReducer} from 'react';
+import PropTypes from "prop-types";
 
 const ValueContext = createContext(null);
 
@@ -40,6 +41,11 @@ function ValueReducer(value, action) {
                 ...value,
                 time: action.newValue}
         }
+        case 'setFilteredStartTime': {
+            return {
+                ...value,
+                filtered_start_time: action.newValue}
+        }
         case 'setSelectedId': {
             return {
                 ...value,
@@ -80,7 +86,10 @@ function ValueReducer(value, action) {
         }
     }
 }
-
+ValueProvider.propTypes = {
+    children: PropTypes.element,
+    init: PropTypes.object
+}
 export function useValue() {
     return useContext(ValueContext);
 }

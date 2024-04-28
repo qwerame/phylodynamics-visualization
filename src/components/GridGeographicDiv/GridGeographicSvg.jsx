@@ -3,6 +3,8 @@ import * as d3 from "d3";
 import {useValue, useValueDispatch} from "../../context.jsx";
 import {geographic_svg_size} from "../../constants.js";
 import {getZone} from "../../utils.js";
+import MapLegend from "../Legend/MapLegend.jsx";
+import PropTypes from "prop-types";
 
 
 const GridGeographicSvg = (props) => {
@@ -61,7 +63,7 @@ const GridGeographicSvg = (props) => {
             .attr("cx", d => d.x)
             .attr("cy", d => d.y)
             .on("click", e => {
-                if(e.target.__data__.color >= 0){
+                if(e.target.__data__.isReal){
                     dispatch({
                         type: 'setSelectedId',
                         newValue: "+" + e.target.__data__.id + "+"
@@ -77,7 +79,7 @@ const GridGeographicSvg = (props) => {
                 }
             })
             .on("mouseenter", function (e){
-                if(e.target.__data__.color >= 0) {
+                if(e.target.__data__.isReal) {
                     dispatch({
                         type: 'setHoveredLocation',
                         newValue: e.target.__data__.label
@@ -118,7 +120,7 @@ const GridGeographicSvg = (props) => {
             .attr('transform', d => `translate(-${d.width / 2}, -${d.height / 2})`)
             .attr('rx', '1%')
             .attr('ry', '1%')
-            .classed("real-node", d => d.color >= 0)
+            .classed("real-node", d => d.isReal)
             .classed("rect", true)
 
 
@@ -148,34 +150,43 @@ const GridGeographicSvg = (props) => {
         // console.log(startTime * (1 - time) + endTime * time)
         const svg = d3.select(svgRef.current);
         if(value.selectedId === "++" && value.selectedNodeIdList === null) {
-            svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time ? "0" : "1")
-            svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time ? "0" : "1")
+            svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time || d.start_time < value.filtered_start_time ? "0" : "1")
+            svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time || d.start_time < value.filtered_start_time ? "0" : "1")
         }
         else if(value.selectedNodeIdList){
-            svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time ? "0" :
+            svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time || d.start_time < value.filtered_start_time ? "0" :
                 (value.selectedNodeIdList.includes(d.source_node_id) && value.selectedNodeIdList.includes(d.target_node_id)) ? "1" : "0")
-            svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time ? "0" :
+            svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time || d.start_time < value.filtered_start_time ? "0" :
                 (value.selectedNodeIdList.includes(d.source_node_id) && value.selectedNodeIdList.includes(d.target_node_id)) ? "1" : "0")
 
         }
         else {
-            svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
-            svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
+            svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time || d.start_time < value.filtered_start_time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
+            svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time || d.start_time < value.filtered_start_time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
         }
-        svg.selectAll(".rect").attr("fill", d => d.color >= 0 ? d3.interpolateRgb(value.startColor, d3.interpolateRgb(value.startColor, value.endColor)(d.color))(getTime(d.label, value.time)) : 'rgb(105 105 105)')
+        svg.selectAll(".rect").attr("fill", d => d.isReal && getTime(d.label, value.time) > 0 ? d3.interpolateRgb(value.startColor, d3.interpolateRgb(value.startColor, value.endColor)(d.color))(getTime(d.label, value.time)) : 'rgb(105 105 105)')
         svg.selectAll(".filtered-num").text(d => value.raw_nodes.nodes[d.label].time_list.filter(item => item < value.time).length)
 
 
-    }, [value.time, value.selectedId, value.startColor, value.endColor, value.selectedNodeIdList]);
+    }, [value.time, value.filtered_start_time, value.selectedId, value.startColor, value.endColor, value.selectedNodeIdList]);
 
 
 
 
     return (
-        <svg ref={svgRef} viewBox={[0, 0, geographic_svg_size, geographic_svg_size]}
-             width={geographic_svg_size} height={geographic_svg_size} style={{"backgroundColor": "aliceblue"}}>
-        </svg>
+        <>
+            <svg ref={svgRef} viewBox={[0, 0, geographic_svg_size, geographic_svg_size]}
+                 width={geographic_svg_size} height={geographic_svg_size} style={{"backgroundColor": "aliceblue"}}>
+            </svg>
+            <MapLegend></MapLegend>
+        </>
     );
 };
 
+GridGeographicSvg.propTypes = {
+    nodes: PropTypes.array,
+    links: PropTypes.array
+}
+
 export default GridGeographicSvg;
+
