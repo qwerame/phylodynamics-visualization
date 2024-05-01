@@ -7,7 +7,7 @@ import {
     axis_margin,
     statical_chart_height,
     slider_height,
-    slider_color, min_length, visible_color
+    slider_color, min_length, visible_color, slider_svg_height
 } from "../../constants.js";
 import {getStroke} from "../../utils.js";
 
@@ -18,6 +18,14 @@ const Slider = () => {
 
     const [startX, setStartX] = useState(axis_margin)
     const [endX, setEndX] = useState(axis_width - axis_margin)
+
+    const dataset1 = [
+        [1,5], [2,5], [3,14],
+        [4, 68], [5, 135], [6, 209],
+        [7, 268], [8, 322], [9, 346],
+        [10, 164]
+    ];
+
 
     const translateTime = useCallback(time => {
         const year = Math.floor(time)
@@ -57,11 +65,29 @@ const Slider = () => {
         d3.select("#end-btn").call(dragEnd)
         d3.select("#selected-zone").call(dragTogether)
         if(value.display_time_axis) {
-            const x = d3.scaleUtc()
+            const x = d3.scaleTime()
                 .domain([new Date(translateTime(value.startTime)), new Date(translateTime(value.endTime))])
-                .range([axis_margin, axis_width - axis_margin]);
-            svg.append("g").call(d3.axisBottom(x)).attr("transform", `translate(0, ${statical_chart_height + slider_height})`);
+                .range([axis_margin, axis_width - axis_margin])
+
+            svg.append("g").call(d3.axisBottom(x).ticks(10).tickSize(5).ticks(d3.timeYear.every(1)))
+                .attr("transform", `translate(0, ${statical_chart_height + slider_height})`);
         }
+
+        const xScale = d3.scaleLinear().domain([0,10 ]).range([axis_margin, axis_width - axis_margin])
+        const yScale = d3.scaleLinear().domain([0, 350]).range([statical_chart_height, 0]);
+
+        const line = d3.line()
+            .x(function(d) { return xScale(d[0]); })
+            .y(function(d) { return yScale(d[1]); })
+            // .curve(d3.curveMonotoneX)
+        d3.select("#chart").append("path")
+            .datum(dataset1)
+            // .attr("class", "line")
+            .attr("transform", `translate(${(axis_margin * 2 - axis_width) / 20 }, 0)`)
+            .attr("d", line)
+            .style("fill", "none")
+            .style("stroke", "#CC0000")
+            .style("stroke-width", "1");
     }, []);
 
     useEffect(() => {
@@ -88,7 +114,8 @@ const Slider = () => {
             {/*<input type="range" min={value.startTime} max={value.endTime} list="values"*/}
             {/*       onInput={changeValue} step="any" defaultValue={value.endTime}*/}
             {/*       style={{width: axis_width - axis_margin * 2 + "px"}}/>*/}
-            <svg id="axis-svg" style={{height: '50px', width: axis_width}}>
+            <svg id="axis-svg" style={{height: slider_svg_height, width: axis_width}}>
+                <g id='chart'></g>
                 <g id='slider-g' transform={`translate(0, ${statical_chart_height})`}>
                     <line x1={axis_margin} x2={axis_width - axis_margin}
                           y1={slider_height / 2} y2={slider_height / 2} stroke={slider_color} strokeWidth={5}></line>

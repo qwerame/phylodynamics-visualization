@@ -2,20 +2,20 @@ import './App.css'
 
 import Panel from "./components/Panel";
 import {useEffect, useState} from "react";
-import GeographicDiv from "./components/GeographicDiv";
+// import GeographicDiv from "./components/GeographicDiv";
 import GridGeographicDiv from "./components/GridGeographicDiv/index.jsx";
 import TreeStructureDiv from "./components/TreeStructureDiv/index.jsx";
 // import constraint from "./data/constraint.json"
 //
-// import gridConstraints from "./data/grid_constraint.json"
-// import raw_nodes from "./data/output_node.json"
-// import raw_links from "./data/output_edge.json"
-// import raw_tree from "./data/output_tree.json"
+// import gridConstraints from "./data/USA_constraint.json"
+// import raw_nodes from "./data/USA_node.json"
+// import raw_links from "./data/USA_edge.json"
+// import raw_tree from "./data/USA_tree.json"
 
-// import gridConstraints from "./data/constraint_aferica.json"
-// import raw_nodes from "./data/node_aferica.json"
-// import raw_links from "./data/edge_aferica.json"
-// import raw_tree from "./data/tree_aferica.json"
+// import gridConstraints from "./data/africa_constraint.json"
+// import raw_nodes from "./data/africa_node.json"
+// import raw_links from "./data/africa_edge.json"
+// import raw_tree from "./data/africa_tree.json"
 
 import gridConstraints from "./data/china_constraint.json"
 import raw_nodes from "./data/china_node.json"

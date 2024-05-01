@@ -7,10 +7,10 @@ export const axis_margin = 25
 export const tree_structure_svg_size = 800
 export const tree_structure_svg_padding = 10
 
-export const statical_chart_height = 10
+export const statical_chart_height = 50
 export const slider_height = 20
 
-export const slider_svg_height = '50px'
+export const slider_svg_height = 100
 
 export const slider_color = 'rgb(211 211 211)'
 

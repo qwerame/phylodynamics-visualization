@@ -114,10 +114,10 @@ const GridGeographicSvg = (props) => {
 
 
         node.append("rect")
-            .attr("width" , d => d.width)
-            .attr('height', d => d.height)
+            .attr("width" , d => d.width * 0.9)
+            .attr('height', d => d.height * 0.9)
             // .attr("fill", d => d.color)
-            .attr('transform', d => `translate(-${d.width / 2}, -${d.height / 2})`)
+            .attr('transform', d => `translate(-${d.width * 0.9 / 2}, -${d.height * 0.9 / 2})`)
             .attr('rx', '1%')
             .attr('ry', '1%')
             .classed("real-node", d => d.isReal)

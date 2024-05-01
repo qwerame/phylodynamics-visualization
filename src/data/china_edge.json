@@ -2,9 +2,9 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 2.048617,
-        "end_time": 3.690716,
-        "id_str": "+13+8+10+5+11+9+2+0+7+14+1+12+4+3+6+",
+        "start_time": 2005.9667773646554,
+        "end_time": 2007.0458684025673,
+        "id_str": "+5+1+10+12+6+14+0+3+2+7+13+9+4+11+8+",
         "source_node_id": 5,
         "target_node_id": 6,
         "id": 0
@@ -12,9 +12,9 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 5.696436,
-        "end_time": 8.147605,
-        "id_str": "+0+1+2+",
+        "start_time": 2009.518894500263,
+        "end_time": 2011.526921255445,
+        "id_str": "+2+0+1+",
         "source_node_id": 9,
         "target_node_id": 10,
         "id": 1
@@ -22,9 +22,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 8.147605,
-        "end_time": 9.868332,
-        "id_str": "+0+1+2+",
+        "start_time": 2012.3355672128625,
+        "end_time": 2013.2958904134257,
+        "id_str": "+2+0+1+",
         "source_node_id": 11,
         "target_node_id": 1732,
         "id": 2
@@ -32,8 +32,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 6.599238000000001,
-        "end_time": 9.028291000000001,
+        "start_time": 2011.1520802288035,
+        "end_time": 2012.4254541480589,
         "id_str": "+0+1+3+",
         "source_node_id": 4608,
         "target_node_id": 4609,
@@ -42,9 +42,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 10.666387,
-        "end_time": 12.78171,
-        "id_str": "+0+1+4+",
+        "start_time": 2014.695011090691,
+        "end_time": 2016.2088041952388,
+        "id_str": "+4+0+1+",
         "source_node_id": 11779,
         "target_node_id": 12644,
         "id": 4
@@ -52,9 +52,9 @@
     {
         "source": "1",
         "target": "5",
-        "start_time": 10.666387,
-        "end_time": 11.800045,
-        "id_str": "+0+5+1+",
+        "start_time": 2014.695011090691,
+        "end_time": 2015.1979565230056,
+        "id_str": "+5+0+1+",
         "source_node_id": 11779,
         "target_node_id": 12654,
         "id": 5
@@ -62,8 +62,8 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 7.481622000000001,
-        "end_time": 10.101509,
+        "start_time": 2011.2286974444166,
+        "end_time": 2013.4743017850706,
         "id_str": "+0+1+",
         "source_node_id": 20880,
         "target_node_id": 20881,
@@ -72,9 +72,9 @@
     {
         "source": "1",
         "target": "6",
-        "start_time": 9.366371000000001,
-        "end_time": 12.053518,
-        "id_str": "+0+1+6+",
+        "start_time": 2013.7555692142166,
+        "end_time": 2015.4299654379693,
+        "id_str": "+6+0+1+",
         "source_node_id": 24507,
         "target_node_id": 24508,
         "id": 7
@@ -82,9 +82,9 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 10.348772,
-        "end_time": 10.932293,
-        "id_str": "+0+1+3+6+",
+        "start_time": 2014.1405830614697,
+        "end_time": 2014.3402165110342,
+        "id_str": "+1+6+0+3+",
         "source_node_id": 27116,
         "target_node_id": 27117,
         "id": 8
@@ -92,9 +92,9 @@
     {
         "source": "3",
         "target": "1",
-        "start_time": 10.737599,
-        "end_time": 11.390813999999999,
-        "id_str": "+0+1+3+6+",
+        "start_time": 2014.3402165110342,
+        "end_time": 2014.8493639914914,
+        "id_str": "+1+6+0+3+",
         "source_node_id": 27117,
         "target_node_id": 27118,
         "id": 9
@@ -102,8 +102,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 10.932293,
-        "end_time": 12.510855999999999,
+        "start_time": 2014.8493639914914,
+        "end_time": 2015.8948167064732,
         "id_str": "+0+1+3+",
         "source_node_id": 27118,
         "target_node_id": 27119,
@@ -112,9 +112,9 @@
     {
         "source": "1",
         "target": "6",
-        "start_time": 10.932293,
-        "end_time": 13.364605,
-        "id_str": "+0+1+3+6+",
+        "start_time": 2014.8493639914914,
+        "end_time": 2016.7923335251592,
+        "id_str": "+6+0+1+3+",
         "source_node_id": 27118,
         "target_node_id": 30756,
         "id": 11
@@ -122,9 +122,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 10.348772,
-        "end_time": 13.278943,
-        "id_str": "+0+7+8+1+",
+        "start_time": 2014.1405830614697,
+        "end_time": 2016.645776579313,
+        "id_str": "+7+0+1+8+",
         "source_node_id": 27116,
         "target_node_id": 33850,
         "id": 12
@@ -132,9 +132,9 @@
     {
         "source": "7",
         "target": "8",
-        "start_time": 13.611215,
-        "end_time": 14.825869999999998,
-        "id_str": "+0+7+8+1+",
+        "start_time": 2017.6771315087622,
+        "end_time": 2018.2240104403106,
+        "id_str": "+7+0+1+8+",
         "source_node_id": 36453,
         "target_node_id": 36454,
         "id": 13
@@ -142,8 +142,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 8.665876,
-        "end_time": 12.616943000000001,
+        "start_time": 2012.8504160686484,
+        "end_time": 2016.04436386427,
         "id_str": "+0+1+9+",
         "source_node_id": 56575,
         "target_node_id": 57430,
@@ -152,9 +152,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 8.665876,
-        "end_time": 12.090248,
-        "id_str": "+0+10+1+",
+        "start_time": 2012.8504160686484,
+        "end_time": 2015.5178082216435,
+        "id_str": "+0+1+10+",
         "source_node_id": 56575,
         "target_node_id": 58292,
         "id": 15
@@ -162,9 +162,9 @@
     {
         "source": "1",
         "target": "11",
-        "start_time": 8.133280000000001,
-        "end_time": 10.137781,
-        "id_str": "+0+1+11+",
+        "start_time": 2011.7157243494466,
+        "end_time": 2013.544678766276,
+        "id_str": "+0+11+1+",
         "source_node_id": 60516,
         "target_node_id": 61365,
         "id": 16
@@ -172,9 +172,9 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 7.481622000000001,
-        "end_time": 8.57916,
-        "id_str": "+0+1+12+",
+        "start_time": 2011.22721423569,
+        "end_time": 2011.9850615288701,
+        "id_str": "+1+12+0+",
         "source_node_id": 69239,
         "target_node_id": 69240,
         "id": 17
@@ -182,8 +182,8 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 9.163644,
-        "end_time": 14.977920999999998,
+        "start_time": 2013.425629132687,
+        "end_time": 2018.4054794545207,
         "id_str": "+0+1+",
         "source_node_id": 69242,
         "target_node_id": 70955,
@@ -192,9 +192,9 @@
     {
         "source": "0",
         "target": "12",
-        "start_time": 9.438911,
-        "end_time": 12.901412,
-        "id_str": "+0+12+1+",
+        "start_time": 2013.251361613292,
+        "end_time": 2016.2917723892322,
+        "id_str": "+0+1+12+",
         "source_node_id": 89265,
         "target_node_id": 90122,
         "id": 19
@@ -202,8 +202,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 7.846847,
-        "end_time": 11.615299,
+        "start_time": 2011.846235988113,
+        "end_time": 2015.0433557845033,
         "id_str": "+0+1+3+",
         "source_node_id": 98465,
         "target_node_id": 99330,
@@ -212,8 +212,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 8.426029,
-        "end_time": 13.284310999999999,
+        "start_time": 2012.4780995095086,
+        "end_time": 2016.7117235095643,
         "id_str": "+0+1+9+",
         "source_node_id": 99339,
         "target_node_id": 100183,
@@ -222,9 +222,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 9.859903,
-        "end_time": 12.618085999999998,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.4377393138411,
+        "end_time": 2016.0455286674335,
+        "id_str": "+0+1+12+",
         "source_node_id": 100194,
         "target_node_id": 101886,
         "id": 22
@@ -232,9 +232,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 11.224607999999998,
-        "end_time": 14.777691999999998,
-        "id_str": "+0+1+4+",
+        "start_time": 2014.762251322657,
+        "end_time": 2018.2056112126522,
+        "id_str": "+4+0+1+",
         "source_node_id": 104632,
         "target_node_id": 106352,
         "id": 23
@@ -242,9 +242,9 @@
     {
         "source": "1",
         "target": "6",
-        "start_time": 10.243115999999999,
-        "end_time": 12.1139,
-        "id_str": "+0+1+6+",
+        "start_time": 2014.1176672724484,
+        "end_time": 2015.5412503299274,
+        "id_str": "+6+0+1+",
         "source_node_id": 102915,
         "target_node_id": 109864,
         "id": 24
@@ -252,9 +252,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 10.205413000000002,
-        "end_time": 12.781914000000002,
-        "id_str": "+0+8+1+",
+        "start_time": 2013.780855589503,
+        "end_time": 2016.2091207809951,
+        "id_str": "+0+1+8+",
         "source_node_id": 117124,
         "target_node_id": 122333,
         "id": 25
@@ -262,9 +262,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 9.373944000000002,
-        "end_time": 14.151811000000002,
-        "id_str": "+0+10+1+",
+        "start_time": 2013.602114571194,
+        "end_time": 2017.510182629874,
+        "id_str": "+0+1+10+",
         "source_node_id": 117123,
         "target_node_id": 123325,
         "id": 26
@@ -272,9 +272,9 @@
     {
         "source": "1",
         "target": "13",
-        "start_time": 4.775647,
-        "end_time": 8.03696,
-        "id_str": "+0+13+1+",
+        "start_time": 2009.0604720495317,
+        "end_time": 2011.4795416959157,
+        "id_str": "+0+1+13+",
         "source_node_id": 8,
         "target_node_id": 132617,
         "id": 27
@@ -282,9 +282,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 3.690716,
-        "end_time": 10.913909,
-        "id_str": "+0+10+1+",
+        "start_time": 2008.1484491787146,
+        "end_time": 2014.3900633523508,
+        "id_str": "+0+1+10+",
         "source_node_id": 7,
         "target_node_id": 134621,
         "id": 28
@@ -292,9 +292,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 3.690716,
-        "end_time": 5.791641,
-        "id_str": "+0+10+1+",
+        "start_time": 2007.9101447906216,
+        "end_time": 2009.1914173199111,
+        "id_str": "+0+1+10+",
         "source_node_id": 135757,
         "target_node_id": 135758,
         "id": 29
@@ -302,9 +302,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 5.956061,
-        "end_time": 11.126728,
-        "id_str": "+0+10+1+",
+        "start_time": 2009.930139003839,
+        "end_time": 2014.5398714463379,
+        "id_str": "+0+1+10+",
         "source_node_id": 138594,
         "target_node_id": 139434,
         "id": 30
@@ -312,9 +312,9 @@
     {
         "source": "1",
         "target": "11",
-        "start_time": 5.956061,
-        "end_time": 9.566983,
-        "id_str": "+0+1+11+",
+        "start_time": 2010.3377771943635,
+        "end_time": 2012.9945430071814,
+        "id_str": "+0+11+1+",
         "source_node_id": 143389,
         "target_node_id": 144240,
         "id": 31
@@ -322,9 +322,9 @@
     {
         "source": "1",
         "target": "14",
-        "start_time": 7.719778,
-        "end_time": 14.775441999999998,
-        "id_str": "+0+14+1+",
+        "start_time": 2011.6507119050063,
+        "end_time": 2018.2041393328875,
+        "id_str": "+14+0+1+",
         "source_node_id": 145107,
         "target_node_id": 145964,
         "id": 32
@@ -332,9 +332,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 7.524633,
-        "end_time": 8.70082,
-        "id_str": "+0+12+1+",
+        "start_time": 2011.116716384996,
+        "end_time": 2012.1287925084691,
+        "id_str": "+0+1+12+",
         "source_node_id": 145106,
         "target_node_id": 148563,
         "id": 33
@@ -342,8 +342,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 4.5473230000000004,
-        "end_time": 9.095316,
+        "start_time": 2008.671012169691,
+        "end_time": 2012.5166058102209,
         "id_str": "+0+1+9+",
         "source_node_id": 138592,
         "target_node_id": 155068,
@@ -352,9 +352,9 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 2.048617,
-        "end_time": 6.787524,
-        "id_str": "+0+7+1+12+4+15+2+",
+        "start_time": 2006.35111455017,
+        "end_time": 2010.1595766943296,
+        "id_str": "+2+7+15+1+12+4+0+",
         "source_node_id": 162013,
         "target_node_id": 162014,
         "id": 35
@@ -362,9 +362,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 6.787524,
-        "end_time": 13.452229,
-        "id_str": "+0+7+1+",
+        "start_time": 2011.9046188329398,
+        "end_time": 2016.8797889088214,
+        "id_str": "+7+0+1+",
         "source_node_id": 162015,
         "target_node_id": 162870,
         "id": 36
@@ -372,9 +372,9 @@
     {
         "source": "1",
         "target": "2",
-        "start_time": 6.787524,
-        "end_time": 11.741717000000001,
-        "id_str": "+0+1+2+",
+        "start_time": 2011.9046188329398,
+        "end_time": 2015.0969224940352,
+        "id_str": "+2+0+1+",
         "source_node_id": 162015,
         "target_node_id": 162880,
         "id": 37
@@ -382,9 +382,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 7.412291000000001,
-        "end_time": 9.618733,
-        "id_str": "+0+1+4+",
+        "start_time": 2011.2431902051112,
+        "end_time": 2013.0031940796764,
+        "id_str": "+4+0+1+",
         "source_node_id": 166942,
         "target_node_id": 166943,
         "id": 38
@@ -392,9 +392,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 7.412291000000001,
-        "end_time": 9.566984000000001,
-        "id_str": "+0+12+1+",
+        "start_time": 2011.684487843849,
+        "end_time": 2012.9945430071814,
+        "id_str": "+0+1+12+",
         "source_node_id": 178880,
         "target_node_id": 179721,
         "id": 39
@@ -402,9 +402,9 @@
     {
         "source": "1",
         "target": "15",
-        "start_time": 7.412291000000001,
-        "end_time": 9.712167,
-        "id_str": "+0+15+1+",
+        "start_time": 2011.684487843849,
+        "end_time": 2013.1397260298622,
+        "id_str": "+15+0+1+",
         "source_node_id": 178880,
         "target_node_id": 180595,
         "id": 40
@@ -412,9 +412,9 @@
     {
         "source": "0",
         "target": "4",
-        "start_time": 5.446471000000001,
-        "end_time": 11.701975000000001,
-        "id_str": "+0+4+",
+        "start_time": 2010.986463765729,
+        "end_time": 2015.1294005819482,
+        "id_str": "+4+0+",
         "source_node_id": 184257,
         "target_node_id": 185104,
         "id": 41
@@ -422,9 +422,9 @@
     {
         "source": "0",
         "target": "12",
-        "start_time": 5.446471000000001,
-        "end_time": 12.715390000000001,
-        "id_str": "+0+12+16+",
+        "start_time": 2010.986463765729,
+        "end_time": 2016.087559175551,
+        "id_str": "+16+0+12+",
         "source_node_id": 184257,
         "target_node_id": 185114,
         "id": 42
@@ -432,9 +432,9 @@
     {
         "source": "12",
         "target": "16",
-        "start_time": 12.715390000000001,
-        "end_time": 16.462851,
-        "id_str": "+0+12+16+",
+        "start_time": 2016.6144444783115,
+        "end_time": 2019.89041096137,
+        "id_str": "+16+0+12+",
         "source_node_id": 185973,
         "target_node_id": 187701,
         "id": 43
@@ -442,9 +442,9 @@
     {
         "source": "0",
         "target": "10",
-        "start_time": 3.8851890000000004,
-        "end_time": 8.237165000000001,
-        "id_str": "+0+10+1+",
+        "start_time": 2008.947158583486,
+        "end_time": 2011.6290558594708,
+        "id_str": "+0+1+10+",
         "source_node_id": 200283,
         "target_node_id": 201142,
         "id": 44
@@ -452,9 +452,9 @@
     {
         "source": "10",
         "target": "1",
-        "start_time": 8.237165000000001,
-        "end_time": 15.778357000000002,
-        "id_str": "+0+10+1+",
+        "start_time": 2013.4298118081363,
+        "end_time": 2019.2061856550208,
+        "id_str": "+0+1+10+",
         "source_node_id": 201143,
         "target_node_id": 209820,
         "id": 45
@@ -462,9 +462,9 @@
     {
         "source": "0",
         "target": "17",
-        "start_time": 3.8851890000000004,
-        "end_time": 7.872193,
-        "id_str": "+0+17+",
+        "start_time": 2010.2516787602747,
+        "end_time": 2011.354479979706,
+        "id_str": "+17+0+",
         "source_node_id": 214407,
         "target_node_id": 215253,
         "id": 46
@@ -472,8 +472,8 @@
     {
         "source": "0",
         "target": "3",
-        "start_time": 6.862522,
-        "end_time": 7.719052,
+        "start_time": 2010.6626342969712,
+        "end_time": 2011.1404435040336,
         "id_str": "+0+3+",
         "source_node_id": 215263,
         "target_node_id": 215264,
@@ -482,9 +482,9 @@
     {
         "source": "0",
         "target": "18",
-        "start_time": 7.230728,
-        "end_time": 8.321878,
-        "id_str": "+0+18+",
+        "start_time": 2010.8413584670136,
+        "end_time": 2011.695500105673,
+        "id_str": "+18+0+",
         "source_node_id": 217982,
         "target_node_id": 219693,
         "id": 48
@@ -492,9 +492,9 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 1.559886,
-        "end_time": 4.523117,
-        "id_str": "+0+20+19+1+6+",
+        "start_time": 2004.9277586003134,
+        "end_time": 2009.281553572594,
+        "id_str": "+19+20+1+6+0+",
         "source_node_id": 226721,
         "target_node_id": 226722,
         "id": 49
@@ -502,9 +502,9 @@
     {
         "source": "1",
         "target": "19",
-        "start_time": 4.523117,
-        "end_time": 9.799945000000001,
-        "id_str": "+0+19+1+",
+        "start_time": 2013.702909331321,
+        "end_time": 2014.6015872124233,
+        "id_str": "+19+0+1+",
         "source_node_id": 229334,
         "target_node_id": 229335,
         "id": 50
@@ -512,9 +512,9 @@
     {
         "source": "1",
         "target": "6",
-        "start_time": 9.488706,
-        "end_time": 11.991201,
-        "id_str": "+0+1+6+",
+        "start_time": 2014.5180861740096,
+        "end_time": 2016.830608580952,
+        "id_str": "+6+0+1+",
         "source_node_id": 233681,
         "target_node_id": 234533,
         "id": 51
@@ -522,9 +522,9 @@
     {
         "source": "1",
         "target": "20",
-        "start_time": 9.488706,
-        "end_time": 9.853743000000001,
-        "id_str": "+0+20+1+",
+        "start_time": 2014.5180861740096,
+        "end_time": 2014.693150687397,
+        "id_str": "+20+0+1+",
         "source_node_id": 233681,
         "target_node_id": 235404,
         "id": 52
@@ -532,9 +532,9 @@
     {
         "source": "0",
         "target": "14",
-        "start_time": 1.869709,
-        "end_time": 7.826652,
-        "id_str": "+0+14+",
+        "start_time": 2006.6814789608209,
+        "end_time": 2011.2910208041058,
+        "id_str": "+14+0+",
         "source_node_id": 240667,
         "target_node_id": 241508,
         "id": 53
@@ -542,9 +542,9 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 3.59138,
-        "end_time": 8.091915,
-        "id_str": "+0+20+1+21+9+",
+        "start_time": 2006.982064056069,
+        "end_time": 2011.1869268079035,
+        "id_str": "+20+1+9+0+21+",
         "source_node_id": 241518,
         "target_node_id": 241519,
         "id": 54
@@ -552,8 +552,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 3.938285,
-        "end_time": 14.228973,
+        "start_time": 2011.1869268079035,
+        "end_time": 2017.372176020376,
         "id_str": "+0+1+9+",
         "source_node_id": 241519,
         "target_node_id": 242358,
@@ -562,9 +562,9 @@
     {
         "source": "1",
         "target": "21",
-        "start_time": 3.938285,
-        "end_time": 13.107778,
-        "id_str": "+0+21+1+20+",
+        "start_time": 2011.1869268079035,
+        "end_time": 2016.204069291492,
+        "id_str": "+20+0+21+1+",
         "source_node_id": 241519,
         "target_node_id": 242368,
         "id": 56
@@ -572,9 +572,9 @@
     {
         "source": "21",
         "target": "20",
-        "start_time": 8.091915,
-        "end_time": 13.538851,
-        "id_str": "+0+20+1+21+",
+        "start_time": 2016.204069291492,
+        "end_time": 2016.6318120327064,
+        "id_str": "+20+0+21+1+",
         "source_node_id": 242368,
         "target_node_id": 242369,
         "id": 57
@@ -582,8 +582,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 7.067177,
-        "end_time": 9.883911000000001,
+        "start_time": 2011.2208817277096,
+        "end_time": 2013.318088819262,
         "id_str": "+0+22+",
         "source_node_id": 253190,
         "target_node_id": 254038,
@@ -592,9 +592,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 7.067177,
-        "end_time": 9.848197,
-        "id_str": "+0+2+",
+        "start_time": 2011.2208817277096,
+        "end_time": 2013.2191780846579,
+        "id_str": "+2+0+",
         "source_node_id": 253190,
         "target_node_id": 254905,
         "id": 59
@@ -602,9 +602,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 6.214305,
-        "end_time": 8.387949,
-        "id_str": "+23+21+14+0+",
+        "start_time": 2010.393479494951,
+        "end_time": 2011.7240683651137,
+        "id_str": "+14+0+21+23+",
         "source_node_id": 253189,
         "target_node_id": 256162,
         "id": 60
@@ -612,9 +612,9 @@
     {
         "source": "23",
         "target": "21",
-        "start_time": 9.217888,
-        "end_time": 10.589755,
-        "id_str": "+23+21+0+",
+        "start_time": 2013.0922282283068,
+        "end_time": 2013.9600705617538,
+        "id_str": "+0+21+23+",
         "source_node_id": 256164,
         "target_node_id": 257888,
         "id": 61
@@ -622,9 +622,9 @@
     {
         "source": "23",
         "target": "14",
-        "start_time": 8.387949,
-        "end_time": 14.833319,
-        "id_str": "+23+14+0+",
+        "start_time": 2013.9463758923996,
+        "end_time": 2018.2047933507408,
+        "id_str": "+14+0+23+",
         "source_node_id": 262528,
         "target_node_id": 263385,
         "id": 62
@@ -632,9 +632,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 5.852312,
-        "end_time": 8.268719,
-        "id_str": "+0+2+",
+        "start_time": 2009.6102556849266,
+        "end_time": 2011.607497631917,
+        "id_str": "+2+0+",
         "source_node_id": 253188,
         "target_node_id": 267669,
         "id": 63
@@ -642,9 +642,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 5.660268,
-        "end_time": 9.282931000000001,
-        "id_str": "+23+7+0+9+",
+        "start_time": 2009.6952656985284,
+        "end_time": 2012.5465413692048,
+        "id_str": "+7+0+23+9+",
         "source_node_id": 279333,
         "target_node_id": 279334,
         "id": 64
@@ -652,9 +652,9 @@
     {
         "source": "23",
         "target": "7",
-        "start_time": 10.800788,
-        "end_time": 12.589221000000002,
-        "id_str": "+23+7+0+",
+        "start_time": 2014.72402049665,
+        "end_time": 2015.9601604308111,
+        "id_str": "+7+0+23+",
         "source_node_id": 280213,
         "target_node_id": 281062,
         "id": 65
@@ -662,9 +662,9 @@
     {
         "source": "23",
         "target": "9",
-        "start_time": 6.222866000000001,
-        "end_time": 12.000580000000001,
-        "id_str": "+23+0+9+",
+        "start_time": 2012.5465413692048,
+        "end_time": 2015.3721991827165,
+        "id_str": "+0+23+9+",
         "source_node_id": 279334,
         "target_node_id": 284842,
         "id": 66
@@ -672,8 +672,8 @@
     {
         "source": "0",
         "target": "12",
-        "start_time": 6.672544,
-        "end_time": 13.766006,
+        "start_time": 2010.9406347418508,
+        "end_time": 2017.136986303836,
         "id_str": "+0+12+",
         "source_node_id": 286194,
         "target_node_id": 287039,
@@ -682,9 +682,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 6.672544,
-        "end_time": 12.689137,
-        "id_str": "+0+2+",
+        "start_time": 2010.9406347418508,
+        "end_time": 2016.0601167776738,
+        "id_str": "+2+0+",
         "source_node_id": 286194,
         "target_node_id": 287907,
         "id": 68
@@ -692,8 +692,8 @@
     {
         "source": "0",
         "target": "8",
-        "start_time": 6.222866000000001,
-        "end_time": 12.05303,
+        "start_time": 2010.0319029675475,
+        "end_time": 2015.3536243893016,
         "id_str": "+0+8+",
         "source_node_id": 286193,
         "target_node_id": 289194,
@@ -702,9 +702,9 @@
     {
         "source": "0",
         "target": "15",
-        "start_time": 5.660268,
-        "end_time": 10.045782,
-        "id_str": "+0+15+",
+        "start_time": 2009.4220274566528,
+        "end_time": 2013.4461076194357,
+        "id_str": "+15+0+",
         "source_node_id": 297602,
         "target_node_id": 298449,
         "id": 70
@@ -712,9 +712,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 6.730851,
-        "end_time": 7.5959140000000005,
-        "id_str": "+0+7+1+10+2+",
+        "start_time": 2010.5066007649536,
+        "end_time": 2010.9016675493772,
+        "id_str": "+2+7+1+0+10+",
         "source_node_id": 298460,
         "target_node_id": 298461,
         "id": 71
@@ -722,9 +722,9 @@
     {
         "source": "2",
         "target": "7",
-        "start_time": 7.5959140000000005,
-        "end_time": 14.051009,
-        "id_str": "+0+7+1+10+2+",
+        "start_time": 2013.1360184589628,
+        "end_time": 2017.3227704540154,
+        "id_str": "+2+7+1+0+10+",
         "source_node_id": 299331,
         "target_node_id": 299332,
         "id": 72
@@ -732,9 +732,9 @@
     {
         "source": "7",
         "target": "1",
-        "start_time": 9.828671,
-        "end_time": 15.025564000000001,
-        "id_str": "+0+7+1+10+2+",
+        "start_time": 2017.3227704540154,
+        "end_time": 2018.3753365454293,
+        "id_str": "+2+7+1+0+10+",
         "source_node_id": 299332,
         "target_node_id": 299333,
         "id": 73
@@ -742,9 +742,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 14.051009,
-        "end_time": 15.993404000000002,
-        "id_str": "+0+7+1+10+2+",
+        "start_time": 2018.3753365454293,
+        "end_time": 2019.3643835641096,
+        "id_str": "+2+7+1+0+10+",
         "source_node_id": 299333,
         "target_node_id": 301086,
         "id": 74
@@ -752,9 +752,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 6.730851,
-        "end_time": 9.763266000000002,
-        "id_str": "+0+2+",
+        "start_time": 2012.259405183153,
+        "end_time": 2013.1342465778073,
+        "id_str": "+2+0+",
         "source_node_id": 314514,
         "target_node_id": 315380,
         "id": 75
@@ -762,9 +762,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 6.07561,
-        "end_time": 10.812927,
-        "id_str": "+23+0+",
+        "start_time": 2011.0802842992189,
+        "end_time": 2014.2684931531514,
+        "id_str": "+0+23+",
         "source_node_id": 321283,
         "target_node_id": 322148,
         "id": 76
@@ -772,9 +772,9 @@
     {
         "source": "0",
         "target": "8",
-        "start_time": 6.07561,
-        "end_time": 11.905724,
-        "id_str": "+0+8+21+17+",
+        "start_time": 2011.0802842992189,
+        "end_time": 2015.2936766532603,
+        "id_str": "+17+0+21+8+",
         "source_node_id": 321283,
         "target_node_id": 322158,
         "id": 77
@@ -782,9 +782,9 @@
     {
         "source": "8",
         "target": "0",
-        "start_time": 12.968658999999999,
-        "end_time": 14.720487,
-        "id_str": "+0+8+21+17+",
+        "start_time": 2016.8128700202258,
+        "end_time": 2018.1332547135996,
+        "id_str": "+17+0+21+8+",
         "source_node_id": 324758,
         "target_node_id": 324759,
         "id": 78
@@ -792,8 +792,8 @@
     {
         "source": "0",
         "target": "21",
-        "start_time": 14.720487,
-        "end_time": 15.470461,
+        "start_time": 2018.4283524357902,
+        "end_time": 2018.926027399726,
         "id_str": "+0+21+8+",
         "source_node_id": 325651,
         "target_node_id": 326522,
@@ -802,9 +802,9 @@
     {
         "source": "0",
         "target": "17",
-        "start_time": 14.720487,
-        "end_time": 15.525256,
-        "id_str": "+0+8+17+",
+        "start_time": 2018.4283524357902,
+        "end_time": 2018.9808219202741,
+        "id_str": "+17+0+8+",
         "source_node_id": 325651,
         "target_node_id": 327403,
         "id": 80
@@ -812,9 +812,9 @@
     {
         "source": "0",
         "target": "7",
-        "start_time": 5.1289810000000005,
-        "end_time": 5.961546000000001,
-        "id_str": "+0+7+23+22+2+",
+        "start_time": 2008.9108486416148,
+        "end_time": 2009.3599596777137,
+        "id_str": "+2+7+23+22+0+",
         "source_node_id": 342893,
         "target_node_id": 342894,
         "id": 81
@@ -822,9 +822,9 @@
     {
         "source": "7",
         "target": "23",
-        "start_time": 5.961546000000001,
-        "end_time": 14.839039,
-        "id_str": "+0+7+23+22+2+",
+        "start_time": 2017.395591949397,
+        "end_time": 2018.2784922537826,
+        "id_str": "+2+7+23+22+0+",
         "source_node_id": 342895,
         "target_node_id": 342896,
         "id": 82
@@ -832,9 +832,9 @@
     {
         "source": "23",
         "target": "2",
-        "start_time": 13.992563,
-        "end_time": 15.225874,
-        "id_str": "+0+7+23+22+2+",
+        "start_time": 2018.2784922537826,
+        "end_time": 2018.6441826452797,
+        "id_str": "+2+7+23+22+0+",
         "source_node_id": 342896,
         "target_node_id": 343787,
         "id": 83
@@ -842,9 +842,9 @@
     {
         "source": "2",
         "target": "22",
-        "start_time": 14.839039,
-        "end_time": 15.589253999999999,
-        "id_str": "+0+7+23+22+2+",
+        "start_time": 2018.6441826452797,
+        "end_time": 2019.0446055790142,
+        "id_str": "+2+7+23+22+0+",
         "source_node_id": 343787,
         "target_node_id": 345536,
         "id": 84
@@ -852,9 +852,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 5.1289810000000005,
-        "end_time": 8.544658000000002,
-        "id_str": "+0+2+",
+        "start_time": 2008.9108486416148,
+        "end_time": 2011.9462519296924,
+        "id_str": "+2+0+",
         "source_node_id": 342893,
         "target_node_id": 353852,
         "id": 85
@@ -862,9 +862,9 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 4.775354,
-        "end_time": 5.448254,
-        "id_str": "+18+16+10+25+0+7+14+12+4+15+6+8+5+17+11+9+2+20+19+1+23+21+22+3+24+",
+        "start_time": 2008.1913207559273,
+        "end_time": 2008.571288665713,
+        "id_str": "+12+14+17+0+3+2+19+20+25+22+8+5+1+6+16+7+24+15+23+9+4+18+21+11+10+",
         "source_node_id": 358684,
         "target_node_id": 358685,
         "id": 86
@@ -872,9 +872,9 @@
     {
         "source": "1",
         "target": "2",
-        "start_time": 8.910573999999999,
-        "end_time": 11.201424999999999,
-        "id_str": "+0+1+2+",
+        "start_time": 2013.0170680232204,
+        "end_time": 2014.8114266144305,
+        "id_str": "+2+0+1+",
         "source_node_id": 358693,
         "target_node_id": 358694,
         "id": 87
@@ -882,8 +882,8 @@
     {
         "source": "1",
         "target": "21",
-        "start_time": 9.481342999999999,
-        "end_time": 11.339583,
+        "start_time": 2013.102167314727,
+        "end_time": 2014.959378058354,
         "id_str": "+0+21+1+",
         "source_node_id": 361494,
         "target_node_id": 362338,
@@ -892,9 +892,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 8.910573999999999,
-        "end_time": 14.424443999999998,
-        "id_str": "+0+22+1+",
+        "start_time": 2012.684924840695,
+        "end_time": 2018.0442274568816,
+        "id_str": "+0+1+22+",
         "source_node_id": 368559,
         "target_node_id": 369412,
         "id": 89
@@ -902,9 +902,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 8.910573999999999,
-        "end_time": 10.451540999999999,
-        "id_str": "+23+1+0+6+",
+        "start_time": 2012.684924840695,
+        "end_time": 2013.9978118487766,
+        "id_str": "+6+0+23+1+",
         "source_node_id": 368559,
         "target_node_id": 369422,
         "id": 90
@@ -912,9 +912,9 @@
     {
         "source": "23",
         "target": "6",
-        "start_time": 9.122398999999998,
-        "end_time": 14.86531,
-        "id_str": "+23+1+0+6+",
+        "start_time": 2013.9978118487766,
+        "end_time": 2018.4849315093152,
+        "id_str": "+6+0+23+1+",
         "source_node_id": 369422,
         "target_node_id": 370270,
         "id": 91
@@ -922,9 +922,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 8.402334,
-        "end_time": 14.706406999999999,
-        "id_str": "+0+10+1+",
+        "start_time": 2012.1477230311143,
+        "end_time": 2018.3260273997262,
+        "id_str": "+0+1+10+",
         "source_node_id": 358691,
         "target_node_id": 375080,
         "id": 92
@@ -932,9 +932,9 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 6.890537,
-        "end_time": 10.589981,
-        "id_str": "+0+12+1+",
+        "start_time": 2011.9556015151186,
+        "end_time": 2014.1260548549644,
+        "id_str": "+0+1+12+",
         "source_node_id": 358690,
         "target_node_id": 375938,
         "id": 93
@@ -942,9 +942,9 @@
     {
         "source": "0",
         "target": "12",
-        "start_time": 8.402334,
-        "end_time": 14.183119,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.1260548549644,
+        "end_time": 2017.8027397284932,
+        "id_str": "+0+1+12+",
         "source_node_id": 375938,
         "target_node_id": 379745,
         "id": 94
@@ -952,9 +952,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 6.737032,
-        "end_time": 6.926366,
-        "id_str": "+8+16+10+17+11+9+0+19+1+21+22+24+",
+        "start_time": 2010.5101576887864,
+        "end_time": 2010.518464961952,
+        "id_str": "+1+10+17+9+16+0+19+24+22+21+11+8+",
         "source_node_id": 358689,
         "target_node_id": 381992,
         "id": 95
@@ -962,9 +962,9 @@
     {
         "source": "8",
         "target": "9",
-        "start_time": 6.926366,
-        "end_time": 13.753096,
-        "id_str": "+0+8+1+9+",
+        "start_time": 2011.7352375858202,
+        "end_time": 2017.3728952118959,
+        "id_str": "+0+1+8+9+",
         "source_node_id": 381993,
         "target_node_id": 382833,
         "id": 96
@@ -972,9 +972,9 @@
     {
         "source": "8",
         "target": "1",
-        "start_time": 6.890537,
-        "end_time": 7.552128,
-        "id_str": "+8+16+10+17+11+0+19+1+21+22+24+",
+        "start_time": 2010.518464961952,
+        "end_time": 2011.1013492768416,
+        "id_str": "+1+10+17+16+0+19+24+22+21+11+8+",
         "source_node_id": 381992,
         "target_node_id": 385017,
         "id": 97
@@ -982,9 +982,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 6.926366,
-        "end_time": 12.965086,
-        "id_str": "+0+22+1+8+",
+        "start_time": 2011.1013492768416,
+        "end_time": 2016.5847069416077,
+        "id_str": "+0+1+8+22+",
         "source_node_id": 385017,
         "target_node_id": 385863,
         "id": 98
@@ -992,9 +992,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 6.926366,
-        "end_time": 8.308102,
-        "id_str": "+8+16+10+17+11+0+19+1+21+24+",
+        "start_time": 2011.1013492768416,
+        "end_time": 2011.911217898905,
+        "id_str": "+1+17+16+0+19+24+21+11+8+10+",
         "source_node_id": 385017,
         "target_node_id": 385873,
         "id": 99
@@ -1002,9 +1002,9 @@
     {
         "source": "8",
         "target": "11",
-        "start_time": 8.308102,
-        "end_time": 12.091177,
-        "id_str": "+0+8+1+11+",
+        "start_time": 2013.7607660513886,
+        "end_time": 2015.7105751149381,
+        "id_str": "+0+11+1+8+",
         "source_node_id": 385874,
         "target_node_id": 386723,
         "id": 100
@@ -1012,9 +1012,9 @@
     {
         "source": "8",
         "target": "10",
-        "start_time": 11.55114,
-        "end_time": 13.392296,
-        "id_str": "+8+16+10+17+0+19+1+21+24+",
+        "start_time": 2015.4191923131384,
+        "end_time": 2016.972724301409,
+        "id_str": "+1+17+16+0+19+24+21+8+10+",
         "source_node_id": 393980,
         "target_node_id": 394850,
         "id": 101
@@ -1022,9 +1022,9 @@
     {
         "source": "10",
         "target": "19",
-        "start_time": 13.392296,
-        "end_time": 15.46805,
-        "id_str": "+0+19+8+1+10+",
+        "start_time": 2017.832164039405,
+        "end_time": 2019.0876712353424,
+        "id_str": "+19+1+10+0+8+",
         "source_node_id": 394851,
         "target_node_id": 395708,
         "id": 102
@@ -1032,9 +1032,9 @@
     {
         "source": "10",
         "target": "16",
-        "start_time": 14.292094,
-        "end_time": 14.780932000000002,
-        "id_str": "+0+8+1+16+10+21+",
+        "start_time": 2018.1242951062004,
+        "end_time": 2018.3806621305512,
+        "id_str": "+1+10+0+16+21+8+",
         "source_node_id": 395718,
         "target_node_id": 398415,
         "id": 103
@@ -1042,9 +1042,9 @@
     {
         "source": "16",
         "target": "21",
-        "start_time": 14.780932000000002,
-        "end_time": 15.536543000000002,
-        "id_str": "+0+8+1+16+10+21+",
+        "start_time": 2018.8721628135381,
+        "end_time": 2019.1561643860275,
+        "id_str": "+1+0+16+21+8+10+",
         "source_node_id": 399291,
         "target_node_id": 400155,
         "id": 104
@@ -1052,9 +1052,9 @@
     {
         "source": "10",
         "target": "24",
-        "start_time": 13.392296,
-        "end_time": 15.451611,
-        "id_str": "+0+8+1+10+24+",
+        "start_time": 2018.0004250203763,
+        "end_time": 2019.071232879178,
+        "id_str": "+24+1+10+0+8+",
         "source_node_id": 405618,
         "target_node_id": 406473,
         "id": 105
@@ -1062,9 +1062,9 @@
     {
         "source": "10",
         "target": "17",
-        "start_time": 13.392296,
-        "end_time": 15.413255,
-        "id_str": "+0+8+1+10+17+",
+        "start_time": 2018.0004250203763,
+        "end_time": 2019.0328767147946,
+        "id_str": "+1+10+17+0+8+",
         "source_node_id": 405618,
         "target_node_id": 407342,
         "id": 106
@@ -1072,9 +1072,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 11.151971,
-        "end_time": 13.547753,
-        "id_str": "+0+10+12+1+",
+        "start_time": 2015.0265836198532,
+        "end_time": 2016.2694805671272,
+        "id_str": "+0+1+12+10+",
         "source_node_id": 418527,
         "target_node_id": 418528,
         "id": 107
@@ -1082,9 +1082,9 @@
     {
         "source": "10",
         "target": "12",
-        "start_time": 13.970802,
-        "end_time": 15.241374,
-        "id_str": "+0+10+12+1+",
+        "start_time": 2016.8138725792778,
+        "end_time": 2017.9753424682192,
+        "id_str": "+0+1+12+10+",
         "source_node_id": 420281,
         "target_node_id": 421131,
         "id": 108
@@ -1092,8 +1092,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 12.380685,
-        "end_time": 14.976493,
+        "start_time": 2015.3124461943848,
+        "end_time": 2017.7106769329366,
         "id_str": "+0+1+9+",
         "source_node_id": 427498,
         "target_node_id": 429211,
@@ -1102,9 +1102,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 12.976768,
-        "end_time": 13.764764,
-        "id_str": "+0+12+1+",
+        "start_time": 2015.8243473620482,
+        "end_time": 2016.4608263393784,
+        "id_str": "+0+1+12+",
         "source_node_id": 432724,
         "target_node_id": 432725,
         "id": 110
@@ -1112,8 +1112,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 12.976768,
-        "end_time": 15.863291,
+        "start_time": 2015.8243473620482,
+        "end_time": 2018.5972602764384,
         "id_str": "+0+1+9+",
         "source_node_id": 432724,
         "target_node_id": 438054,
@@ -1122,9 +1122,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 11.749841,
-        "end_time": 15.646853,
-        "id_str": "+0+10+1+",
+        "start_time": 2015.6947233681926,
+        "end_time": 2018.380821920274,
+        "id_str": "+0+1+10+",
         "source_node_id": 432723,
         "target_node_id": 440050,
         "id": 112
@@ -1132,8 +1132,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 11.634523,
-        "end_time": 14.976379,
+        "start_time": 2015.439022575045,
+        "end_time": 2017.710475586879,
         "id_str": "+0+1+9+",
         "source_node_id": 442012,
         "target_node_id": 442860,
@@ -1142,9 +1142,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 13.273563,
-        "end_time": 14.493680999999999,
-        "id_str": "+0+7+8+1+",
+        "start_time": 2016.4677893936441,
+        "end_time": 2017.1670726876291,
+        "id_str": "+7+0+1+8+",
         "source_node_id": 442871,
         "target_node_id": 443725,
         "id": 114
@@ -1152,9 +1152,9 @@
     {
         "source": "7",
         "target": "8",
-        "start_time": 14.493680999999999,
-        "end_time": 15.555304999999999,
-        "id_str": "+0+7+8+1+",
+        "start_time": 2017.6003394752677,
+        "end_time": 2018.2900888097251,
+        "id_str": "+7+0+1+8+",
         "source_node_id": 443726,
         "target_node_id": 444595,
         "id": 115
@@ -1162,9 +1162,9 @@
     {
         "source": "1",
         "target": "15",
-        "start_time": 12.701483,
-        "end_time": 14.200465999999999,
-        "id_str": "+0+15+1+",
+        "start_time": 2015.9492749315684,
+        "end_time": 2016.934433717564,
+        "id_str": "+15+0+1+",
         "source_node_id": 442870,
         "target_node_id": 450374,
         "id": 116
@@ -1172,9 +1172,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 11.4271,
-        "end_time": 13.42565,
-        "id_str": "+0+10+7+1+",
+        "start_time": 2015.5283682338459,
+        "end_time": 2016.110745672528,
+        "id_str": "+7+0+1+10+",
         "source_node_id": 453091,
         "target_node_id": 453092,
         "id": 117
@@ -1182,9 +1182,9 @@
     {
         "source": "10",
         "target": "7",
-        "start_time": 13.945545,
-        "end_time": 16.148224,
-        "id_str": "+0+7+10+1+",
+        "start_time": 2018.345614778219,
+        "end_time": 2018.8821917832877,
+        "id_str": "+7+0+1+10+",
         "source_node_id": 464629,
         "target_node_id": 465499,
         "id": 118
@@ -1192,8 +1192,8 @@
     {
         "source": "1",
         "target": "25",
-        "start_time": 11.4271,
-        "end_time": 13.412834,
+        "start_time": 2015.5283682338459,
+        "end_time": 2016.0814145598094,
         "id_str": "+0+1+25+",
         "source_node_id": 453091,
         "target_node_id": 472115,
@@ -1202,9 +1202,9 @@
     {
         "source": "1",
         "target": "19",
-        "start_time": 11.212956,
-        "end_time": 11.904623,
-        "id_str": "+0+19+1+",
+        "start_time": 2014.247525278422,
+        "end_time": 2014.6348820659994,
+        "id_str": "+19+0+1+",
         "source_node_id": 442010,
         "target_node_id": 479329,
         "id": 120
@@ -1212,9 +1212,9 @@
     {
         "source": "1",
         "target": "5",
-        "start_time": 10.425349,
-        "end_time": 13.487351,
-        "id_str": "+0+5+1+",
+        "start_time": 2013.521954421273,
+        "end_time": 2016.2213189634658,
+        "id_str": "+5+0+1+",
         "source_node_id": 418525,
         "target_node_id": 499337,
         "id": 121
@@ -1222,9 +1222,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 9.429953000000001,
-        "end_time": 11.41045,
-        "id_str": "+0+8+12+1+4+5+3+",
+        "start_time": 2012.5280329059972,
+        "end_time": 2014.1185553857326,
+        "id_str": "+5+1+12+4+0+8+3+",
         "source_node_id": 501169,
         "target_node_id": 501170,
         "id": 122
@@ -1232,9 +1232,9 @@
     {
         "source": "12",
         "target": "8",
-        "start_time": 9.828686000000001,
-        "end_time": 11.60706,
-        "id_str": "+0+8+12+1+4+5+3+",
+        "start_time": 2014.1185553857326,
+        "end_time": 2014.3308790663489,
+        "id_str": "+5+1+12+4+0+8+3+",
         "source_node_id": 501170,
         "target_node_id": 501171,
         "id": 123
@@ -1242,9 +1242,9 @@
     {
         "source": "8",
         "target": "12",
-        "start_time": 11.41045,
-        "end_time": 11.969419,
-        "id_str": "+0+8+12+1+3+",
+        "start_time": 2014.3308790663489,
+        "end_time": 2014.7134526377743,
+        "id_str": "+1+12+0+8+3+",
         "source_node_id": 501171,
         "target_node_id": 501172,
         "id": 124
@@ -1252,9 +1252,9 @@
     {
         "source": "12",
         "target": "3",
-        "start_time": 13.148393000000002,
-        "end_time": 15.889914000000001,
-        "id_str": "+0+8+12+1+3+",
+        "start_time": 2016.4309156387003,
+        "end_time": 2018.6242825660088,
+        "id_str": "+1+12+0+8+3+",
         "source_node_id": 504594,
         "target_node_id": 505462,
         "id": 125
@@ -1262,9 +1262,9 @@
     {
         "source": "8",
         "target": "4",
-        "start_time": 12.102573,
-        "end_time": 14.725403,
-        "id_str": "+0+8+12+1+4+",
+        "start_time": 2015.2796194334649,
+        "end_time": 2017.4589569469133,
+        "id_str": "+1+12+4+0+8+",
         "source_node_id": 516988,
         "target_node_id": 518706,
         "id": 126
@@ -1272,9 +1272,9 @@
     {
         "source": "8",
         "target": "5",
-        "start_time": 11.60706,
-        "end_time": 14.557037000000001,
-        "id_str": "+0+8+12+1+5+",
+        "start_time": 2014.79553255139,
+        "end_time": 2017.2909644092726,
+        "id_str": "+5+1+12+0+8+",
         "source_node_id": 516124,
         "target_node_id": 521964,
         "id": 127
@@ -1282,9 +1282,9 @@
     {
         "source": "12",
         "target": "8",
-        "start_time": 9.828686000000001,
-        "end_time": 14.724575000000002,
-        "id_str": "+0+8+12+1+",
+        "start_time": 2014.1185553857326,
+        "end_time": 2017.4585265232422,
+        "id_str": "+0+1+12+8+",
         "source_node_id": 501170,
         "target_node_id": 524806,
         "id": 128
@@ -1292,9 +1292,9 @@
     {
         "source": "1",
         "target": "19",
-        "start_time": 9.429953000000001,
-        "end_time": 12.682626,
-        "id_str": "+0+19+1+",
+        "start_time": 2012.5280329059972,
+        "end_time": 2015.3694085449085,
+        "id_str": "+19+0+1+",
         "source_node_id": 501169,
         "target_node_id": 525980,
         "id": 129
@@ -1302,9 +1302,9 @@
     {
         "source": "1",
         "target": "19",
-        "start_time": 13.14215,
-        "end_time": 16.175621,
-        "id_str": "+0+19+1+",
+        "start_time": 2017.0365547598328,
+        "end_time": 2018.9095890435617,
+        "id_str": "+19+0+1+",
         "source_node_id": 534249,
         "target_node_id": 535982,
         "id": 130
@@ -1312,9 +1312,9 @@
     {
         "source": "1",
         "target": "17",
-        "start_time": 8.898086000000001,
-        "end_time": 16.246853,
-        "id_str": "+0+17+1+",
+        "start_time": 2015.7636810200443,
+        "end_time": 2018.9808219202741,
+        "id_str": "+17+0+1+",
         "source_node_id": 534248,
         "target_node_id": 538110,
         "id": 131
@@ -1322,8 +1322,8 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 6.8551470000000005,
-        "end_time": 7.447446000000001,
+        "start_time": 2011.123286622251,
+        "end_time": 2011.1328629422253,
         "id_str": "+0+1+",
         "source_node_id": 540448,
         "target_node_id": 540449,
@@ -1332,8 +1332,8 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 8.289276000000001,
-        "end_time": 10.180975,
+        "start_time": 2012.5814150812273,
+        "end_time": 2013.8504680187284,
         "id_str": "+0+1+",
         "source_node_id": 543330,
         "target_node_id": 543331,
@@ -1342,9 +1342,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 10.142990000000001,
-        "end_time": 11.661521000000002,
-        "id_str": "+0+8+1+",
+        "start_time": 2014.4154765789258,
+        "end_time": 2015.3741051628292,
+        "id_str": "+0+1+8+",
         "source_node_id": 546849,
         "target_node_id": 547703,
         "id": 134
@@ -1352,9 +1352,9 @@
     {
         "source": "1",
         "target": "2",
-        "start_time": 10.142990000000001,
-        "end_time": 12.246811000000001,
-        "id_str": "+0+1+2+",
+        "start_time": 2014.4154765789258,
+        "end_time": 2015.9596482199006,
+        "id_str": "+2+0+1+",
         "source_node_id": 546849,
         "target_node_id": 548565,
         "id": 135
@@ -1362,9 +1362,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 10.799769000000001,
-        "end_time": 12.134063000000001,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.7156073543447,
+        "end_time": 2015.755568795176,
+        "id_str": "+0+1+12+",
         "source_node_id": 551606,
         "target_node_id": 551607,
         "id": 136
@@ -1372,9 +1372,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 10.421885000000001,
-        "end_time": 11.661001,
-        "id_str": "+0+8+1+",
+        "start_time": 2014.506217877163,
+        "end_time": 2015.373642400957,
+        "id_str": "+0+1+8+",
         "source_node_id": 551605,
         "target_node_id": 557026,
         "id": 137
@@ -1382,9 +1382,9 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 10.289850000000001,
-        "end_time": 10.802197000000001,
-        "id_str": "+0+1+2+",
+        "start_time": 2014.093379953238,
+        "end_time": 2014.451040759328,
+        "id_str": "+2+0+1+",
         "source_node_id": 551604,
         "target_node_id": 557951,
         "id": 138
@@ -1392,9 +1392,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 10.421885000000001,
-        "end_time": 11.983055000000002,
-        "id_str": "+0+1+2+",
+        "start_time": 2014.451040759328,
+        "end_time": 2015.6958904134246,
+        "id_str": "+2+0+1+",
         "source_node_id": 557951,
         "target_node_id": 558807,
         "id": 139
@@ -1402,9 +1402,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 8.289276000000001,
-        "end_time": 9.405694,
-        "id_str": "+23+8+1+0+",
+        "start_time": 2012.380982747177,
+        "end_time": 2013.0801752603975,
+        "id_str": "+0+23+1+8+",
         "source_node_id": 566265,
         "target_node_id": 566266,
         "id": 140
@@ -1412,9 +1412,9 @@
     {
         "source": "23",
         "target": "8",
-        "start_time": 8.713918000000001,
-        "end_time": 12.414011,
-        "id_str": "+23+8+1+0+",
+        "start_time": 2013.0801752603975,
+        "end_time": 2016.1276701232016,
+        "id_str": "+0+23+1+8+",
         "source_node_id": 566266,
         "target_node_id": 567989,
         "id": 141
@@ -1422,9 +1422,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 8.713918000000001,
-        "end_time": 9.718157000000001,
-        "id_str": "+23+12+0+1+",
+        "start_time": 2012.6066214491743,
+        "end_time": 2013.3970352921663,
+        "id_str": "+1+0+23+12+",
         "source_node_id": 569014,
         "target_node_id": 573432,
         "id": 142
@@ -1432,9 +1432,9 @@
     {
         "source": "23",
         "target": "12",
-        "start_time": 9.718157000000001,
-        "end_time": 12.247060000000001,
-        "id_str": "+23+12+0+1+",
+        "start_time": 2013.8881679830504,
+        "end_time": 2015.9597326005905,
+        "id_str": "+1+0+23+12+",
         "source_node_id": 573433,
         "target_node_id": 575156,
         "id": 143
@@ -1442,9 +1442,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 11.782549000000001,
-        "end_time": 14.412109000000001,
-        "id_str": "+0+8+1+",
+        "start_time": 2015.9749394042085,
+        "end_time": 2017.8725911195859,
+        "id_str": "+0+1+8+",
         "source_node_id": 581727,
         "target_node_id": 581728,
         "id": 144
@@ -1452,9 +1452,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 11.782549000000001,
-        "end_time": 13.184431,
-        "id_str": "+0+7+1+",
+        "start_time": 2015.9749394042085,
+        "end_time": 2016.7021932804057,
+        "id_str": "+7+0+1+",
         "source_node_id": 581727,
         "target_node_id": 592266,
         "id": 145
@@ -1462,9 +1462,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 12.521033000000001,
-        "end_time": 14.706895,
-        "id_str": "+0+7+1+",
+        "start_time": 2017.0053600071922,
+        "end_time": 2018.2246575367124,
+        "id_str": "+7+0+1+",
         "source_node_id": 593399,
         "target_node_id": 594249,
         "id": 146
@@ -1472,9 +1472,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 12.521033000000001,
-        "end_time": 14.706895,
-        "id_str": "+0+8+1+",
+        "start_time": 2017.0053600071922,
+        "end_time": 2018.2246575367124,
+        "id_str": "+0+1+8+",
         "source_node_id": 593399,
         "target_node_id": 595114,
         "id": 147
@@ -1482,9 +1482,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 11.782549000000001,
-        "end_time": 15.688724,
-        "id_str": "+0+10+1+",
+        "start_time": 2015.9847716155764,
+        "end_time": 2019.2062771434294,
+        "id_str": "+0+1+10+",
         "source_node_id": 593398,
         "target_node_id": 597245,
         "id": 148
@@ -1492,8 +1492,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 11.272291000000001,
-        "end_time": 14.686001000000001,
+        "start_time": 2015.294850277153,
+        "end_time": 2018.2046576150317,
         "id_str": "+0+1+9+",
         "source_node_id": 581725,
         "target_node_id": 600328,
@@ -1502,9 +1502,9 @@
     {
         "source": "1",
         "target": "19",
-        "start_time": 11.272291000000001,
-        "end_time": 14.442297000000002,
-        "id_str": "+0+19+1+",
+        "start_time": 2015.840102603127,
+        "end_time": 2017.959881233969,
+        "id_str": "+19+0+1+",
         "source_node_id": 601309,
         "target_node_id": 602167,
         "id": 150
@@ -1512,8 +1512,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 11.272291000000001,
-        "end_time": 15.108028000000001,
+        "start_time": 2015.840102603127,
+        "end_time": 2018.6252269699482,
         "id_str": "+0+1+3+",
         "source_node_id": 601309,
         "target_node_id": 603048,
@@ -1522,9 +1522,9 @@
     {
         "source": "1",
         "target": "15",
-        "start_time": 13.195069000000002,
-        "end_time": 15.772890000000002,
-        "id_str": "+0+15+1+",
+        "start_time": 2017.2912330272059,
+        "end_time": 2019.2909575934393,
+        "id_str": "+15+0+1+",
         "source_node_id": 606083,
         "target_node_id": 607819,
         "id": 152
@@ -1532,9 +1532,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 13.195069000000002,
-        "end_time": 15.358968000000003,
-        "id_str": "+0+10+1+",
+        "start_time": 2018.3701471426282,
+        "end_time": 2018.8770352276633,
+        "id_str": "+0+1+10+",
         "source_node_id": 608868,
         "target_node_id": 609740,
         "id": 153
@@ -1542,9 +1542,9 @@
     {
         "source": "1",
         "target": "14",
-        "start_time": 10.906521,
-        "end_time": 12.043775,
-        "id_str": "+0+14+1+12+6+",
+        "start_time": 2015.2313488726022,
+        "end_time": 2015.5183107095295,
+        "id_str": "+14+1+12+6+0+",
         "source_node_id": 614384,
         "target_node_id": 614385,
         "id": 154
@@ -1552,9 +1552,9 @@
     {
         "source": "14",
         "target": "6",
-        "start_time": 11.73034,
-        "end_time": 12.334093,
-        "id_str": "+0+14+1+12+6+",
+        "start_time": 2015.5183107095295,
+        "end_time": 2015.8149675596476,
+        "id_str": "+14+1+12+6+0+",
         "source_node_id": 614385,
         "target_node_id": 615245,
         "id": 155
@@ -1562,9 +1562,9 @@
     {
         "source": "6",
         "target": "1",
-        "start_time": 12.334093,
-        "end_time": 13.361251999999999,
-        "id_str": "+0+14+12+1+6+",
+        "start_time": 2016.0031912456773,
+        "end_time": 2016.8135921127696,
+        "id_str": "+14+1+12+6+0+",
         "source_node_id": 616105,
         "target_node_id": 616106,
         "id": 156
@@ -1572,9 +1572,9 @@
     {
         "source": "1",
         "target": "6",
-        "start_time": 12.524809999999999,
-        "end_time": 14.525139999999999,
-        "id_str": "+0+14+1+6+",
+        "start_time": 2016.8135921127696,
+        "end_time": 2018.043286516209,
+        "id_str": "+14+1+6+0+",
         "source_node_id": 616106,
         "target_node_id": 616957,
         "id": 157
@@ -1582,9 +1582,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 12.524809999999999,
-        "end_time": 13.856910999999998,
-        "id_str": "+0+14+12+1+6+",
+        "start_time": 2016.8135921127696,
+        "end_time": 2017.3741136747728,
+        "id_str": "+6+1+12+14+0+",
         "source_node_id": 616106,
         "target_node_id": 617816,
         "id": 158
@@ -1592,9 +1592,9 @@
     {
         "source": "1",
         "target": "14",
-        "start_time": 10.906521,
-        "end_time": 12.512246,
-        "id_str": "+0+14+1+15+17+3+",
+        "start_time": 2015.2313488726022,
+        "end_time": 2016.0195263917792,
+        "id_str": "+15+1+14+17+0+3+",
         "source_node_id": 614384,
         "target_node_id": 623084,
         "id": 159
@@ -1602,9 +1602,9 @@
     {
         "source": "14",
         "target": "3",
-        "start_time": 12.512246,
-        "end_time": 14.687902,
-        "id_str": "+0+14+1+3+",
+        "start_time": 2016.3230616260882,
+        "end_time": 2018.2056715850795,
+        "id_str": "+14+0+1+3+",
         "source_node_id": 623085,
         "target_node_id": 623959,
         "id": 160
@@ -1612,9 +1612,9 @@
     {
         "source": "14",
         "target": "17",
-        "start_time": 12.995176,
-        "end_time": 14.854824,
-        "id_str": "+0+14+17+1+",
+        "start_time": 2016.7545111556492,
+        "end_time": 2018.372743137557,
+        "id_str": "+14+17+0+1+",
         "source_node_id": 623970,
         "target_node_id": 625708,
         "id": 161
@@ -1622,9 +1622,9 @@
     {
         "source": "14",
         "target": "15",
-        "start_time": 12.811859,
-        "end_time": 14.222100000000001,
-        "id_str": "+0+14+15+1+",
+        "start_time": 2016.499862248913,
+        "end_time": 2017.6604309145487,
+        "id_str": "+14+15+0+1+",
         "source_node_id": 623969,
         "target_node_id": 626872,
         "id": 162
@@ -1632,9 +1632,9 @@
     {
         "source": "1",
         "target": "2",
-        "start_time": 10.172424,
-        "end_time": 11.523333999999998,
-        "id_str": "+0+1+2+",
+        "start_time": 2014.3786659797472,
+        "end_time": 2015.0410958928762,
+        "id_str": "+2+0+1+",
         "source_node_id": 635769,
         "target_node_id": 636628,
         "id": 163
@@ -1642,9 +1642,9 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 10.910388999999999,
-        "end_time": 11.874322,
-        "id_str": "+0+1+2+",
+        "start_time": 2014.9812698741096,
+        "end_time": 2015.3899546072187,
+        "id_str": "+2+0+1+",
         "source_node_id": 636638,
         "target_node_id": 636639,
         "id": 164
@@ -1652,9 +1652,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 11.430803,
-        "end_time": 13.835663,
-        "id_str": "+0+1+2+",
+        "start_time": 2015.3899546072187,
+        "end_time": 2017.35342466,
+        "id_str": "+2+0+1+",
         "source_node_id": 636639,
         "target_node_id": 643908,
         "id": 165
@@ -1662,9 +1662,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 13.670838,
-        "end_time": 14.802786,
-        "id_str": "+0+22+1+",
+        "start_time": 2017.6269569772692,
+        "end_time": 2018.3205479476712,
+        "id_str": "+0+1+22+",
         "source_node_id": 644892,
         "target_node_id": 645748,
         "id": 166
@@ -1672,9 +1672,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 11.430803,
-        "end_time": 14.360584,
-        "id_str": "+0+7+1+",
+        "start_time": 2017.1519785766804,
+        "end_time": 2017.8777758004135,
+        "id_str": "+7+0+1+",
         "source_node_id": 644891,
         "target_node_id": 648687,
         "id": 167
@@ -1682,9 +1682,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 8.75915,
-        "end_time": 12.339091999999999,
-        "id_str": "+0+12+1+",
+        "start_time": 2012.3961510203194,
+        "end_time": 2015.7947499522554,
+        "id_str": "+0+1+12+",
         "source_node_id": 653028,
         "target_node_id": 653029,
         "id": 168
@@ -1692,9 +1692,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 8.75915,
-        "end_time": 11.668184,
-        "id_str": "+0+7+1+",
+        "start_time": 2012.3961510203194,
+        "end_time": 2015.1242592134154,
+        "id_str": "+7+0+1+",
         "source_node_id": 653028,
         "target_node_id": 657570,
         "id": 169
@@ -1702,9 +1702,9 @@
     {
         "source": "1",
         "target": "17",
-        "start_time": 18.241502,
-        "end_time": 19.784707,
-        "id_str": "+0+17+1+",
+        "start_time": 2013.7602980831482,
+        "end_time": 2015.1232876736983,
+        "id_str": "+17+0+1+",
         "source_node_id": 662264,
         "target_node_id": 663120,
         "id": 170
@@ -1712,9 +1712,9 @@
     {
         "source": "1",
         "target": "11",
-        "start_time": 18.426598000000002,
-        "end_time": 20.371503,
-        "id_str": "+0+1+11+",
+        "start_time": 2013.920702527412,
+        "end_time": 2015.7099002987463,
+        "id_str": "+0+11+1+",
         "source_node_id": 663130,
         "target_node_id": 663985,
         "id": 171
@@ -1722,8 +1722,8 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 18.426598000000002,
-        "end_time": 19.344976,
+        "start_time": 2013.920702527412,
+        "end_time": 2014.6362002851215,
         "id_str": "+0+1+",
         "source_node_id": 663130,
         "target_node_id": 663995,
@@ -1732,9 +1732,9 @@
     {
         "source": "1",
         "target": "11",
-        "start_time": 18.077977,
-        "end_time": 20.621569,
-        "id_str": "+0+1+11+",
+        "start_time": 2015.1994816781303,
+        "end_time": 2015.9597509011073,
+        "id_str": "+0+11+1+",
         "source_node_id": 670497,
         "target_node_id": 671357,
         "id": 173
@@ -1742,9 +1742,9 @@
     {
         "source": "1",
         "target": "14",
-        "start_time": 18.077977,
-        "end_time": 22.866782,
-        "id_str": "+0+14+1+",
+        "start_time": 2015.1994816781303,
+        "end_time": 2018.2056336440994,
+        "id_str": "+14+0+1+",
         "source_node_id": 670497,
         "target_node_id": 672226,
         "id": 174
@@ -1752,9 +1752,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 17.06443,
-        "end_time": 18.868009,
-        "id_str": "+0+8+1+",
+        "start_time": 2012.9645700199746,
+        "end_time": 2014.2064321328087,
+        "id_str": "+0+1+8+",
         "source_node_id": 662261,
         "target_node_id": 675374,
         "id": 175
@@ -1762,9 +1762,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 18.280195,
-        "end_time": 20.870721,
-        "id_str": "+0+8+1+",
+        "start_time": 2014.1701836160773,
+        "end_time": 2016.2089529286093,
+        "id_str": "+0+1+8+",
         "source_node_id": 676417,
         "target_node_id": 677268,
         "id": 176
@@ -1772,9 +1772,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 18.280195,
-        "end_time": 20.789278,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.1701836160773,
+        "end_time": 2016.1285433134622,
+        "id_str": "+0+1+12+",
         "source_node_id": 676417,
         "target_node_id": 678125,
         "id": 177
@@ -1782,9 +1782,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 17.644638,
-        "end_time": 20.369735,
-        "id_str": "+0+7+1+",
+        "start_time": 2013.6120290104732,
+        "end_time": 2015.7087443807802,
+        "id_str": "+7+0+1+",
         "source_node_id": 676416,
         "target_node_id": 680241,
         "id": 178
@@ -1792,9 +1792,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 18.261658,
-        "end_time": 20.538572000000002,
-        "id_str": "+0+7+1+",
+        "start_time": 2014.2904620425586,
+        "end_time": 2015.8772670239982,
+        "id_str": "+7+0+1+",
         "source_node_id": 681370,
         "target_node_id": 682215,
         "id": 179
@@ -1802,9 +1802,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 18.261658,
-        "end_time": 20.788948,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.2904620425586,
+        "end_time": 2016.128103697719,
+        "id_str": "+0+1+12+",
         "source_node_id": 681370,
         "target_node_id": 683075,
         "id": 180
@@ -1812,8 +1812,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 18.99359,
-        "end_time": 21.035076,
+        "start_time": 2015.1597444800766,
+        "end_time": 2016.374059671942,
         "id_str": "+0+1+3+",
         "source_node_id": 684271,
         "target_node_id": 685147,
@@ -1822,8 +1822,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 18.99359,
-        "end_time": 21.034548,
+        "start_time": 2014.6512783259732,
+        "end_time": 2016.373736927161,
         "id_str": "+0+1+3+",
         "source_node_id": 687068,
         "target_node_id": 687941,
@@ -1832,9 +1832,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 18.99359,
-        "end_time": 21.037425000000002,
-        "id_str": "+0+1+4+",
+        "start_time": 2014.6512783259732,
+        "end_time": 2016.3757509353966,
+        "id_str": "+4+0+1+",
         "source_node_id": 687068,
         "target_node_id": 688812,
         "id": 183
@@ -1842,9 +1842,9 @@
     {
         "source": "1",
         "target": "19",
-        "start_time": 18.261658,
-        "end_time": 19.866582,
-        "id_str": "+0+19+1+",
+        "start_time": 2013.8535380502954,
+        "end_time": 2015.205291758031,
+        "id_str": "+19+0+1+",
         "source_node_id": 684269,
         "target_node_id": 691953,
         "id": 184
@@ -1852,9 +1852,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 8.848494,
-        "end_time": 10.738432,
-        "id_str": "+23+1+0+",
+        "start_time": 2012.5420361207618,
+        "end_time": 2013.8086944178742,
+        "id_str": "+0+23+1+",
         "source_node_id": 702155,
         "target_node_id": 702156,
         "id": 185
@@ -1862,9 +1862,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 10.629489,
-        "end_time": 14.212677,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.1961208560404,
+        "end_time": 2017.3824349182457,
+        "id_str": "+0+1+12+",
         "source_node_id": 704809,
         "target_node_id": 705651,
         "id": 186
@@ -1872,9 +1872,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 10.031832,
-        "end_time": 11.860346,
-        "id_str": "+0+10+1+",
+        "start_time": 2013.7099673787511,
+        "end_time": 2014.9780821942463,
+        "id_str": "+0+1+10+",
         "source_node_id": 704808,
         "target_node_id": 708440,
         "id": 187
@@ -1882,9 +1882,9 @@
     {
         "source": "1",
         "target": "6",
-        "start_time": 9.715042,
-        "end_time": 11.873285,
-        "id_str": "+0+1+6+",
+        "start_time": 2013.1235306386902,
+        "end_time": 2014.9732425482136,
+        "id_str": "+6+0+1+",
         "source_node_id": 704807,
         "target_node_id": 709511,
         "id": 188
@@ -1892,9 +1892,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 8.848494,
-        "end_time": 11.748017,
-        "id_str": "+23+1+0+",
+        "start_time": 2012.3647254908005,
+        "end_time": 2014.8657534271238,
+        "id_str": "+0+23+1+",
         "source_node_id": 716087,
         "target_node_id": 716947,
         "id": 189
@@ -1902,9 +1902,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 8.848494,
-        "end_time": 11.841593,
-        "id_str": "+0+8+1+",
+        "start_time": 2012.3647254908005,
+        "end_time": 2014.959318640274,
+        "id_str": "+0+1+8+",
         "source_node_id": 716087,
         "target_node_id": 717806,
         "id": 190
@@ -1912,9 +1912,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 9.096929,
-        "end_time": 13.674605999999999,
-        "id_str": "+0+1+4+",
+        "start_time": 2013.982551614747,
+        "end_time": 2016.792599892151,
+        "id_str": "+4+0+1+",
         "source_node_id": 723439,
         "target_node_id": 724300,
         "id": 191
@@ -1922,9 +1922,9 @@
     {
         "source": "1",
         "target": "18",
-        "start_time": 9.096929,
-        "end_time": 12.864590999999999,
-        "id_str": "+0+18+1+",
+        "start_time": 2013.982551614747,
+        "end_time": 2015.924805782076,
+        "id_str": "+18+0+1+",
         "source_node_id": 723439,
         "target_node_id": 724310,
         "id": 192
@@ -1932,9 +1932,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 9.096929,
-        "end_time": 12.841788,
-        "id_str": "+0+7+1+",
+        "start_time": 2012.2694735839955,
+        "end_time": 2015.9596461162919,
+        "id_str": "+7+0+1+",
         "source_node_id": 728318,
         "target_node_id": 729162,
         "id": 193
@@ -1942,8 +1942,8 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 10.606102,
-        "end_time": 12.965821,
+        "start_time": 2014.7700024031672,
+        "end_time": 2016.0539329784715,
         "id_str": "+0+1+",
         "source_node_id": 729174,
         "target_node_id": 731795,
@@ -1952,9 +1952,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 10.606102,
-        "end_time": 12.183633,
-        "id_str": "+23+1+0+",
+        "start_time": 2013.8011381832755,
+        "end_time": 2015.30136986548,
+        "id_str": "+0+23+1+",
         "source_node_id": 735547,
         "target_node_id": 740671,
         "id": 195
@@ -1962,9 +1962,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 10.846376,
-        "end_time": 12.759156999999998,
-        "id_str": "+0+8+1+",
+        "start_time": 2014.0225923546334,
+        "end_time": 2015.8772030809405,
+        "id_str": "+0+1+8+",
         "source_node_id": 742445,
         "target_node_id": 743298,
         "id": 196
@@ -1972,8 +1972,8 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 10.846376,
-        "end_time": 13.262051,
+        "start_time": 2014.0225923546334,
+        "end_time": 2016.3797889088214,
         "id_str": "+0+1+",
         "source_node_id": 742445,
         "target_node_id": 744162,
@@ -1982,8 +1982,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 10.217937,
-        "end_time": 13.593388,
+        "start_time": 2013.956087094739,
+        "end_time": 2016.7108504288976,
         "id_str": "+0+1+3+",
         "source_node_id": 742444,
         "target_node_id": 746040,
@@ -1992,9 +1992,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 9.181968,
-        "end_time": 12.757541,
-        "id_str": "+0+7+1+",
+        "start_time": 2012.7478256579427,
+        "end_time": 2015.8762002410103,
+        "id_str": "+7+0+1+",
         "source_node_id": 729171,
         "target_node_id": 748907,
         "id": 199
@@ -2002,9 +2002,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 14.080533999999997,
-        "end_time": 14.759920999999997,
-        "id_str": "+0+7+1+",
+        "start_time": 2017.481583782412,
+        "end_time": 2017.8774175153694,
+        "id_str": "+7+0+1+",
         "source_node_id": 751764,
         "target_node_id": 752628,
         "id": 200
@@ -2012,9 +2012,9 @@
     {
         "source": "1",
         "target": "15",
-        "start_time": 14.402349999999997,
-        "end_time": 16.171889999999998,
-        "id_str": "+0+15+1+",
+        "start_time": 2018.1872209529593,
+        "end_time": 2019.2899962565768,
+        "id_str": "+15+0+1+",
         "source_node_id": 752638,
         "target_node_id": 753510,
         "id": 201
@@ -2022,9 +2022,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 13.002293999999997,
-        "end_time": 15.090364999999997,
-        "id_str": "+0+22+1+",
+        "start_time": 2017.1616058521395,
+        "end_time": 2018.2076848544502,
+        "id_str": "+0+1+22+",
         "source_node_id": 751763,
         "target_node_id": 757339,
         "id": 202
@@ -2032,9 +2032,9 @@
     {
         "source": "1",
         "target": "15",
-        "start_time": 12.403655999999998,
-        "end_time": 15.202810999999997,
-        "id_str": "+0+15+1+",
+        "start_time": 2016.077363950644,
+        "end_time": 2018.3205479476712,
+        "id_str": "+15+0+1+",
         "source_node_id": 751762,
         "target_node_id": 759316,
         "id": 203
@@ -2042,9 +2042,9 @@
     {
         "source": "1",
         "target": "14",
-        "start_time": 12.403655999999998,
-        "end_time": 14.504765999999998,
-        "id_str": "+0+14+17+1+",
+        "start_time": 2016.3339752683755,
+        "end_time": 2017.5785830955372,
+        "id_str": "+14+17+0+1+",
         "source_node_id": 760452,
         "target_node_id": 760453,
         "id": 204
@@ -2052,9 +2052,9 @@
     {
         "source": "14",
         "target": "17",
-        "start_time": 14.504765999999998,
-        "end_time": 14.928697999999999,
-        "id_str": "+0+14+17+1+",
+        "start_time": 2017.8442000929688,
+        "end_time": 2018.045853543177,
+        "id_str": "+14+17+0+1+",
         "source_node_id": 760454,
         "target_node_id": 761320,
         "id": 205
@@ -2062,9 +2062,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 12.403655999999998,
-        "end_time": 14.500949999999998,
-        "id_str": "+0+22+1+",
+        "start_time": 2016.3339752683755,
+        "end_time": 2017.5717487372149,
+        "id_str": "+0+1+22+",
         "source_node_id": 760452,
         "target_node_id": 765159,
         "id": 206
@@ -2072,9 +2072,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 11.511719999999997,
-        "end_time": 12.628039999999997,
-        "id_str": "+10+22+0+7+1+12+15+6+",
+        "start_time": 2015.1743799935894,
+        "end_time": 2015.7171908780526,
+        "id_str": "+1+12+6+0+7+15+22+10+",
         "source_node_id": 772112,
         "target_node_id": 772113,
         "id": 207
@@ -2082,9 +2082,9 @@
     {
         "source": "10",
         "target": "6",
-        "start_time": 14.065039999999998,
-        "end_time": 15.369932999999998,
-        "id_str": "+0+10+1+6+",
+        "start_time": 2018.1471367157917,
+        "end_time": 2018.4876712353425,
+        "id_str": "+6+0+1+10+",
         "source_node_id": 772118,
         "target_node_id": 773860,
         "id": 208
@@ -2092,9 +2092,9 @@
     {
         "source": "10",
         "target": "15",
-        "start_time": 14.065039999999998,
-        "end_time": 16.173018999999996,
-        "id_str": "+0+10+15+1+",
+        "start_time": 2018.6699166391468,
+        "end_time": 2019.290742778904,
+        "id_str": "+15+0+1+10+",
         "source_node_id": 774923,
         "target_node_id": 775793,
         "id": 209
@@ -2102,9 +2102,9 @@
     {
         "source": "10",
         "target": "1",
-        "start_time": 13.281768999999997,
-        "end_time": 15.010688999999998,
-        "id_str": "+0+10+1+",
+        "start_time": 2016.9416374556818,
+        "end_time": 2018.1287860766788,
+        "id_str": "+0+1+10+",
         "source_node_id": 772116,
         "target_node_id": 779536,
         "id": 210
@@ -2112,9 +2112,9 @@
     {
         "source": "10",
         "target": "0",
-        "start_time": 13.384461999999997,
-        "end_time": 15.164453999999997,
-        "id_str": "+0+10+1+",
+        "start_time": 2016.7245299302635,
+        "end_time": 2018.2821917832878,
+        "id_str": "+0+1+10+",
         "source_node_id": 780492,
         "target_node_id": 782221,
         "id": 211
@@ -2122,9 +2122,9 @@
     {
         "source": "10",
         "target": "12",
-        "start_time": 13.281768999999997,
-        "end_time": 15.106919999999997,
-        "id_str": "+0+10+12+1+",
+        "start_time": 2016.4926799720095,
+        "end_time": 2018.2246575367124,
+        "id_str": "+0+1+12+10+",
         "source_node_id": 780491,
         "target_node_id": 784086,
         "id": 212
@@ -2132,9 +2132,9 @@
     {
         "source": "10",
         "target": "22",
-        "start_time": 13.002499999999998,
-        "end_time": 15.088931999999998,
-        "id_str": "+0+10+22+1+",
+        "start_time": 2016.4865101801918,
+        "end_time": 2018.2065072244113,
+        "id_str": "+10+0+1+22+",
         "source_node_id": 785993,
         "target_node_id": 786862,
         "id": 213
@@ -2142,9 +2142,9 @@
     {
         "source": "10",
         "target": "7",
-        "start_time": 13.002499999999998,
-        "end_time": 13.704396999999998,
-        "id_str": "+0+7+1+10+",
+        "start_time": 2016.4865101801918,
+        "end_time": 2016.7866525676384,
+        "id_str": "+7+1+0+10+",
         "source_node_id": 785993,
         "target_node_id": 786872,
         "id": 214
@@ -2152,9 +2152,9 @@
     {
         "source": "7",
         "target": "0",
-        "start_time": 13.704396999999998,
-        "end_time": 14.750754999999998,
-        "id_str": "+0+7+1+10+",
+        "start_time": 2017.0477251673424,
+        "end_time": 2017.8684931531507,
+        "id_str": "+7+1+0+10+",
         "source_node_id": 786873,
         "target_node_id": 788593,
         "id": 215
@@ -2162,9 +2162,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 11.203583999999998,
-        "end_time": 13.907586999999996,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.6126532668327,
+        "end_time": 2016.9831373388135,
+        "id_str": "+0+1+12+",
         "source_node_id": 772111,
         "target_node_id": 814941,
         "id": 216
@@ -2172,9 +2172,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 10.587856999999998,
-        "end_time": 15.068564999999998,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.2942580913661,
+        "end_time": 2018.186301372329,
+        "id_str": "+0+1+12+",
         "source_node_id": 772110,
         "target_node_id": 819720,
         "id": 217
@@ -2182,9 +2182,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 12.586996999999998,
-        "end_time": 15.402809999999999,
-        "id_str": "+0+8+1+",
+        "start_time": 2016.386694383986,
+        "end_time": 2018.5205479476713,
+        "id_str": "+0+1+8+",
         "source_node_id": 820827,
         "target_node_id": 821697,
         "id": 218
@@ -2192,9 +2192,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 14.580438999999998,
-        "end_time": 15.481518999999999,
-        "id_str": "+0+10+1+",
+        "start_time": 2017.975972611075,
+        "end_time": 2018.5701393671002,
+        "id_str": "+0+1+10+",
         "source_node_id": 821708,
         "target_node_id": 821709,
         "id": 219
@@ -2202,8 +2202,8 @@
     {
         "source": "1",
         "target": "21",
-        "start_time": 14.863010999999998,
-        "end_time": 15.340846999999998,
+        "start_time": 2018.1223744019787,
+        "end_time": 2018.4370868053525,
         "id_str": "+0+21+1+",
         "source_node_id": 824425,
         "target_node_id": 824426,
@@ -2212,9 +2212,9 @@
     {
         "source": "1",
         "target": "14",
-        "start_time": 14.863010999999998,
-        "end_time": 15.341220999999999,
-        "id_str": "+0+14+1+",
+        "start_time": 2018.1223744019787,
+        "end_time": 2018.4585258906807,
+        "id_str": "+14+0+1+",
         "source_node_id": 824425,
         "target_node_id": 833238,
         "id": 221
@@ -2222,9 +2222,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 12.586996999999998,
-        "end_time": 15.317877999999999,
-        "id_str": "+0+10+1+",
+        "start_time": 2016.0432468719887,
+        "end_time": 2018.435616440822,
+        "id_str": "+0+1+10+",
         "source_node_id": 838374,
         "target_node_id": 839240,
         "id": 222
@@ -2232,9 +2232,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 13.364598999999998,
-        "end_time": 15.009737999999999,
-        "id_str": "+0+22+1+",
+        "start_time": 2017.5169923807998,
+        "end_time": 2018.0883418450258,
+        "id_str": "+0+1+22+",
         "source_node_id": 839251,
         "target_node_id": 839252,
         "id": 223
@@ -2242,9 +2242,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 14.426426999999999,
-        "end_time": 15.172275999999998,
-        "id_str": "+0+22+1+",
+        "start_time": 2017.8071554769663,
+        "end_time": 2018.2903999198447,
+        "id_str": "+0+1+22+",
         "source_node_id": 841956,
         "target_node_id": 843701,
         "id": 224
@@ -2252,9 +2252,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 14.941077999999997,
-        "end_time": 15.355592999999997,
-        "id_str": "+0+8+1+",
+        "start_time": 2018.2047206490927,
+        "end_time": 2018.4363194772397,
+        "id_str": "+0+1+8+",
         "source_node_id": 846489,
         "target_node_id": 846490,
         "id": 225
@@ -2262,9 +2262,9 @@
     {
         "source": "1",
         "target": "2",
-        "start_time": 11.363369999999998,
-        "end_time": 14.268563999999998,
-        "id_str": "+0+1+2+",
+        "start_time": 2014.380560312606,
+        "end_time": 2017.3863013723292,
+        "id_str": "+2+0+1+",
         "source_node_id": 855112,
         "target_node_id": 855970,
         "id": 226
@@ -2272,9 +2272,9 @@
     {
         "source": "1",
         "target": "20",
-        "start_time": 11.363369999999998,
-        "end_time": 14.089297999999998,
-        "id_str": "+0+20+1+",
+        "start_time": 2014.380560312606,
+        "end_time": 2017.2071472335813,
+        "id_str": "+20+0+1+",
         "source_node_id": 855112,
         "target_node_id": 856824,
         "id": 227
@@ -2282,9 +2282,9 @@
     {
         "source": "1",
         "target": "17",
-        "start_time": 12.410791999999997,
-        "end_time": 13.350075999999996,
-        "id_str": "+23+17+0+1+",
+        "start_time": 2015.7592992819161,
+        "end_time": 2016.4303427406103,
+        "id_str": "+17+0+23+1+",
         "source_node_id": 857936,
         "target_node_id": 857937,
         "id": 228
@@ -2292,9 +2292,9 @@
     {
         "source": "17",
         "target": "23",
-        "start_time": 12.685403999999997,
-        "end_time": 14.739874999999996,
-        "id_str": "+0+1+23+17+",
+        "start_time": 2016.4303427406103,
+        "end_time": 2017.7802767560802,
+        "id_str": "+23+1+17+0+",
         "source_node_id": 857937,
         "target_node_id": 858813,
         "id": 229
@@ -2302,9 +2302,9 @@
     {
         "source": "23",
         "target": "17",
-        "start_time": 13.350075999999996,
-        "end_time": 15.863083999999995,
-        "id_str": "+0+1+23+17+",
+        "start_time": 2017.7802767560802,
+        "end_time": 2018.9808219202741,
+        "id_str": "+23+1+17+0+",
         "source_node_id": 858813,
         "target_node_id": 860569,
         "id": 230
@@ -2312,9 +2312,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 14.950247999999997,
-        "end_time": 15.874362999999997,
-        "id_str": "+0+22+1+",
+        "start_time": 2018.3175081818154,
+        "end_time": 2018.9446167725966,
+        "id_str": "+0+1+22+",
         "source_node_id": 863113,
         "target_node_id": 863114,
         "id": 231
@@ -2322,9 +2322,9 @@
     {
         "source": "1",
         "target": "17",
-        "start_time": 15.218730999999996,
-        "end_time": 15.863082999999996,
-        "id_str": "+0+17+1+",
+        "start_time": 2018.5056494606995,
+        "end_time": 2018.9808219202741,
+        "id_str": "+17+0+1+",
         "source_node_id": 865847,
         "target_node_id": 866721,
         "id": 232
@@ -2332,9 +2332,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 15.218730999999996,
-        "end_time": 15.767192999999995,
-        "id_str": "+0+7+1+",
+        "start_time": 2018.5056494606995,
+        "end_time": 2018.884931509315,
+        "id_str": "+7+0+1+",
         "source_node_id": 865847,
         "target_node_id": 867599,
         "id": 233
@@ -2342,9 +2342,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 12.685403999999997,
-        "end_time": 15.797329999999997,
-        "id_str": "+23+1+0+",
+        "start_time": 2017.997451663779,
+        "end_time": 2018.9150684956164,
+        "id_str": "+0+23+1+",
         "source_node_id": 863112,
         "target_node_id": 870836,
         "id": 234
@@ -2352,9 +2352,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 11.363369999999998,
-        "end_time": 16.089008999999997,
-        "id_str": "+0+10+1+",
+        "start_time": 2015.5092127497448,
+        "end_time": 2019.2063911729128,
+        "id_str": "+0+1+10+",
         "source_node_id": 857935,
         "target_node_id": 874025,
         "id": 235
@@ -2362,9 +2362,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 10.587856999999998,
-        "end_time": 14.341328999999998,
-        "id_str": "+0+8+1+",
+        "start_time": 2013.9800322569545,
+        "end_time": 2017.4586903671466,
+        "id_str": "+0+1+8+",
         "source_node_id": 820824,
         "target_node_id": 877998,
         "id": 236
@@ -2372,9 +2372,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 7.835064,
-        "end_time": 13.176473999999999,
-        "id_str": "+0+22+1+",
+        "start_time": 2012.1711556131015,
+        "end_time": 2016.2939753017895,
+        "id_str": "+0+1+22+",
         "source_node_id": 881876,
         "target_node_id": 882728,
         "id": 237
@@ -2382,9 +2382,9 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 9.942001,
-        "end_time": 11.897251,
-        "id_str": "+0+7+1+23+22+",
+        "start_time": 2013.7672388337458,
+        "end_time": 2014.9775485473147,
+        "id_str": "+7+23+1+22+0+",
         "source_node_id": 882739,
         "target_node_id": 882740,
         "id": 238
@@ -2392,9 +2392,9 @@
     {
         "source": "0",
         "target": "7",
-        "start_time": 14.361874,
-        "end_time": 14.762058,
-        "id_str": "+0+7+1+",
+        "start_time": 2017.5985366390753,
+        "end_time": 2017.879247862574,
+        "id_str": "+7+0+1+",
         "source_node_id": 887191,
         "target_node_id": 888057,
         "id": 239
@@ -2402,9 +2402,9 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 14.361874,
-        "end_time": 14.92895,
-        "id_str": "+0+22+1+",
+        "start_time": 2017.5985366390753,
+        "end_time": 2018.04592175828,
+        "id_str": "+0+1+22+",
         "source_node_id": 887191,
         "target_node_id": 888938,
         "id": 240
@@ -2412,9 +2412,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 10.680645,
-        "end_time": 15.087388,
-        "id_str": "+23+1+0+",
+        "start_time": 2014.9775485473147,
+        "end_time": 2018.2054272790824,
+        "id_str": "+0+23+1+",
         "source_node_id": 882740,
         "target_node_id": 893859,
         "id": 241
@@ -2422,9 +2422,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 9.942001,
-        "end_time": 16.011029,
-        "id_str": "+0+22+1+",
+        "start_time": 2013.7672388337458,
+        "end_time": 2019.1287671257535,
+        "id_str": "+0+1+22+",
         "source_node_id": 882739,
         "target_node_id": 896087,
         "id": 242
@@ -2432,9 +2432,9 @@
     {
         "source": "1",
         "target": "14",
-        "start_time": 9.942001,
-        "end_time": 15.33897,
-        "id_str": "+0+14+1+",
+        "start_time": 2013.7014586767025,
+        "end_time": 2018.4572012858057,
+        "id_str": "+14+0+1+",
         "source_node_id": 897076,
         "target_node_id": 897931,
         "id": 243
@@ -2442,9 +2442,9 @@
     {
         "source": "1",
         "target": "2",
-        "start_time": 10.597417,
-        "end_time": 12.705015000000001,
-        "id_str": "+0+7+1+2+",
+        "start_time": 2014.0827731692148,
+        "end_time": 2015.761670166617,
+        "id_str": "+2+7+0+1+",
         "source_node_id": 897941,
         "target_node_id": 897942,
         "id": 244
@@ -2452,9 +2452,9 @@
     {
         "source": "2",
         "target": "7",
-        "start_time": 10.997243000000001,
-        "end_time": 13.857680000000002,
-        "id_str": "+0+7+1+2+",
+        "start_time": 2015.761670166617,
+        "end_time": 2016.975417324122,
+        "id_str": "+2+7+0+1+",
         "source_node_id": 897942,
         "target_node_id": 898795,
         "id": 245
@@ -2462,9 +2462,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 10.997243000000001,
-        "end_time": 12.899942000000001,
-        "id_str": "+0+7+8+1+",
+        "start_time": 2015.2244530895873,
+        "end_time": 2015.969419472158,
+        "id_str": "+7+0+1+8+",
         "source_node_id": 900884,
         "target_node_id": 900885,
         "id": 246
@@ -2472,9 +2472,9 @@
     {
         "source": "8",
         "target": "7",
-        "start_time": 12.154896,
-        "end_time": 13.767516,
-        "id_str": "+0+7+8+1+",
+        "start_time": 2015.969419472158,
+        "end_time": 2016.8852533896954,
+        "id_str": "+7+0+1+8+",
         "source_node_id": 900885,
         "target_node_id": 901738,
         "id": 247
@@ -2482,9 +2482,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 12.697986,
-        "end_time": 13.924245,
-        "id_str": "+23+7+1+0+",
+        "start_time": 2016.0355751199143,
+        "end_time": 2017.0071903332798,
+        "id_str": "+7+0+23+1+",
         "source_node_id": 906498,
         "target_node_id": 906499,
         "id": 248
@@ -2492,9 +2492,9 @@
     {
         "source": "7",
         "target": "23",
-        "start_time": 13.924245,
-        "end_time": 14.841848,
-        "id_str": "+23+7+1+0+",
+        "start_time": 2017.3487931299571,
+        "end_time": 2017.9594796558795,
+        "id_str": "+7+0+23+1+",
         "source_node_id": 907376,
         "target_node_id": 914317,
         "id": 249
@@ -2502,9 +2502,9 @@
     {
         "source": "1",
         "target": "17",
-        "start_time": 12.943238000000001,
-        "end_time": 15.089031,
-        "id_str": "+0+17+1+",
+        "start_time": 2017.4295113357548,
+        "end_time": 2018.206329027049,
+        "id_str": "+17+0+1+",
         "source_node_id": 916315,
         "target_node_id": 917182,
         "id": 250
@@ -2512,9 +2512,9 @@
     {
         "source": "1",
         "target": "2",
-        "start_time": 12.943238000000001,
-        "end_time": 15.121186,
-        "id_str": "+0+22+1+2+",
+        "start_time": 2017.4295113357548,
+        "end_time": 2018.1890738759862,
+        "id_str": "+2+0+1+22+",
         "source_node_id": 916315,
         "target_node_id": 917192,
         "id": 251
@@ -2522,9 +2522,9 @@
     {
         "source": "2",
         "target": "22",
-        "start_time": 14.359892,
-        "end_time": 15.958976,
-        "id_str": "+0+22+1+2+",
+        "start_time": 2018.1890738759862,
+        "end_time": 2019.076712331233,
+        "id_str": "+2+0+1+22+",
         "source_node_id": 917192,
         "target_node_id": 918944,
         "id": 252
@@ -2532,9 +2532,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 10.084973,
-        "end_time": 13.857244,
-        "id_str": "+0+7+1+10+15+",
+        "start_time": 2015.7866063344009,
+        "end_time": 2016.9338545783137,
+        "id_str": "+7+15+1+0+10+",
         "source_node_id": 929221,
         "target_node_id": 929222,
         "id": 253
@@ -2542,9 +2542,9 @@
     {
         "source": "10",
         "target": "7",
-        "start_time": 13.857244,
-        "end_time": 14.762443,
-        "id_str": "+0+7+10+1+",
+        "start_time": 2017.367246603369,
+        "end_time": 2017.8794624925779,
+        "id_str": "+7+0+1+10+",
         "source_node_id": 929223,
         "target_node_id": 930084,
         "id": 254
@@ -2552,9 +2552,9 @@
     {
         "source": "10",
         "target": "15",
-        "start_time": 14.281706,
-        "end_time": 16.506683000000002,
-        "id_str": "+0+10+15+1+",
+        "start_time": 2017.816508584312,
+        "end_time": 2019.6247926439034,
+        "id_str": "+15+0+1+10+",
         "source_node_id": 930094,
         "target_node_id": 930968,
         "id": 255
@@ -2562,9 +2562,9 @@
     {
         "source": "10",
         "target": "15",
-        "start_time": 14.254849,
-        "end_time": 16.758793,
-        "id_str": "+0+10+15+1+",
+        "start_time": 2018.735597902105,
+        "end_time": 2019.8767954511534,
+        "id_str": "+15+0+1+10+",
         "source_node_id": 934056,
         "target_node_id": 935813,
         "id": 256
@@ -2572,9 +2572,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 7.835064,
-        "end_time": 13.090926,
-        "id_str": "+0+8+1+",
+        "start_time": 2013.1694685776486,
+        "end_time": 2016.2084836477602,
+        "id_str": "+0+1+8+",
         "source_node_id": 929220,
         "target_node_id": 942621,
         "id": 257
@@ -2582,9 +2582,9 @@
     {
         "source": "1",
         "target": "24",
-        "start_time": 10.206643,
-        "end_time": 14.173983,
-        "id_str": "+0+1+24+",
+        "start_time": 2013.7374624930821,
+        "end_time": 2017.2913126947087,
+        "id_str": "+24+0+1+",
         "source_node_id": 946784,
         "target_node_id": 947629,
         "id": 258
@@ -2592,9 +2592,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 10.659066,
-        "end_time": 14.925714,
-        "id_str": "+0+22+1+",
+        "start_time": 2013.8828595879556,
+        "end_time": 2018.0436857520351,
+        "id_str": "+0+1+22+",
         "source_node_id": 947639,
         "target_node_id": 948498,
         "id": 259
@@ -2602,9 +2602,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 11.691411,
-        "end_time": 14.091178000000001,
-        "id_str": "+0+1+4+",
+        "start_time": 2015.7597457978743,
+        "end_time": 2017.2078002693033,
+        "id_str": "+4+0+1+",
         "source_node_id": 948510,
         "target_node_id": 949365,
         "id": 260
@@ -2612,9 +2612,9 @@
     {
         "source": "1",
         "target": "20",
-        "start_time": 11.691411,
-        "end_time": 14.088472000000001,
-        "id_str": "+0+20+1+",
+        "start_time": 2015.7597457978743,
+        "end_time": 2017.2059457100306,
+        "id_str": "+20+0+1+",
         "source_node_id": 948510,
         "target_node_id": 950230,
         "id": 261
@@ -2622,8 +2622,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 11.290803,
-        "end_time": 13.090205000000001,
+        "start_time": 2014.82290128014,
+        "end_time": 2016.207941734061,
         "id_str": "+0+1+3+",
         "source_node_id": 948509,
         "target_node_id": 952368,
@@ -2632,9 +2632,9 @@
     {
         "source": "1",
         "target": "20",
-        "start_time": 10.796768,
-        "end_time": 14.087287,
-        "id_str": "+0+20+1+",
+        "start_time": 2014.38125857208,
+        "end_time": 2017.2056197468453,
+        "id_str": "+20+0+1+",
         "source_node_id": 948508,
         "target_node_id": 954450,
         "id": 263
@@ -2642,9 +2642,9 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 10.206643,
-        "end_time": 10.927451,
-        "id_str": "+0+1+10+11+3+",
+        "start_time": 2013.6398581754388,
+        "end_time": 2014.0217422936648,
+        "id_str": "+1+3+0+11+10+",
         "source_node_id": 957673,
         "target_node_id": 957674,
         "id": 264
@@ -2652,9 +2652,9 @@
     {
         "source": "3",
         "target": "11",
-        "start_time": 13.171032,
-        "end_time": 14.258491,
-        "id_str": "+0+1+11+3+",
+        "start_time": 2016.76294164494,
+        "end_time": 2017.375320739252,
+        "id_str": "+0+11+1+3+",
         "source_node_id": 962938,
         "target_node_id": 963798,
         "id": 265
@@ -2662,9 +2662,9 @@
     {
         "source": "3",
         "target": "10",
-        "start_time": 11.586554,
-        "end_time": 14.054866,
-        "id_str": "+0+10+1+3+",
+        "start_time": 2014.9065927003976,
+        "end_time": 2017.172602742192,
+        "id_str": "+0+1+3+10+",
         "source_node_id": 961163,
         "target_node_id": 971734,
         "id": 266
@@ -2672,9 +2672,9 @@
     {
         "source": "1",
         "target": "6",
-        "start_time": 10.540529,
-        "end_time": 13.421803999999998,
-        "id_str": "+0+1+6+",
+        "start_time": 2014.3692370405013,
+        "end_time": 2016.5401810249443,
+        "id_str": "+6+0+1+",
         "source_node_id": 974809,
         "target_node_id": 975656,
         "id": 267
@@ -2682,9 +2682,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 10.540529,
-        "end_time": 13.010335,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.3692370405013,
+        "end_time": 2016.1284717208785,
+        "id_str": "+0+1+12+",
         "source_node_id": 974809,
         "target_node_id": 976519,
         "id": 268
@@ -2692,9 +2692,9 @@
     {
         "source": "1",
         "target": "11",
-        "start_time": 9.640717,
-        "end_time": 14.333860000000001,
-        "id_str": "+0+1+11+",
+        "start_time": 2013.3206323917314,
+        "end_time": 2017.4672757925428,
+        "id_str": "+0+11+1+",
         "source_node_id": 979882,
         "target_node_id": 980739,
         "id": 269
@@ -2702,9 +2702,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 10.917622999999999,
-        "end_time": 13.030487999999998,
-        "id_str": "+0+1+4+",
+        "start_time": 2014.9505494328291,
+        "end_time": 2016.1072713193519,
+        "id_str": "+4+0+1+",
         "source_node_id": 980751,
         "target_node_id": 980752,
         "id": 270
@@ -2712,9 +2712,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 10.917622999999999,
-        "end_time": 14.685004,
-        "id_str": "+0+12+1+",
+        "start_time": 2014.9505494328291,
+        "end_time": 2017.8027397284932,
+        "id_str": "+0+1+12+",
         "source_node_id": 980751,
         "target_node_id": 984405,
         "id": 271
@@ -2722,9 +2722,9 @@
     {
         "source": "1",
         "target": "7",
-        "start_time": 10.349682,
-        "end_time": 12.531445999999999,
-        "id_str": "+0+7+1+23+",
+        "start_time": 2014.0148308653254,
+        "end_time": 2015.6034176694834,
+        "id_str": "+7+23+1+0+",
         "source_node_id": 980750,
         "target_node_id": 985695,
         "id": 272
@@ -2732,9 +2732,9 @@
     {
         "source": "7",
         "target": "1",
-        "start_time": 12.531445999999999,
-        "end_time": 15.085495,
-        "id_str": "+0+7+1+",
+        "start_time": 2017.6742251114492,
+        "end_time": 2018.2045137768416,
+        "id_str": "+7+0+1+",
         "source_node_id": 985696,
         "target_node_id": 987435,
         "id": 273
@@ -2742,9 +2742,9 @@
     {
         "source": "7",
         "target": "23",
-        "start_time": 12.531445999999999,
-        "end_time": 14.925773999999999,
-        "id_str": "+23+7+1+0+",
+        "start_time": 2017.268882235546,
+        "end_time": 2018.0437924113253,
+        "id_str": "+7+0+23+1+",
         "source_node_id": 988460,
         "target_node_id": 989329,
         "id": 274
@@ -2752,8 +2752,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 10.349682,
-        "end_time": 13.090527999999999,
+        "start_time": 2013.8956635948296,
+        "end_time": 2016.2082276337715,
         "id_str": "+0+1+9+",
         "source_node_id": 995338,
         "target_node_id": 996190,
@@ -2762,8 +2762,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 10.798983999999999,
-        "end_time": 12.802720999999998,
+        "start_time": 2014.6132982671834,
+        "end_time": 2015.854177184743,
         "id_str": "+0+1+3+",
         "source_node_id": 996200,
         "target_node_id": 996201,
@@ -2772,9 +2772,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 10.798983999999999,
-        "end_time": 13.618217999999999,
-        "id_str": "+0+10+19+1+",
+        "start_time": 2014.6132982671834,
+        "end_time": 2016.6924434933803,
+        "id_str": "+19+0+1+10+",
         "source_node_id": 996200,
         "target_node_id": 999011,
         "id": 277
@@ -2782,9 +2782,9 @@
     {
         "source": "10",
         "target": "19",
-        "start_time": 11.503086999999999,
-        "end_time": 16.089088,
-        "id_str": "+0+10+19+1+",
+        "start_time": 2016.6924434933803,
+        "end_time": 2019.2064406117206,
+        "id_str": "+19+0+1+10+",
         "source_node_id": 999011,
         "target_node_id": 999871,
         "id": 278
@@ -2792,9 +2792,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 9.051417,
-        "end_time": 15.21925,
-        "id_str": "+0+10+1+",
+        "start_time": 2012.9510706919475,
+        "end_time": 2018.3369863038356,
+        "id_str": "+0+1+10+",
         "source_node_id": 1009150,
         "target_node_id": 1010013,
         "id": 279
@@ -2802,9 +2802,9 @@
     {
         "source": "1",
         "target": "24",
-        "start_time": 9.051417,
-        "end_time": 14.088924,
-        "id_str": "+0+1+24+",
+        "start_time": 2012.9510706919475,
+        "end_time": 2017.2065619073035,
+        "id_str": "+24+0+1+",
         "source_node_id": 1009150,
         "target_node_id": 1010867,
         "id": 280
@@ -2812,9 +2812,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 9.13114,
-        "end_time": 14.364588,
-        "id_str": "+0+7+1+23+10+",
+        "start_time": 2014.1113029182145,
+        "end_time": 2017.4232973894577,
+        "id_str": "+7+23+1+0+10+",
         "source_node_id": 1012821,
         "target_node_id": 1012822,
         "id": 281
@@ -2822,9 +2822,9 @@
     {
         "source": "23",
         "target": "7",
-        "start_time": 11.059049,
-        "end_time": 14.759689,
-        "id_str": "+23+7+1+0+",
+        "start_time": 2017.4232973894577,
+        "end_time": 2017.8774047185789,
+        "id_str": "+7+0+23+1+",
         "source_node_id": 1012822,
         "target_node_id": 1013683,
         "id": 282
@@ -2832,9 +2832,9 @@
     {
         "source": "23",
         "target": "10",
-        "start_time": 14.931391,
-        "end_time": 16.246647,
-        "id_str": "+23+10+1+0+",
+        "start_time": 2018.1930035976595,
+        "end_time": 2019.3643835641096,
+        "id_str": "+0+23+1+10+",
         "source_node_id": 1014579,
         "target_node_id": 1016337,
         "id": 283
@@ -2842,9 +2842,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 9.13114,
-        "end_time": 12.976983,
-        "id_str": "+0+8+12+1+",
+        "start_time": 2014.1113029182145,
+        "end_time": 2016.0321010555647,
+        "id_str": "+0+1+12+8+",
         "source_node_id": 1012821,
         "target_node_id": 1019641,
         "id": 284
@@ -2852,9 +2852,9 @@
     {
         "source": "8",
         "target": "12",
-        "start_time": 11.059049,
-        "end_time": 13.762052,
-        "id_str": "+0+8+12+1+",
+        "start_time": 2016.0321010555647,
+        "end_time": 2016.8797889088214,
+        "id_str": "+0+1+12+8+",
         "source_node_id": 1019641,
         "target_node_id": 1020506,
         "id": 285
@@ -2862,9 +2862,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 6.35161,
-        "end_time": 15.088224,
-        "id_str": "+0+22+1+",
+        "start_time": 2010.1321512583822,
+        "end_time": 2018.2058237083531,
+        "id_str": "+0+1+22+",
         "source_node_id": 946779,
         "target_node_id": 1025724,
         "id": 286
@@ -2872,9 +2872,9 @@
     {
         "source": "1",
         "target": "19",
-        "start_time": 8.294316,
-        "end_time": 14.093222,
-        "id_str": "+0+19+1+",
+        "start_time": 2012.3042401398404,
+        "end_time": 2017.2109589065753,
+        "id_str": "+19+0+1+",
         "source_node_id": 1027572,
         "target_node_id": 1028423,
         "id": 287
@@ -2882,9 +2882,9 @@
     {
         "source": "1",
         "target": "22",
-        "start_time": 8.294316,
-        "end_time": 13.741520000000001,
-        "id_str": "+0+15+22+1+",
+        "start_time": 2012.3042401398404,
+        "end_time": 2016.7834270302499,
+        "id_str": "+15+0+1+22+",
         "source_node_id": 1027572,
         "target_node_id": 1028433,
         "id": 288
@@ -2892,9 +2892,9 @@
     {
         "source": "22",
         "target": "15",
-        "start_time": 13.741520000000001,
-        "end_time": 16.591615,
-        "id_str": "+0+15+1+22+",
+        "start_time": 2018.0106249645062,
+        "end_time": 2019.7096040837678,
+        "id_str": "+15+0+1+22+",
         "source_node_id": 1028434,
         "target_node_id": 1029307,
         "id": 289
@@ -2902,9 +2902,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 6.761164,
-        "end_time": 12.341384000000001,
-        "id_str": "+0+8+1+",
+        "start_time": 2011.4043805527463,
+        "end_time": 2015.4585614458115,
+        "id_str": "+0+1+8+",
         "source_node_id": 1027571,
         "target_node_id": 1035367,
         "id": 290
@@ -2912,9 +2912,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 6.201982,
-        "end_time": 7.204737,
-        "id_str": "+0+12+1+",
+        "start_time": 2009.9219023841351,
+        "end_time": 2010.2910701908518,
+        "id_str": "+0+1+12+",
         "source_node_id": 1027570,
         "target_node_id": 1036620,
         "id": 291
@@ -2922,9 +2922,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 5.448254,
-        "end_time": 11.280655000000001,
-        "id_str": "+0+1+6+4+",
+        "start_time": 2009.2054535090815,
+        "end_time": 2014.3462298125062,
+        "id_str": "+4+6+0+1+",
         "source_node_id": 1041548,
         "target_node_id": 1041549,
         "id": 292
@@ -2932,9 +2932,9 @@
     {
         "source": "4",
         "target": "6",
-        "start_time": 6.112704000000001,
-        "end_time": 14.010793000000001,
-        "id_str": "+0+4+1+6+",
+        "start_time": 2014.3462298125062,
+        "end_time": 2017.128866327507,
+        "id_str": "+6+4+0+1+",
         "source_node_id": 1041549,
         "target_node_id": 1042398,
         "id": 293
@@ -2942,9 +2942,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 6.112704000000001,
-        "end_time": 8.357555000000001,
-        "id_str": "+0+1+4+",
+        "start_time": 2009.7418795903877,
+        "end_time": 2011.4480031912099,
+        "id_str": "+4+0+1+",
         "source_node_id": 1044658,
         "target_node_id": 1044659,
         "id": 294
@@ -2952,8 +2952,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 7.527862000000001,
-        "end_time": 14.254025,
+        "start_time": 2011.537501858185,
+        "end_time": 2017.3724664313968,
         "id_str": "+0+1+9+",
         "source_node_id": 1050976,
         "target_node_id": 1051814,
@@ -2962,9 +2962,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 7.527862000000001,
-        "end_time": 10.889307,
-        "id_str": "+0+10+1+",
+        "start_time": 2011.537501858185,
+        "end_time": 2013.9509942226248,
+        "id_str": "+0+1+10+",
         "source_node_id": 1050976,
         "target_node_id": 1051824,
         "id": 296
@@ -2972,8 +2972,8 @@
     {
         "source": "0",
         "target": "8",
-        "start_time": 7.934500999999999,
-        "end_time": 12.841534999999999,
+        "start_time": 2011.3918287194738,
+        "end_time": 2015.9591816931952,
         "id_str": "+0+8+",
         "source_node_id": 1062302,
         "target_node_id": 1064006,
@@ -2982,8 +2982,8 @@
     {
         "source": "0",
         "target": "10",
-        "start_time": 7.2443729999999995,
-        "end_time": 12.620076,
+        "start_time": 2010.9847366222327,
+        "end_time": 2015.6649512337021,
         "id_str": "+0+10+",
         "source_node_id": 1062301,
         "target_node_id": 1065237,
@@ -2992,8 +2992,8 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 7.735772,
-        "end_time": 13.257842,
+        "start_time": 2011.7575876260828,
+        "end_time": 2016.3756292336247,
         "id_str": "+0+1+",
         "source_node_id": 1068878,
         "target_node_id": 1069729,
@@ -3002,8 +3002,8 @@
     {
         "source": "0",
         "target": "8",
-        "start_time": 7.735772,
-        "end_time": 12.925977,
+        "start_time": 2011.7575876260828,
+        "end_time": 2016.0440467491276,
         "id_str": "+0+8+",
         "source_node_id": 1068878,
         "target_node_id": 1070593,
@@ -3012,9 +3012,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 5.291017,
-        "end_time": 8.118393,
-        "id_str": "+23+0+",
+        "start_time": 2008.9848796576644,
+        "end_time": 2011.1800761203453,
+        "id_str": "+0+23+",
         "source_node_id": 1062299,
         "target_node_id": 1075044,
         "id": 301
@@ -3022,8 +3022,8 @@
     {
         "source": "0",
         "target": "12",
-        "start_time": 6.8353969999999995,
-        "end_time": 14.01377,
+        "start_time": 2010.5733178668193,
+        "end_time": 2017.131506851781,
         "id_str": "+0+12+",
         "source_node_id": 1080676,
         "target_node_id": 1082379,
@@ -3032,8 +3032,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 6.8353969999999995,
-        "end_time": 11.337057999999999,
+        "start_time": 2011.0193150262858,
+        "end_time": 2014.4547945230138,
         "id_str": "+0+22+",
         "source_node_id": 1083536,
         "target_node_id": 1084379,
@@ -3042,8 +3042,8 @@
     {
         "source": "0",
         "target": "10",
-        "start_time": 6.8353969999999995,
-        "end_time": 12.879524,
+        "start_time": 2011.0193150262858,
+        "end_time": 2015.9972602764383,
         "id_str": "+0+10+",
         "source_node_id": 1083536,
         "target_node_id": 1085248,
@@ -3052,9 +3052,9 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 6.509741,
-        "end_time": 7.482704,
-        "id_str": "+18+8+10+11+9+0+14+19+1+12+4+23+15+3+",
+        "start_time": 2010.0046022194615,
+        "end_time": 2010.587231056703,
+        "id_str": "+1+12+14+0+3+19+15+23+9+4+18+11+8+10+",
         "source_node_id": 1087646,
         "target_node_id": 1087647,
         "id": 305
@@ -3062,9 +3062,9 @@
     {
         "source": "1",
         "target": "0",
-        "start_time": 6.897131,
-        "end_time": 8.45743,
-        "id_str": "+0+1+15+",
+        "start_time": 2010.587231056703,
+        "end_time": 2011.5787586325166,
+        "id_str": "+15+1+0+",
         "source_node_id": 1087647,
         "target_node_id": 1087648,
         "id": 306
@@ -3072,8 +3072,8 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 7.482704,
-        "end_time": 15.506703000000002,
+        "start_time": 2011.5787586325166,
+        "end_time": 2018.6249285213353,
         "id_str": "+0+1+",
         "source_node_id": 1087648,
         "target_node_id": 1088503,
@@ -3082,9 +3082,9 @@
     {
         "source": "0",
         "target": "15",
-        "start_time": 7.482704,
-        "end_time": 11.429299,
-        "id_str": "+0+15+1+",
+        "start_time": 2011.5787586325166,
+        "end_time": 2014.5330969610395,
+        "id_str": "+15+0+1+",
         "source_node_id": 1087648,
         "target_node_id": 1089364,
         "id": 308
@@ -3092,9 +3092,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 7.482704,
-        "end_time": 13.842177,
-        "id_str": "+0+12+1+",
+        "start_time": 2011.7781490488867,
+        "end_time": 2016.9600124511503,
+        "id_str": "+0+1+12+",
         "source_node_id": 1090684,
         "target_node_id": 1091533,
         "id": 309
@@ -3102,8 +3102,8 @@
     {
         "source": "1",
         "target": "3",
-        "start_time": 10.831439999999999,
-        "end_time": 13.091728999999999,
+        "start_time": 2014.2267244826887,
+        "end_time": 2016.2093096645722,
         "id_str": "+0+1+3+",
         "source_node_id": 1091547,
         "target_node_id": 1093285,
@@ -3112,9 +3112,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 11.495802999999999,
-        "end_time": 13.09038,
-        "id_str": "+0+12+1+",
+        "start_time": 2015.5513798131894,
+        "end_time": 2016.2083517280805,
+        "id_str": "+0+1+12+",
         "source_node_id": 1094249,
         "target_node_id": 1095102,
         "id": 311
@@ -3122,9 +3122,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 12.512777999999999,
-        "end_time": 15.301444,
-        "id_str": "+23+1+0+",
+        "start_time": 2016.7578630747157,
+        "end_time": 2018.4191780846577,
+        "id_str": "+0+23+1+",
         "source_node_id": 1095112,
         "target_node_id": 1095976,
         "id": 312
@@ -3132,8 +3132,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 11.495802999999999,
-        "end_time": 13.091755,
+        "start_time": 2015.1516846180189,
+        "end_time": 2016.2090509826091,
         "id_str": "+0+1+9+",
         "source_node_id": 1099068,
         "target_node_id": 1099918,
@@ -3142,9 +3142,9 @@
     {
         "source": "1",
         "target": "23",
-        "start_time": 11.495802999999999,
-        "end_time": 13.091458999999999,
-        "id_str": "+23+1+0+",
+        "start_time": 2015.1516846180189,
+        "end_time": 2016.2086835444043,
+        "id_str": "+0+23+1+",
         "source_node_id": 1099068,
         "target_node_id": 1100786,
         "id": 314
@@ -3152,8 +3152,8 @@
     {
         "source": "1",
         "target": "9",
-        "start_time": 10.150877,
-        "end_time": 14.012056999999999,
+        "start_time": 2014.1787102380406,
+        "end_time": 2017.1297300666045,
         "id_str": "+0+1+9+",
         "source_node_id": 1103949,
         "target_node_id": 1104803,
@@ -3162,9 +3162,9 @@
     {
         "source": "1",
         "target": "18",
-        "start_time": 10.150877,
-        "end_time": 12.760507,
-        "id_str": "+0+18+1+",
+        "start_time": 2014.1787102380406,
+        "end_time": 2015.8779032573957,
+        "id_str": "+18+0+1+",
         "source_node_id": 1103949,
         "target_node_id": 1105663,
         "id": 316
@@ -3172,9 +3172,9 @@
     {
         "source": "1",
         "target": "10",
-        "start_time": 9.769376999999999,
-        "end_time": 11.655354999999998,
-        "id_str": "+0+10+1+",
+        "start_time": 2013.248366794377,
+        "end_time": 2014.7531066245624,
+        "id_str": "+0+1+10+",
         "source_node_id": 1107835,
         "target_node_id": 1107836,
         "id": 317
@@ -3182,9 +3182,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 10.348993999999998,
-        "end_time": 11.448968999999996,
-        "id_str": "+0+10+12+1+",
+        "start_time": 2013.8893924018191,
+        "end_time": 2014.5380948839054,
+        "id_str": "+0+1+12+10+",
         "source_node_id": 1112190,
         "target_node_id": 1112191,
         "id": 318
@@ -3192,9 +3192,9 @@
     {
         "source": "12",
         "target": "10",
-        "start_time": 11.729000999999997,
-        "end_time": 13.898703999999997,
-        "id_str": "+0+10+12+1+",
+        "start_time": 2015.1611520488084,
+        "end_time": 2017.01643835863,
+        "id_str": "+0+1+12+10+",
         "source_node_id": 1113047,
         "target_node_id": 1114763,
         "id": 319
@@ -3202,9 +3202,9 @@
     {
         "source": "1",
         "target": "14",
-        "start_time": 10.786088999999997,
-        "end_time": 13.258134999999996,
-        "id_str": "+0+14+1+",
+        "start_time": 2014.1491538643888,
+        "end_time": 2016.375415554859,
+        "id_str": "+14+0+1+",
         "source_node_id": 1118683,
         "target_node_id": 1119534,
         "id": 320
@@ -3212,9 +3212,9 @@
     {
         "source": "1",
         "target": "11",
-        "start_time": 11.049862999999997,
-        "end_time": 12.936917999999997,
-        "id_str": "+0+1+11+",
+        "start_time": 2015.1161626738792,
+        "end_time": 2016.054652296799,
+        "id_str": "+0+11+1+",
         "source_node_id": 1119544,
         "target_node_id": 1120409,
         "id": 321
@@ -3222,9 +3222,9 @@
     {
         "source": "1",
         "target": "8",
-        "start_time": 12.055699999999996,
-        "end_time": 15.791854999999996,
-        "id_str": "+0+8+1+",
+        "start_time": 2015.6428764852826,
+        "end_time": 2018.9095890435617,
+        "id_str": "+0+1+8+",
         "source_node_id": 1120419,
         "target_node_id": 1122155,
         "id": 322
@@ -3232,9 +3232,9 @@
     {
         "source": "1",
         "target": "12",
-        "start_time": 10.348993999999998,
-        "end_time": 12.269913999999996,
-        "id_str": "+0+12+1+",
+        "start_time": 2013.8945333772772,
+        "end_time": 2015.342739174755,
+        "id_str": "+0+1+12+",
         "source_node_id": 1126226,
         "target_node_id": 1127083,
         "id": 323
@@ -3242,9 +3242,9 @@
     {
         "source": "1",
         "target": "4",
-        "start_time": 10.568181999999998,
-        "end_time": 11.169402999999999,
-        "id_str": "+23+1+0+4+",
+        "start_time": 2013.9344065487405,
+        "end_time": 2014.2531422789207,
+        "id_str": "+4+0+23+1+",
         "source_node_id": 1138548,
         "target_node_id": 1138549,
         "id": 324
@@ -3252,9 +3252,9 @@
     {
         "source": "4",
         "target": "23",
-        "start_time": 11.169402999999999,
-        "end_time": 15.247518,
-        "id_str": "+23+1+0+4+",
+        "start_time": 2015.2451960807455,
+        "end_time": 2018.3009034197466,
+        "id_str": "+4+0+23+1+",
         "source_node_id": 1139412,
         "target_node_id": 1139413,
         "id": 325
@@ -3262,9 +3262,9 @@
     {
         "source": "1",
         "target": "15",
-        "start_time": 10.568181999999998,
-        "end_time": 13.1473,
-        "id_str": "+0+15+1+",
+        "start_time": 2013.9344065487405,
+        "end_time": 2016.2650348104605,
+        "id_str": "+15+0+1+",
         "source_node_id": 1138548,
         "target_node_id": 1146185,
         "id": 326
@@ -3272,9 +3272,9 @@
     {
         "source": "1",
         "target": "15",
-        "start_time": 10.568181999999998,
-        "end_time": 11.9261,
-        "id_str": "+0+15+1+",
+        "start_time": 2014.272847160844,
+        "end_time": 2015.0438356189038,
+        "id_str": "+15+0+1+",
         "source_node_id": 1147167,
         "target_node_id": 1148032,
         "id": 327
@@ -3282,9 +3282,9 @@
     {
         "source": "1",
         "target": "19",
-        "start_time": 10.568181999999998,
-        "end_time": 12.840677999999999,
-        "id_str": "+0+19+1+",
+        "start_time": 2014.272847160844,
+        "end_time": 2015.9590015968854,
+        "id_str": "+19+0+1+",
         "source_node_id": 1147167,
         "target_node_id": 1148887,
         "id": 328
@@ -3292,9 +3292,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 8.497329,
-        "end_time": 9.396816,
-        "id_str": "+0+7+8+12+23+",
+        "start_time": 2012.0367090722273,
+        "end_time": 2012.4784277532879,
+        "id_str": "+7+23+12+0+8+",
         "source_node_id": 1154549,
         "target_node_id": 1154550,
         "id": 329
@@ -3302,9 +3302,9 @@
     {
         "source": "23",
         "target": "7",
-        "start_time": 8.918308,
-        "end_time": 12.927004,
-        "id_str": "+23+7+0+",
+        "start_time": 2012.4784277532879,
+        "end_time": 2016.0446479019058,
+        "id_str": "+7+0+23+",
         "source_node_id": 1154550,
         "target_node_id": 1155395,
         "id": 330
@@ -3312,9 +3312,9 @@
     {
         "source": "23",
         "target": "8",
-        "start_time": 10.055068,
-        "end_time": 11.758541000000001,
-        "id_str": "+23+8+0+",
+        "start_time": 2014.12667129197,
+        "end_time": 2014.8720520977204,
+        "id_str": "+0+23+8+",
         "source_node_id": 1158105,
         "target_node_id": 1158106,
         "id": 331
@@ -3322,9 +3322,9 @@
     {
         "source": "23",
         "target": "7",
-        "start_time": 12.196868,
-        "end_time": 14.676215,
-        "id_str": "+23+7+0+",
+        "start_time": 2017.3581683363332,
+        "end_time": 2017.7936261766326,
+        "id_str": "+7+0+23+",
         "source_node_id": 1161728,
         "target_node_id": 1163474,
         "id": 332
@@ -3332,9 +3332,9 @@
     {
         "source": "23",
         "target": "8",
-        "start_time": 9.816336,
-        "end_time": 14.838986,
-        "id_str": "+23+8+0+",
+        "start_time": 2013.0858356074111,
+        "end_time": 2017.957887361296,
+        "id_str": "+0+23+8+",
         "source_node_id": 1155407,
         "target_node_id": 1168603,
         "id": 333
@@ -3342,9 +3342,9 @@
     {
         "source": "23",
         "target": "8",
-        "start_time": 9.816336,
-        "end_time": 11.648873,
-        "id_str": "+23+8+0+",
+        "start_time": 2013.7889219441163,
+        "end_time": 2014.730195566994,
+        "id_str": "+0+23+8+",
         "source_node_id": 1169567,
         "target_node_id": 1169568,
         "id": 334
@@ -3352,9 +3352,9 @@
     {
         "source": "23",
         "target": "12",
-        "start_time": 10.696802,
-        "end_time": 13.237606,
-        "id_str": "+23+12+0+",
+        "start_time": 2014.742479633077,
+        "end_time": 2016.309901974466,
+        "id_str": "+0+23+12+",
         "source_node_id": 1172251,
         "target_node_id": 1172252,
         "id": 335
@@ -3362,8 +3362,8 @@
     {
         "source": "0",
         "target": "8",
-        "start_time": 8.497329,
-        "end_time": 12.926812000000002,
+        "start_time": 2011.9193833528866,
+        "end_time": 2016.044423334218,
         "id_str": "+0+8+",
         "source_node_id": 1191046,
         "target_node_id": 1191899,
@@ -3372,8 +3372,8 @@
     {
         "source": "0",
         "target": "10",
-        "start_time": 6.266138,
-        "end_time": 10.898702,
+        "start_time": 2009.709432680244,
+        "end_time": 2014.0164383586298,
         "id_str": "+0+10+",
         "source_node_id": 1087645,
         "target_node_id": 1201776,
@@ -3382,9 +3382,9 @@
     {
         "source": "0",
         "target": "7",
-        "start_time": 0.972683,
-        "end_time": 12.701453,
-        "id_str": "+0+7+22+9+",
+        "start_time": 2004.630177451469,
+        "end_time": 2015.7185084659322,
+        "id_str": "+9+7+0+22+",
         "source_node_id": 3,
         "target_node_id": 1210800,
         "id": 338
@@ -3392,9 +3392,9 @@
     {
         "source": "7",
         "target": "9",
-        "start_time": 1.559886,
-        "end_time": 13.739656,
-        "id_str": "+0+7+22+9+",
+        "start_time": 2015.7185084659322,
+        "end_time": 2016.7857591036927,
+        "id_str": "+7+22+0+9+",
         "source_node_id": 1210800,
         "target_node_id": 1211675,
         "id": 339
@@ -3402,9 +3402,9 @@
     {
         "source": "9",
         "target": "22",
-        "start_time": 12.701453,
-        "end_time": 14.924402,
-        "id_str": "+0+7+22+9+",
+        "start_time": 2016.7857591036927,
+        "end_time": 2018.0430145606047,
+        "id_str": "+9+7+0+22+",
         "source_node_id": 1211675,
         "target_node_id": 1212539,
         "id": 340
@@ -3412,9 +3412,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 0.0,
-        "end_time": 12.232948,
-        "id_str": "+23+0+",
+        "start_time": 2004.015175338147,
+        "end_time": 2015.3506849339726,
+        "id_str": "+0+23+",
         "source_node_id": 2,
         "target_node_id": 1218099,
         "id": 341
@@ -3422,8 +3422,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 6.189363999999999,
-        "end_time": 10.425784,
+        "start_time": 2010.3305632507995,
+        "end_time": 2013.5348304387546,
         "id_str": "+0+22+",
         "source_node_id": 1219273,
         "target_node_id": 1220119,
@@ -3432,9 +3432,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 3.685091,
-        "end_time": 7.057818999999999,
-        "id_str": "+23+0+",
+        "start_time": 2009.2470508920414,
+        "end_time": 2010.1229330810324,
+        "id_str": "+0+23+",
         "source_node_id": 1219272,
         "target_node_id": 1222180,
         "id": 343
@@ -3442,8 +3442,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 6.047592,
-        "end_time": 7.931577999999999,
+        "start_time": 2009.3262666462867,
+        "end_time": 2011.049315070958,
         "id_str": "+0+22+",
         "source_node_id": 1233174,
         "target_node_id": 1234021,
@@ -3452,9 +3452,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 6.498073,
-        "end_time": 8.340966,
-        "id_str": "+0+2+",
+        "start_time": 2010.2414213373816,
+        "end_time": 2011.4585348117926,
+        "id_str": "+2+0+",
         "source_node_id": 1235773,
         "target_node_id": 1236621,
         "id": 345
@@ -3462,8 +3462,8 @@
     {
         "source": "0",
         "target": "12",
-        "start_time": 6.466701,
-        "end_time": 14.019248999999999,
+        "start_time": 2016.1056176308741,
+        "end_time": 2017.136986303836,
         "id_str": "+0+12+",
         "source_node_id": 1241136,
         "target_node_id": 1242859,
@@ -3472,8 +3472,8 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 6.855103,
-        "end_time": 14.381668,
+        "start_time": 2010.4597594282575,
+        "end_time": 2017.4996814584013,
         "id_str": "+0+1+",
         "source_node_id": 1245803,
         "target_node_id": 1246651,
@@ -3482,8 +3482,8 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 6.855103,
-        "end_time": 8.957322,
+        "start_time": 2010.4597594282575,
+        "end_time": 2012.0631516380622,
         "id_str": "+0+1+",
         "source_node_id": 1245803,
         "target_node_id": 1246661,
@@ -3492,8 +3492,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 6.855103,
-        "end_time": 8.271303999999999,
+        "start_time": 2010.2561849172957,
+        "end_time": 2011.3890410983556,
         "id_str": "+0+22+",
         "source_node_id": 1250816,
         "target_node_id": 1251657,
@@ -3502,9 +3502,9 @@
     {
         "source": "0",
         "target": "17",
-        "start_time": 7.3778749999999995,
-        "end_time": 9.347085,
-        "id_str": "+0+17+",
+        "start_time": 2010.76196735063,
+        "end_time": 2012.4747901765793,
+        "id_str": "+17+0+",
         "source_node_id": 1251668,
         "target_node_id": 1252525,
         "id": 350
@@ -3512,9 +3512,9 @@
     {
         "source": "0",
         "target": "14",
-        "start_time": 7.3778749999999995,
-        "end_time": 10.178151999999999,
-        "id_str": "+0+14+",
+        "start_time": 2010.76196735063,
+        "end_time": 2013.2958904134257,
+        "id_str": "+14+0+",
         "source_node_id": 1251668,
         "target_node_id": 1253377,
         "id": 351
@@ -3522,9 +3522,9 @@
     {
         "source": "0",
         "target": "10",
-        "start_time": 7.197598999999999,
-        "end_time": 11.493186,
-        "id_str": "+0+8+12+19+10+",
+        "start_time": 2010.445379473765,
+        "end_time": 2014.5575167505142,
+        "id_str": "+19+10+12+0+8+",
         "source_node_id": 1251667,
         "target_node_id": 1254607,
         "id": 352
@@ -3532,9 +3532,9 @@
     {
         "source": "10",
         "target": "8",
-        "start_time": 7.3778749999999995,
-        "end_time": 14.383807,
-        "id_str": "+0+8+12+19+10+",
+        "start_time": 2014.5575167505142,
+        "end_time": 2017.3928181630552,
+        "id_str": "+19+10+12+0+8+",
         "source_node_id": 1254607,
         "target_node_id": 1255470,
         "id": 353
@@ -3542,9 +3542,9 @@
     {
         "source": "8",
         "target": "19",
-        "start_time": 11.493186,
-        "end_time": 15.60555,
-        "id_str": "+0+10+19+8+",
+        "start_time": 2017.3928181630552,
+        "end_time": 2018.7232876736987,
+        "id_str": "+19+0+8+10+",
         "source_node_id": 1255470,
         "target_node_id": 1256338,
         "id": 354
@@ -3552,9 +3552,9 @@
     {
         "source": "8",
         "target": "12",
-        "start_time": 14.383807,
-        "end_time": 15.652125,
-        "id_str": "+0+10+8+12+",
+        "start_time": 2017.9606410559438,
+        "end_time": 2018.7698630161644,
+        "id_str": "+8+0+12+10+",
         "source_node_id": 1256348,
         "target_node_id": 1258092,
         "id": 355
@@ -3562,8 +3562,8 @@
     {
         "source": "0",
         "target": "8",
-        "start_time": 8.111239000000001,
-        "end_time": 10.422205000000002,
+        "start_time": 2012.2528857869627,
+        "end_time": 2013.5401647550104,
         "id_str": "+0+8+",
         "source_node_id": 1279055,
         "target_node_id": 1279903,
@@ -3572,8 +3572,8 @@
     {
         "source": "0",
         "target": "8",
-        "start_time": 9.496798,
-        "end_time": 14.742537,
+        "start_time": 2012.8300188095466,
+        "end_time": 2017.8602739750686,
         "id_str": "+0+8+",
         "source_node_id": 1292995,
         "target_node_id": 1294724,
@@ -3582,9 +3582,9 @@
     {
         "source": "0",
         "target": "7",
-        "start_time": 7.774373000000001,
-        "end_time": 9.236857,
-        "id_str": "+0+7+",
+        "start_time": 2011.4486966775817,
+        "end_time": 2012.393931403924,
+        "id_str": "+7+0+",
         "source_node_id": 1302528,
         "target_node_id": 1305952,
         "id": 358
@@ -3592,9 +3592,9 @@
     {
         "source": "0",
         "target": "17",
-        "start_time": 5.706058,
-        "end_time": 8.395008,
-        "id_str": "+0+17+",
+        "start_time": 2009.3058417569569,
+        "end_time": 2011.511146473536,
+        "id_str": "+17+0+",
         "source_node_id": 1277316,
         "target_node_id": 1312050,
         "id": 359
@@ -3602,9 +3602,9 @@
     {
         "source": "0",
         "target": "24",
-        "start_time": 6.314223,
-        "end_time": 9.426185,
-        "id_str": "+0+24+",
+        "start_time": 2010.3190007596168,
+        "end_time": 2012.5045821451163,
+        "id_str": "+24+0+",
         "source_node_id": 1319874,
         "target_node_id": 1319875,
         "id": 360
@@ -3612,8 +3612,8 @@
     {
         "source": "0",
         "target": "12",
-        "start_time": 7.263441,
-        "end_time": 8.255232,
+        "start_time": 2010.7541177424278,
+        "end_time": 2011.3728541983728,
         "id_str": "+0+12+",
         "source_node_id": 1324199,
         "target_node_id": 1325040,
@@ -3622,8 +3622,8 @@
     {
         "source": "0",
         "target": "9",
-        "start_time": 5.353777,
-        "end_time": 15.361715,
+        "start_time": 2009.943928006825,
+        "end_time": 2018.4794520572605,
         "id_str": "+0+9+",
         "source_node_id": 1330476,
         "target_node_id": 1331323,
@@ -3632,9 +3632,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 6.816846,
-        "end_time": 8.343091,
-        "id_str": "+0+15+2+",
+        "start_time": 2010.078548741713,
+        "end_time": 2011.3753298815636,
+        "id_str": "+2+15+0+",
         "source_node_id": 1331333,
         "target_node_id": 1331334,
         "id": 363
@@ -3642,9 +3642,9 @@
     {
         "source": "2",
         "target": "15",
-        "start_time": 7.01647,
-        "end_time": 8.739716999999999,
-        "id_str": "+0+15+2+",
+        "start_time": 2011.3753298815636,
+        "end_time": 2011.7936822175734,
+        "id_str": "+2+15+0+",
         "source_node_id": 1331334,
         "target_node_id": 1332205,
         "id": 364
@@ -3652,9 +3652,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 7.01647,
-        "end_time": 9.106315,
-        "id_str": "+0+2+",
+        "start_time": 2010.9864597800365,
+        "end_time": 2012.224051203904,
+        "id_str": "+2+0+",
         "source_node_id": 1336097,
         "target_node_id": 1341413,
         "id": 365
@@ -3662,9 +3662,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 5.394601,
-        "end_time": 9.978152999999999,
-        "id_str": "+0+2+",
+        "start_time": 2009.7924938481133,
+        "end_time": 2013.0958904134238,
+        "id_str": "+2+0+",
         "source_node_id": 1344391,
         "target_node_id": 1345248,
         "id": 366
@@ -3672,9 +3672,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 5.394601,
-        "end_time": 9.983632,
-        "id_str": "+23+0+",
+        "start_time": 2009.7924938481133,
+        "end_time": 2013.1013698654785,
+        "id_str": "+0+23+",
         "source_node_id": 1344391,
         "target_node_id": 1346115,
         "id": 367
@@ -3682,9 +3682,9 @@
     {
         "source": "0",
         "target": "23",
-        "start_time": 6.236574,
-        "end_time": 9.827626,
-        "id_str": "+23+0+",
+        "start_time": 2009.7897890384354,
+        "end_time": 2012.9453626793124,
+        "id_str": "+0+23+",
         "source_node_id": 1347339,
         "target_node_id": 1348199,
         "id": 368
@@ -3692,8 +3692,8 @@
     {
         "source": "0",
         "target": "11",
-        "start_time": 7.034261,
-        "end_time": 13.675549,
+        "start_time": 2010.857727636913,
+        "end_time": 2016.7931494145537,
         "id_str": "+0+11+",
         "source_node_id": 1348211,
         "target_node_id": 1349917,
@@ -3702,9 +3702,9 @@
     {
         "source": "0",
         "target": "24",
-        "start_time": 7.034261,
-        "end_time": 10.005551,
-        "id_str": "+0+24+",
+        "start_time": 2012.1358985208374,
+        "end_time": 2013.1232876736979,
+        "id_str": "+24+0+",
         "source_node_id": 1351090,
         "target_node_id": 1351943,
         "id": 370
@@ -3712,9 +3712,9 @@
     {
         "source": "0",
         "target": "17",
-        "start_time": 7.034261,
-        "end_time": 10.178154,
-        "id_str": "+0+17+",
+        "start_time": 2012.1358985208374,
+        "end_time": 2013.2958904134257,
+        "id_str": "+17+0+",
         "source_node_id": 1351090,
         "target_node_id": 1352805,
         "id": 371
@@ -3722,9 +3722,9 @@
     {
         "source": "0",
         "target": "18",
-        "start_time": 6.531161,
-        "end_time": 9.274193,
-        "id_str": "+0+18+",
+        "start_time": 2009.904851765617,
+        "end_time": 2012.4282503610177,
+        "id_str": "+18+0+",
         "source_node_id": 1348209,
         "target_node_id": 1356053,
         "id": 372
@@ -3732,9 +3732,9 @@
     {
         "source": "0",
         "target": "17",
-        "start_time": 6.735545,
-        "end_time": 9.068063,
-        "id_str": "+0+17+",
+        "start_time": 2010.1773157507039,
+        "end_time": 2012.1857998377827,
+        "id_str": "+17+0+",
         "source_node_id": 1357906,
         "target_node_id": 1358756,
         "id": 373
@@ -3742,8 +3742,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 7.102601,
-        "end_time": 9.377367,
+        "start_time": 2010.6516895709738,
+        "end_time": 2012.498728232716,
         "id_str": "+0+22+",
         "source_node_id": 1358766,
         "target_node_id": 1359607,
@@ -3752,8 +3752,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 6.236574,
-        "end_time": 9.226134,
+        "start_time": 2009.8957140560594,
+        "end_time": 2012.3901870832028,
         "id_str": "+0+22+",
         "source_node_id": 1357905,
         "target_node_id": 1363434,
@@ -3762,9 +3762,9 @@
     {
         "source": "0",
         "target": "14",
-        "start_time": 5.487258,
-        "end_time": 8.345276,
-        "id_str": "+0+14+",
+        "start_time": 2009.6018778584667,
+        "end_time": 2011.4630137010959,
+        "id_str": "+14+0+",
         "source_node_id": 1365349,
         "target_node_id": 1366186,
         "id": 376
@@ -3772,9 +3772,9 @@
     {
         "source": "0",
         "target": "15",
-        "start_time": 4.857174,
-        "end_time": 6.174823,
-        "id_str": "+23+15+1+0+",
+        "start_time": 2008.2972665171762,
+        "end_time": 2009.2431752613636,
+        "id_str": "+0+15+23+1+",
         "source_node_id": 1372397,
         "target_node_id": 1372398,
         "id": 377
@@ -3782,9 +3782,9 @@
     {
         "source": "15",
         "target": "1",
-        "start_time": 7.181743,
-        "end_time": 9.510231000000001,
-        "id_str": "+0+15+1+",
+        "start_time": 2010.8714339784099,
+        "end_time": 2012.6274318859303,
+        "id_str": "+15+0+1+",
         "source_node_id": 1374128,
         "target_node_id": 1374982,
         "id": 378
@@ -3792,9 +3792,9 @@
     {
         "source": "15",
         "target": "23",
-        "start_time": 6.404706,
-        "end_time": 8.260045999999999,
-        "id_str": "+23+15+0+",
+        "start_time": 2009.8685463065578,
+        "end_time": 2011.415624179755,
+        "id_str": "+15+0+23+",
         "source_node_id": 1377876,
         "target_node_id": 1378727,
         "id": 379
@@ -3802,9 +3802,9 @@
     {
         "source": "0",
         "target": "7",
-        "start_time": 8.249393,
-        "end_time": 9.092170999999999,
-        "id_str": "+0+7+",
+        "start_time": 2011.839928675165,
+        "end_time": 2012.2096570819706,
+        "id_str": "+7+0+",
         "source_node_id": 1385292,
         "target_node_id": 1387002,
         "id": 380
@@ -3812,8 +3812,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 8.076846999999999,
-        "end_time": 8.795776,
+        "start_time": 2011.3320729263016,
+        "end_time": 2011.878823800463,
         "id_str": "+0+22+",
         "source_node_id": 1385291,
         "target_node_id": 1388079,
@@ -3822,9 +3822,9 @@
     {
         "source": "0",
         "target": "15",
-        "start_time": 7.73795,
-        "end_time": 9.255977,
-        "id_str": "+0+15+",
+        "start_time": 2011.155529253718,
+        "end_time": 2012.3742638973297,
+        "id_str": "+15+0+",
         "source_node_id": 1385290,
         "target_node_id": 1394337,
         "id": 382
@@ -3832,8 +3832,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 7.73795,
-        "end_time": 8.740815999999999,
+        "start_time": 2011.5678686204503,
+        "end_time": 2011.8098418890013,
         "id_str": "+0+22+",
         "source_node_id": 1395384,
         "target_node_id": 1397099,
@@ -3842,9 +3842,9 @@
     {
         "source": "0",
         "target": "6",
-        "start_time": 5.472188,
-        "end_time": 8.378397,
-        "id_str": "+0+6+",
+        "start_time": 2008.891834864471,
+        "end_time": 2011.4998351567665,
+        "id_str": "+6+0+",
         "source_node_id": 1400008,
         "target_node_id": 1400843,
         "id": 384
@@ -3852,9 +3852,9 @@
     {
         "source": "0",
         "target": "17",
-        "start_time": 14.155381,
-        "end_time": 16.835687,
-        "id_str": "+0+17+",
+        "start_time": 2017.7115329973963,
+        "end_time": 2019.95342466,
+        "id_str": "+17+0+",
         "source_node_id": 1402605,
         "target_node_id": 1403302,
         "id": 385
@@ -3862,8 +3862,8 @@
     {
         "source": "0",
         "target": "11",
-        "start_time": 6.021399,
-        "end_time": 8.156235,
+        "start_time": 2009.5089421154155,
+        "end_time": 2011.2739726052052,
         "id_str": "+0+11+",
         "source_node_id": 1400854,
         "target_node_id": 1407730,
@@ -3872,9 +3872,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 6.021399,
-        "end_time": 9.103582,
-        "id_str": "+0+2+",
+        "start_time": 2009.5553932845396,
+        "end_time": 2012.2213189634656,
+        "id_str": "+2+0+",
         "source_node_id": 1408962,
         "target_node_id": 1409818,
         "id": 387
@@ -3882,8 +3882,8 @@
     {
         "source": "0",
         "target": "1",
-        "start_time": 6.021399,
-        "end_time": 8.841598,
+        "start_time": 2009.5553932845396,
+        "end_time": 2011.959200788016,
         "id_str": "+0+1+",
         "source_node_id": 1408962,
         "target_node_id": 1410675,
@@ -3892,9 +3892,9 @@
     {
         "source": "0",
         "target": "9",
-        "start_time": 4.427561,
-        "end_time": 5.8174779999999995,
-        "id_str": "+0+18+15+9+",
+        "start_time": 2007.9330027916142,
+        "end_time": 2008.8816571043076,
+        "id_str": "+18+15+0+9+",
         "source_node_id": 1372396,
         "target_node_id": 1415730,
         "id": 389
@@ -3902,9 +3902,9 @@
     {
         "source": "9",
         "target": "18",
-        "start_time": 6.248722,
-        "end_time": 8.0112,
-        "id_str": "+0+18+9+",
+        "start_time": 2009.5223113432291,
+        "end_time": 2011.1292084180657,
+        "id_str": "+18+0+9+",
         "source_node_id": 1419261,
         "target_node_id": 1420105,
         "id": 390
@@ -3912,9 +3912,9 @@
     {
         "source": "9",
         "target": "15",
-        "start_time": 6.411923,
-        "end_time": 7.140399,
-        "id_str": "+0+15+9+",
+        "start_time": 2009.6945021874672,
+        "end_time": 2010.186717750561,
+        "id_str": "+15+0+9+",
         "source_node_id": 1420115,
         "target_node_id": 1420964,
         "id": 391
@@ -3922,8 +3922,8 @@
     {
         "source": "0",
         "target": "22",
-        "start_time": 3.685091,
-        "end_time": 9.490357,
+        "start_time": 2007.3636728299198,
+        "end_time": 2012.5746498895542,
         "id_str": "+0+22+",
         "source_node_id": 1233169,
         "target_node_id": 1430599,
@@ -3932,9 +3932,9 @@
     {
         "source": "0",
         "target": "2",
-        "start_time": 3.295609,
-        "end_time": 9.59422,
-        "id_str": "+0+2+",
+        "start_time": 2009.0416608561036,
+        "end_time": 2012.7116091196376,
+        "id_str": "+2+0+",
         "source_node_id": 1432849,
         "target_node_id": 1433693,
         "id": 393
@@ -3942,8 +3942,8 @@
     {
         "source": "0",
         "target": "8",
-        "start_time": 3.295609,
-        "end_time": 10.420973,
+        "start_time": 2009.0416608561036,
+        "end_time": 2013.539192603681,
         "id_str": "+0+8+",
         "source_node_id": 1432849,
         "target_node_id": 1434547,
@@ -3952,8 +3952,8 @@
     {
         "source": "0",
         "target": "12",
-        "start_time": 0.0,
-        "end_time": 9.010954,
+        "start_time": 2004.5995798792014,
+        "end_time": 2012.1287916109009,
         "id_str": "+0+12+",
         "source_node_id": 1219269,
         "target_node_id": 1437800,
