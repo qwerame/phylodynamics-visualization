@@ -16,17 +16,24 @@ const MapLegend = () => {
     }, [isFolded]);
 
     useEffect(() => {
-         const x = d3.scaleLog()
-            .domain([1,value.maxLength])         // This is what is written on the Axis: from 0 to 100
-            .range([250, 0])       // This is where the axis is placed: from 100 px to 800px
-            .base(Math.E)
+        // const maxRef = Math.floor((value.maxLength + 49) / 50) * 50
+        // const ticks = [];
+        // for (let i = 50; i <= maxRef; i += 50) {
+        //     ticks.push(i);
+        // }
+        // console.log(value.maxLength)
+        const x = d3.scaleLinear() //scaleLog()
+            .domain([1, value.maxLength])
+            // .domain([1,value.maxLength])         // This is what is written on the Axis: from 0 to 100
+            .range([250, 20])
+            // This is where the axis is placed: from 100 px to 800px
+            // .base(Math.E)
 
         const svg = d3.select("#map-legend")
-        console.log(d3.axisRight(x).tickFormat(d3.format(".0f")))
 
         svg.append("g")
             .attr("transform", 'translate(40, -20)')
-            .call(d3.axisRight(x).tickFormat(d3.format(".0f")));
+            .call(d3.axisRight(x).ticks(8));//.tickFormat(d3.format(".0f")).ticks(8));
 
     }, []);
 

@@ -16,9 +16,9 @@ const GridGeographicSvg = (props) => {
 
 
     // generate radius
-    const getTime = useCallback((label, time) => {
+    const getTime = useCallback((label, endTime, startTime) => {
         if(value.raw_nodes.nodes[label]) {
-            const new_list = value.raw_nodes.nodes[label].time_list.filter(item => item < time)
+            const new_list = value.raw_nodes.nodes[label].time_list.filter(item => item < endTime && item > startTime)
             // console.log(new_list)
             return new_list.length / value.raw_nodes.nodes[label].time_list.length
         }
@@ -164,7 +164,7 @@ const GridGeographicSvg = (props) => {
             svg.selectAll(".link").attr("stroke-opacity", d => d.end_time > value.time || d.start_time < value.filtered_start_time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
             svg.selectAll(".arrow").attr("opacity", d => d.end_time > value.time || d.start_time < value.filtered_start_time ? "0" : (d.id_str.includes(value.selectedId) ? "1" : "0"))
         }
-        svg.selectAll(".rect").attr("fill", d => d.isReal && getTime(d.label, value.time) > 0 ? d3.interpolateRgb(value.startColor, d3.interpolateRgb(value.startColor, value.endColor)(d.color))(getTime(d.label, value.time)) : 'rgb(105 105 105)')
+        svg.selectAll(".rect").attr("fill", d => d.isReal && getTime(d.label, value.time, value.filtered_start_time) > 0 ? d3.interpolateRgb(value.startColor, d3.interpolateRgb(value.startColor, value.endColor)(d.color))(getTime(d.label, value.time, value.filtered_start_time)) : 'rgb(105 105 105)')
         svg.selectAll(".filtered-num").text(d => value.raw_nodes.nodes[d.label].time_list.filter(item => item < value.time).length)
 
 

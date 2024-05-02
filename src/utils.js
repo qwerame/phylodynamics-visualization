@@ -72,8 +72,8 @@ export const getStroke = oldValue => {
 }
 
 export const getLnLength = length => {
-    // return length
-    return length >= 1 ? Math.log(length) : -1
+    return length
+    // return length >= 1 ? Math.log(length) : -1
 }
 
 export const getPath = (parentX, selfX, min, max) => {

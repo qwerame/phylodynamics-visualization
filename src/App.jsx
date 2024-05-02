@@ -12,15 +12,15 @@ import TreeStructureDiv from "./components/TreeStructureDiv/index.jsx";
 // import raw_links from "./data/USA_edge.json"
 // import raw_tree from "./data/USA_tree.json"
 
-import gridConstraints from "./data/africa_constraint.json"
-import raw_nodes from "./data/africa_node.json"
-import raw_links from "./data/africa_edge.json"
-import raw_tree from "./data/africa_tree.json"
+// import gridConstraints from "./data/africa_constraint.json"
+// import raw_nodes from "./data/africa_node.json"
+// import raw_links from "./data/africa_edge.json"
+// import raw_tree from "./data/africa_tree.json"
 
-// import gridConstraints from "./data/china_constraint.json"
-// import raw_nodes from "./data/china_node.json"
-// import raw_links from "./data/china_edge.json"
-// import raw_tree from "./data/china_tree.json"
+import gridConstraints from "./data/china_constraint.json"
+import raw_nodes from "./data/china_node.json"
+import raw_links from "./data/china_edge.json"
+import raw_tree from "./data/china_tree.json"
 
 import {ValueProvider} from "./context.jsx";
 import {generateColor} from "./utils.js";
