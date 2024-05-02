@@ -3,11 +3,10 @@ import {useCallback, useEffect, useState} from "react";
 import * as d3 from "d3";
 import {
     axis_width,
-    axis_height,
     axis_margin,
     statical_chart_height,
     slider_height,
-    slider_color, min_length, visible_color, slider_svg_height
+    slider_color, min_length, visible_color, slider_svg_height,
 } from "../../constants.js";
 import {getStroke} from "../../utils.js";
 
@@ -18,14 +17,6 @@ const Slider = () => {
 
     const [startX, setStartX] = useState(axis_margin)
     const [endX, setEndX] = useState(axis_width - axis_margin)
-
-    const dataset1 = [
-        [1,5], [2,5], [3,14],
-        [4, 68], [5, 135], [6, 209],
-        [7, 268], [8, 322], [9, 346],
-        [10, 164]
-    ];
-
 
     const translateTime = useCallback(time => {
         const year = Math.floor(time)
@@ -69,21 +60,54 @@ const Slider = () => {
                 .domain([new Date(translateTime(value.startTime)), new Date(translateTime(value.endTime))])
                 .range([axis_margin, axis_width - axis_margin])
 
-            svg.append("g").call(d3.axisBottom(x).ticks(10).tickSize(5).ticks(d3.timeYear.every(1)))
+            svg.append("g").call(d3.axisBottom(x).ticks(12)
+                .tickFormat(date => date.getMonth() === 0 ? d3.timeFormat("%Y")(date):d3.timeFormat("%b")(date)))
                 .attr("transform", `translate(0, ${statical_chart_height + slider_height})`);
         }
 
-        const xScale = d3.scaleLinear().domain([0,10 ]).range([axis_margin, axis_width - axis_margin])
-        const yScale = d3.scaleLinear().domain([0, 350]).range([statical_chart_height, 0]);
+        const xScale = d3.scaleLinear().domain([0,20]).range([axis_margin, axis_width - axis_margin])
+        const yScale = d3.scaleLinear().domain([0, value.max_ref]).range([statical_chart_height , 0]);
+
+        // svg.append("g").call(d3.axisLeft(yScale).ticks(3).tickValues([0, 100, 200]))
+        //     .attr("transform", `translate(${axis_margin}, 0)`);
+
+        svg.append('g')
+            .selectAll("dot")
+            .data(value.span_record)
+            .enter()
+            .append("circle")
+            .attr("cx", d => xScale(d[0]))
+            .attr("cy", d => yScale(d[1]))
+            .attr("r", 2)
+            // .attr("transform", "translate(" + 100 + "," + 100 + ")")
+            .style("fill", "#CC0000")
+            .on("mouseenter", function (e){
+                console.log(e.target.__data__)
+                dispatch({
+                    type: 'setLineChartNodeInfo',
+                    newValue: {
+                        num: e.target.__data__[1],
+                        x: e.clientX,
+                        y: e.clientY
+                    }
+                })
+
+            })
+            .on("mouseleave", () => {
+                dispatch({
+                    type: 'setLineChartNodeInfo',
+                    newValue: null
+                })
+            })
 
         const line = d3.line()
-            .x(function(d) { return xScale(d[0]); })
-            .y(function(d) { return yScale(d[1]); })
+            .x(d => xScale(d[0]))
+            .y(d => yScale(d[1]))
             // .curve(d3.curveMonotoneX)
         d3.select("#chart").append("path")
-            .datum(dataset1)
+            .datum(value.span_record)
             // .attr("class", "line")
-            .attr("transform", `translate(${(axis_margin * 2 - axis_width) / 20 }, 0)`)
+            // .attr("transform", `translate(${(axis_margin * 2 - axis_width) / 20 }, 0)`)
             .attr("d", line)
             .style("fill", "none")
             .style("stroke", "#CC0000")
@@ -110,7 +134,7 @@ const Slider = () => {
 
     return (
         <div id="slider" style={{display: "flex", width: axis_width + "px",
-            justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+            justifyContent: "center", alignItems: "center", flexDirection: "column", position: "relative"}}>
             {/*<input type="range" min={value.startTime} max={value.endTime} list="values"*/}
             {/*       onInput={changeValue} step="any" defaultValue={value.endTime}*/}
             {/*       style={{width: axis_width - axis_margin * 2 + "px"}}/>*/}
@@ -130,6 +154,7 @@ const Slider = () => {
                     ></circle>
                 </g>
             </svg>
+
         </div>
     )
 }

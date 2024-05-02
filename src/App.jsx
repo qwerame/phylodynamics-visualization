@@ -12,18 +12,19 @@ import TreeStructureDiv from "./components/TreeStructureDiv/index.jsx";
 // import raw_links from "./data/USA_edge.json"
 // import raw_tree from "./data/USA_tree.json"
 
-// import gridConstraints from "./data/africa_constraint.json"
-// import raw_nodes from "./data/africa_node.json"
-// import raw_links from "./data/africa_edge.json"
-// import raw_tree from "./data/africa_tree.json"
+import gridConstraints from "./data/africa_constraint.json"
+import raw_nodes from "./data/africa_node.json"
+import raw_links from "./data/africa_edge.json"
+import raw_tree from "./data/africa_tree.json"
 
-import gridConstraints from "./data/china_constraint.json"
-import raw_nodes from "./data/china_node.json"
-import raw_links from "./data/china_edge.json"
-import raw_tree from "./data/china_tree.json"
+// import gridConstraints from "./data/china_constraint.json"
+// import raw_nodes from "./data/china_node.json"
+// import raw_links from "./data/china_edge.json"
+// import raw_tree from "./data/china_tree.json"
 
 import {ValueProvider} from "./context.jsx";
 import {generateColor} from "./utils.js";
+import LineChartNodeDetail from "./components/LineChartNodeDetail/index.jsx";
 
 
 function App() {
@@ -55,7 +56,10 @@ function App() {
             selectedNodeId: null, // node id in tree structure
             selectedNodeIdList: null,
             display_time_axis: raw_nodes.time_axis,
-            maxLength: Math.max(...Object.values(raw_nodes.nodes).map(item => item.time_list.length))
+            maxLength: Math.max(...Object.values(raw_nodes.nodes).map(item => item.time_list.length)),
+            span_record: raw_tree.span_record, //used in line chart
+            max_ref: raw_tree.max_ref, // used as the max y-axis in line chart
+            line_chart_node_info: null
         })
     }, []);
 
@@ -69,6 +73,7 @@ function App() {
                         <GridGeographicDiv/>
                         <TreeStructureDiv/>
                         <Panel/>
+                        <LineChartNodeDetail></LineChartNodeDetail>
                     </ValueProvider> : null
             }
         </>

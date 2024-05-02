@@ -80,7 +80,6 @@ const Panel = ()  => {
                 </div>
                 : null }
 
-
         </div>
     )
 }

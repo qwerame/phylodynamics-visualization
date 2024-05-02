@@ -81,6 +81,12 @@ function ValueReducer(value, action) {
                 selectedNodeIdList: action.newValue
             }
         }
+        case 'setLineChartNodeInfo': {
+            return {
+                ...value,
+                line_chart_node_info: action.newValue
+            }
+        }
         default: {
             throw Error('Unknown action: ' + action.type);
         }
