@@ -4,7 +4,6 @@ import * as cola from "webcola";
 import {useValue} from "../../context.jsx";
 import {geographic_svg_padding, geographic_svg_size} from "../../constants.js";
 import GridGeographicSvg from "./GridGeographicSvg.jsx";
-import VariationDetail from "../VariationDetail/index.jsx";
 import {getLnLength} from "../../utils.js";
 const GridGeographicDiv = () => {
     const value = useValue()
@@ -156,7 +155,7 @@ const GridGeographicDiv = () => {
             <div id="geographic-div" className="svg-div" style={{width: geographic_svg_size + 'px', height: geographic_svg_size + 'px'}}>
                 {nodes && finalLinks ? <GridGeographicSvg nodes={nodes} links={finalLinks}/> : null}
             </div>
-            <VariationDetail></VariationDetail>
+
         </>
     );
 };

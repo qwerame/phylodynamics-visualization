@@ -2,7 +2,7 @@ import {useRef, useState} from "react";
 import { ChromePicker } from 'react-color';
 import './index.css'
 import {useValue, useValueDispatch} from "../../context.jsx";
-import Slider from "../Slider/index.jsx";
+import Slider from "./Silder.jsx";
 
 const Panel = ()  => {
     const value = useValue()

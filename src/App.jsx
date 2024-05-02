@@ -24,7 +24,9 @@ import raw_tree from "./data/china_tree.json"
 
 import {ValueProvider} from "./context.jsx";
 import {generateColor} from "./utils.js";
-import LineChartNodeDetail from "./components/LineChartNodeDetail/index.jsx";
+import LineChartNodeDetail from "./components/DetailCard/LineChartNodeDetail.jsx";
+import NodeDetail from "./components/DetailCard/NodeDetail.jsx";
+import VariationDetail from "./components/DetailCard/VariationDetail.jsx";
 
 
 function App() {
@@ -74,6 +76,8 @@ function App() {
                         <TreeStructureDiv/>
                         <Panel/>
                         <LineChartNodeDetail></LineChartNodeDetail>
+                        <NodeDetail></NodeDetail>
+                        <VariationDetail></VariationDetail>
                     </ValueProvider> : null
             }
         </>

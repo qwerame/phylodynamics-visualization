@@ -49,8 +49,8 @@ const Slider = () => {
 
     useEffect(() => {
         const svg = d3.select("#axis-svg")
-            // .attr("width", axis_width)
-            // .attr("height", axis_height);
+        // .attr("width", axis_width)
+        // .attr("height", axis_height);
 
         d3.select("#start-btn").call(dragStart)
         d3.select("#end-btn").call(dragEnd)
@@ -103,7 +103,7 @@ const Slider = () => {
         const line = d3.line()
             .x(d => xScale(d[0]))
             .y(d => yScale(d[1]))
-            // .curve(d3.curveMonotoneX)
+        // .curve(d3.curveMonotoneX)
         d3.select("#chart").append("path")
             .datum(value.span_record)
             // .attr("class", "line")
@@ -150,7 +150,7 @@ const Slider = () => {
                             cx={startX} cy={slider_height / 2}
                     ></circle>
                     <circle id='end-btn' r='6' fill={slider_color} stroke={getStroke(slider_color)}
-                             cx={endX} cy={slider_height / 2}
+                            cx={endX} cy={slider_height / 2}
                     ></circle>
                 </g>
             </svg>
