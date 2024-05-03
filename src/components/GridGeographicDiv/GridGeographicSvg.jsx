@@ -125,7 +125,7 @@ const GridGeographicSvg = (props) => {
 
 
         node.append("text")
-            .text(d => d.label)
+            .text(d => value.translation_map[d.label])
             .attr("fill", "black")
             .attr("stroke", "black")
             .attr("font-size", "8px")

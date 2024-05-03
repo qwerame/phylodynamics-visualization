@@ -41,7 +41,7 @@ const TreeLegend = () => {
                                        }}
                                     >
                                         <rect width='15px' height='15px' fill={value.color_map[key]}></rect>
-                                        <text className='legend-text' x={24} y={11} clipPath='url(#clipPath)'>{key}</text>
+                                        <text className='legend-text' x={24} y={11} clipPath='url(#clipPath)'>{value.translation_map[key]}</text>
                                     </g>
                                 ))}
                             </g>

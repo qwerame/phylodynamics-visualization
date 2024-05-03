@@ -119,7 +119,7 @@ const GridGeographicDiv = () => {
         if(gridSize && maxListLength && marginX && marginY){
             const fakeList = Object.keys(value.grid_constraint).filter(name => value.raw_nodes.nodes[name] == undefined)
             const finalList = [...Object.keys(value.raw_nodes.nodes), ...fakeList]
-            const sizeList = getTextSizes(finalList)
+            const sizeList = getTextSizes(finalList.map(item => value.translation_map[item]))
             const idList = getIdList(finalList)
             console.log(value.grid_constraint)
             setNodes(finalList.map((key, index) => {

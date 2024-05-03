@@ -109,6 +109,35 @@
       3
     ]
   },
+  "translation": {
+    "British Columbia": "British Columbia",
+    "Washington": "Washington",
+    "California": "California",
+    "Montana": "Montana",
+    "Texas": "Texas",
+    "North Dakota": "North Dakota",
+    "Kansas": "Kansas",
+    "Manitoba": "Manitoba",
+    "Iowa": "Iowa",
+    "Arkansas": "Arkansas",
+    "Missouri": "Missouri",
+    "Louisiana": "Louisiana",
+    "Wisconsin": "Wisconsin",
+    "Illinois": "Illinois",
+    "Alabama": "Alabama",
+    "Indiana": "Indiana",
+    "Michigan": "Michigan",
+    "Ontario": "Ontario",
+    "Georgia": "Georgia",
+    "Ohio": "Ohio",
+    "North Carolina": "North Carolina",
+    "Virginia": "Virginia",
+    "Pennsylvania": "Pennsylvania",
+    "New York": "New York",
+    "New Jersey": "New Jersey",
+    "New Hampshire": "New Hampshire",
+    "Massachusetts": "Massachusetts"
+  },
   "info": {
     "rows": 9,
     "columns": 11

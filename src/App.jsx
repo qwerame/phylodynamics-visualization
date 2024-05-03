@@ -61,7 +61,8 @@ function App() {
             maxLength: Math.max(...Object.values(raw_nodes.nodes).map(item => item.time_list.length)),
             span_record: raw_tree.span_record, //used in line chart
             max_ref: raw_tree.max_ref, // used as the max y-axis in line chart
-            line_chart_node_info: null
+            line_chart_node_info: null,
+            translation_map: gridConstraints.translation
         })
     }, []);
 
