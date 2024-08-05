@@ -62,6 +62,7 @@ const GridGeographicDiv = () => {
     const generateLinks = useCallback(() => {
         setLinks(value.raw_links.map(d => Object.assign(Object.create(d), {
             ...d,
+            opacity: ((d.start_time + d.end_time) / 2 - value.startTime) / (value.endTime - value.startTime),
             source: parseInt(d.source),// index.get(d.source),
             target: parseInt(d.target),//index.get(d.target),
         })))

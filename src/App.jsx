@@ -2,21 +2,19 @@ import './App.css'
 
 import Panel from "./components/Panel";
 import {useEffect, useState} from "react";
-// import GeographicDiv from "./components/GeographicDiv";
 import GridGeographicDiv from "./components/GridGeographicDiv/index.jsx";
 import TreeStructureDiv from "./components/TreeStructureDiv/index.jsx";
-// import constraint from "./data/constraint.json"
-//
+
 // import gridConstraints from "./data/USA_constraint.json"
 // import raw_nodes from "./data/USA_node.json"
 // import raw_links from "./data/USA_edge.json"
 // import raw_tree from "./data/USA_tree.json"
-
+//
 // import gridConstraints from "./data/africa_constraint.json"
 // import raw_nodes from "./data/africa_node.json"
 // import raw_links from "./data/africa_edge.json"
 // import raw_tree from "./data/africa_tree.json"
-
+//
 import gridConstraints from "./data/china_constraint.json"
 import raw_nodes from "./data/china_node.json"
 import raw_links from "./data/china_edge.json"
@@ -40,7 +38,6 @@ function App() {
             filtered_start_time: raw_nodes.time_info.end_time,
             raw_nodes: raw_nodes,
             raw_links: raw_links,
-            // constraint: constraint,
             startTime: raw_nodes.time_info.start_time,
             endTime: raw_nodes.time_info.end_time,
             nodes_map: raw_nodes.nodes_map,
@@ -72,7 +69,6 @@ function App() {
             {
                 initValue ?
                     <ValueProvider init={initValue}>
-                        {/*<GeographicDiv/>*/}
                         <GridGeographicDiv/>
                         <TreeStructureDiv/>
                         <Panel/>

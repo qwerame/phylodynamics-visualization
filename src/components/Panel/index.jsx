@@ -3,6 +3,7 @@ import { ChromePicker } from 'react-color';
 import './index.css'
 import {useValue, useValueDispatch} from "../../context.jsx";
 import Slider from "./Silder.jsx";
+import {getDate} from "../../utils.js";
 
 const Panel = ()  => {
     const value = useValue()
@@ -63,22 +64,28 @@ const Panel = ()  => {
 
     return (
         <div id="panel">
-            <button className="panel-button" onClick={clickStart} ref={startRef} style={{background: localStartColor}}>min color</button>
+            <div className='panel-block'>
+                <button className="panel-button" onClick={clickStart} ref={startRef} style={{background: localStartColor}}>min color</button>
+                <button className="panel-button" onClick={clickEnd} ref={endRef} style={{background: localEndColor}}>max color</button>
+                {displayStart ?
+                    <div id="popoverStart" className="panel-popover">
+                        <div className="cover" onClick={handleCloseStart}></div>
+                        <ChromePicker color={localStartColor} onChangeComplete={handleSetStart}/>
+                    </div>
+                    : null }
+                {displayEnd ?
+                    <div id="popoverEnd" className="panel-popover">
+                        <div className="cover" onClick={handleCloseEnd}></div>
+                        <ChromePicker color={localEndColor} onChangeComplete={handleSetEnd}/>
+                    </div>
+                    : null }
+            </div>
             <Slider></Slider>
-            <button className="panel-button" onClick={clickEnd} ref={endRef} style={{background: localEndColor}}>max color</button>
-
-            {displayStart ?
-                <div id="popoverStart" className="panel-popover">
-                    <div className="cover" onClick={handleCloseStart}></div>
-                    <ChromePicker color={localStartColor} onChangeComplete={handleSetStart}/>
-                </div>
-                : null }
-            {displayEnd ?
-                <div id="popoverEnd" className="panel-popover">
-                    <div className="cover" onClick={handleCloseEnd}></div>
-                    <ChromePicker color={localEndColor} onChangeComplete={handleSetEnd}/>
-                </div>
-                : null }
+            <div className='panel-block'>
+                <p className='date-display'>{getDate(value.filtered_start_time)}</p>
+                 ~
+                <p className='date-display'>{getDate(value.time)}</p>
+            </div>
 
         </div>
     )

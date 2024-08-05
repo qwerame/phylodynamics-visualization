@@ -2,28 +2,40 @@
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 90px;
     margin-top: 5px;
 
-    .panel-popover {
-        position: absolute;
-        top: -240px;
-    }
-    #popoverStart {
-        left: 345px;
-    }
-    #popoverEnd
-    {
-        right: 345px;
-    }
-    .cover {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-    .panel-button {
-        align-self: center;
+    .panel-block {
+        width: 280px;
+        position: relative;
+        .panel-button {
+            width: 120px;
+            height: 40px;
+            margin: 10px;
+        }
+        .date-display {
+            width: 100px;
+            display: inline-block;
+        }
+
+        .panel-popover {
+            position: absolute;
+            top: -240px;
+        }
+        #popoverStart {
+            left: -40px;
+        }
+        #popoverEnd
+        {
+            right: -40px;
+        }
+        .cover {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
     }
 }

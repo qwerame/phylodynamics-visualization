@@ -16,4 +16,4 @@ export const slider_color = 'rgb(211 211 211)'
 
 export const visible_color = 'rgb(30,144,255)'
 
-export const min_length = 50
+export const min_length = 13
